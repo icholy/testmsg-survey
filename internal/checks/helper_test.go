@@ -227,6 +227,35 @@ func TestX(t *testing.T) {
 			want: "helper helper:example.com/m.Must bare run@.",
 		},
 		{
+			name: "closure helpers",
+			files: map[string]string{
+				"go.mod": "module example.com/m\n",
+				"p_test.go": `package p
+import ("os"; "testing")
+func TestX(t *testing.T) {
+	check := func(err error) {
+		t.Helper()
+		if err != nil {
+			t.Fatal(err)
+		}
+	}
+	var mustf = func(err error, what string) {
+		if err != nil {
+			t.Fatalf("%s: %v", what, err)
+		}
+	}
+	check(os.Remove("x"))
+	mustf(os.Remove("y"), "remove y")
+	mustf(os.Remove("y"), "error")
+	notHelper := func(err error) { t.Log(err) }
+	notHelper(os.Remove("z"))
+}`,
+			},
+			want: "helper helper:example.com/m.TestX.check bare os.Remove@os\n" +
+				"helper helper:example.com/m.TestX.mustf contextual os.Remove@os\n" +
+				"helper helper:example.com/m.TestX.mustf bare os.Remove@os",
+		},
+		{
 			name: "not helpers",
 			files: map[string]string{
 				"go.mod": "module example.com/m\n",
@@ -256,6 +285,54 @@ func TestX(t *testing.T) {
 				t.Errorf("got:\n%s\nwant:\n%s", got, tt.want)
 			}
 		})
+	}
+}
+
+func TestStdImportPaths(t *testing.T) {
+	m := loadFiles(t, "", map[string]string{
+		"src/go.mod": "module std\n",
+		"src/internal/testenv/testenv.go": `package testenv
+import "testing"
+func Must(t testing.TB, err error) {
+	if err != nil {
+		t.Fatal(err)
+	}
+}`,
+		"src/os/os_test.go": `package os_test
+import (
+	"testing"
+	"internal/testenv"
+)
+func TestX(t *testing.T) {
+	testenv.Must(t, run())
+}`,
+	})
+	if got, want := summary(m.Analyze().Checks), "helper helper:internal/testenv.Must bare run@."; got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+func TestFuncKind(t *testing.T) {
+	m := loadFiles(t, "", map[string]string{
+		"go.mod": "module example.com/m\n",
+		"p_test.go": `package p
+import ("log"; "testing")
+func TestX(t *testing.T) { if err := run(); err != nil { t.Fatal(err) } }
+func Testable(t *testing.T) { if err := run(); err != nil { t.Fatal(err) } }
+func BenchmarkX(b *testing.B) { if err := run(); err != nil { b.Fatal(err) } }
+func FuzzX(f *testing.F) { if err := run(); err != nil { f.Fatal(err) } }
+func Example() { if err := run(); err != nil { log.Fatal(err) } }
+func ExampleFoo_bar() { if err := run(); err != nil { log.Fatal(err) } }
+func TestMain(m *testing.M) { if err := run(); err != nil { log.Fatal(err) } }
+`,
+	})
+	var got []string
+	for _, c := range m.Analyze().Checks {
+		got = append(got, c.Func)
+	}
+	want := "test other benchmark fuzz example example other"
+	if strings.Join(got, " ") != want {
+		t.Errorf("got %q, want %q", strings.Join(got, " "), want)
 	}
 }
 

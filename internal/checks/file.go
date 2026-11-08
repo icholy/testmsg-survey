@@ -61,6 +61,7 @@ func (fc *fileCtx) analyzeIf(ifs *ast.IfStmt, s stack, res *Result) {
 		File:      fc.name,
 		Line:      fc.line(ifs),
 		Mechanism: mech,
+		Func:      funcKind(s),
 		Sink:      sink,
 		Bare:      bare,
 		Code:      fc.text(ifs),
@@ -87,6 +88,7 @@ func (fc *fileCtx) analyzeCall(call *ast.CallExpr, s stack, res *Result) {
 		File:      fc.name,
 		Line:      fc.line(call),
 		Mechanism: mech,
+		Func:      funcKind(s),
 		Sink:      sink,
 		Bare:      bare,
 		Code:      fc.text(call),
@@ -109,13 +111,16 @@ func (fc *fileCtx) insideHelper(s stack, errName string) bool {
 	for i := len(s) - 1; i >= 0; i-- {
 		switch n := s[i].(type) {
 		case *ast.FuncLit:
+			if fi := fc.mod.funcByNode(fc.pkg, n); fi != nil && fi.Helper != nil {
+				return fi.Params[fi.Helper.ErrParam].Name == errName
+			}
 			for _, p := range flattenParams(n.Type) {
 				if p.Name == errName {
 					return false
 				}
 			}
 		case *ast.FuncDecl:
-			fi := fc.mod.funcByDecl(fc.pkg, n)
+			fi := fc.mod.funcByNode(fc.pkg, n)
 			if fi == nil || fi.Helper == nil {
 				return false
 			}

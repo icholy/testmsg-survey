@@ -71,8 +71,9 @@ non-nil. Every sink has a **mechanism** tag.
   `log.Panicf` in an `if X != nil` body, with `X` an error value.
 - **helper**: a call to a function that passes one of its parameters,
   unchanged, to a sink as the asserted error. The parameter may arrive as
-  part of a multi-value call such as `must(t, f())`. Helpers can call other
-  helpers. The set is computed as a fixed point over every `.go` file in the
+  part of a multi-value call such as `must(f())`. Helpers can be functions,
+  methods, or function literals assigned to a local variable
+  (`check := func(err error) {...}`), and can call other helpers. The set is computed as a fixed point over every `.go` file in the
   module, including non-test files (for example `internal/testutil`). Imports
   within the module are resolved to directories using the `go.mod` module
   path, or the repository path for code with no `go.mod`. A parameter is
@@ -132,6 +133,13 @@ Still to be defined. The analyser records the call that produced the error
 (from the `if` initialiser, or the closest earlier assignment to the error
 value in the same block) and, where it can be resolved, its package, so this
 can be decided before the results are looked at.
+
+### Function kinds
+
+Each check records the kind of top-level function it is in, using the
+`go test` naming rules: `test`, `benchmark`, `fuzz`, `example`, or `other`
+(helpers, `TestMain`, methods). `Example` functions are documentation rather
+than tests, so results are reported both with and without them.
 
 ### Files
 

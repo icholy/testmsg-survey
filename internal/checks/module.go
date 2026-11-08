@@ -20,8 +20,10 @@ import (
 type Module struct {
 	Fset  *token.FileSet
 	Files []*File
-	// ParseErrors counts files that failed to parse.
-	ParseErrors int
+	// ParseErrors counts files that failed to parse, and TestParseErrors
+	// lists the _test.go files among them.
+	ParseErrors     int
+	TestParseErrors []string
 
 	pkgs   map[pkgKey]*Package
 	byPath map[string]*Package // import path -> non-test package
@@ -46,17 +48,44 @@ type Package struct {
 	Path  string // import path, "" if unknown
 	Files []*File
 
-	funcs   map[string]*FuncInfo
-	methods map[string][]*FuncInfo
-	structs map[string]*ast.StructType
+	funcs    map[string]*FuncInfo
+	methods  map[string][]*FuncInfo
+	structs  map[string]*ast.StructType
+	closures map[*ast.Object]*FuncInfo
+	all      []*FuncInfo
+	byNode   map[ast.Node]*FuncInfo
 }
 
-// FuncInfo is a function or method declaration.
+// FuncInfo is a function or method declaration, or a function literal
+// assigned to a local variable (a closure helper such as
+// check := func(err error) {...}).
 type FuncInfo struct {
-	Decl   *ast.FuncDecl
+	// Decl is the function declaration, or for a closure, the top-level
+	// declaration that contains it.
+	Decl *ast.FuncDecl
+	// Lit and Var are set for closures: the literal and the variable name.
+	Lit    *ast.FuncLit
+	Var    string
 	File   *File
 	Params []Param
 	Helper *HelperInfo
+}
+
+// Body returns the function body.
+func (fi *FuncInfo) Body() *ast.BlockStmt {
+	if fi.Lit != nil {
+		return fi.Lit.Body
+	}
+	return fi.Decl.Body
+}
+
+// Node returns the function node: the literal for a closure, otherwise the
+// declaration.
+func (fi *FuncInfo) Node() ast.Node {
+	if fi.Lit != nil {
+		return fi.Lit
+	}
+	return fi.Decl
 }
 
 // Param is one flattened function parameter.
@@ -122,6 +151,9 @@ func Load(root, fallbackPath string) (*Module, error) {
 		f, err := parser.ParseFile(m.Fset, rel, src, parser.ParseComments)
 		if err != nil {
 			m.ParseErrors++
+			if strings.HasSuffix(rel, "_test.go") {
+				m.TestParseErrors = append(m.TestParseErrors, rel)
+			}
 			continue
 		}
 		dir := path.Dir(rel)
@@ -129,12 +161,14 @@ func Load(root, fallbackPath string) (*Module, error) {
 		pkg := m.pkgs[key]
 		if pkg == nil {
 			pkg = &Package{
-				Dir:     dir,
-				Name:    f.Name.Name,
-				Path:    importPath(dir, modPaths, fallbackPath),
-				funcs:   map[string]*FuncInfo{},
-				methods: map[string][]*FuncInfo{},
-				structs: map[string]*ast.StructType{},
+				Dir:      dir,
+				Name:     f.Name.Name,
+				Path:     importPath(dir, modPaths, fallbackPath),
+				funcs:    map[string]*FuncInfo{},
+				methods:  map[string][]*FuncInfo{},
+				structs:  map[string]*ast.StructType{},
+				closures: map[*ast.Object]*FuncInfo{},
+				byNode:   map[ast.Node]*FuncInfo{},
 			}
 			m.pkgs[key] = pkg
 			if pkg.Path != "" && !strings.HasSuffix(pkg.Name, "_test") && pkg.Name != "main" {
@@ -174,6 +208,11 @@ func joinPath(modPath, dir, modDir string) string {
 	if modDir != "." {
 		rel = strings.TrimPrefix(dir, modDir+"/")
 	}
+	if modPath == "std" {
+		// The standard library module: packages are imported by their
+		// path relative to src.
+		return rel
+	}
 	return modPath + "/" + rel
 }
 
@@ -186,11 +225,14 @@ func (p *Package) index(f *File) {
 				continue
 			}
 			fi := &FuncInfo{Decl: d, File: f, Params: flattenParams(d.Type)}
+			p.all = append(p.all, fi)
+			p.byNode[d] = fi
 			if d.Recv == nil {
 				p.funcs[d.Name.Name] = fi
 			} else {
 				p.methods[d.Name.Name] = append(p.methods[d.Name.Name], fi)
 			}
+			p.indexClosures(f, d)
 		case *ast.GenDecl:
 			for _, spec := range d.Specs {
 				ts, ok := spec.(*ast.TypeSpec)
@@ -203,6 +245,40 @@ func (p *Package) index(f *File) {
 			}
 		}
 	}
+}
+
+// indexClosures records function literals assigned to local variables in a
+// declaration body: name := func(...) {...}, var name = func(...) {...}.
+func (p *Package) indexClosures(f *File, d *ast.FuncDecl) {
+	add := func(id *ast.Ident, rhs ast.Expr) {
+		lit, ok := rhs.(*ast.FuncLit)
+		if !ok || id.Obj == nil || id.Name == "_" {
+			return
+		}
+		fi := &FuncInfo{Decl: d, Lit: lit, Var: id.Name, File: f, Params: flattenParams(lit.Type)}
+		p.closures[id.Obj] = fi
+		p.all = append(p.all, fi)
+		p.byNode[lit] = fi
+	}
+	ast.Inspect(d.Body, func(n ast.Node) bool {
+		switch n := n.(type) {
+		case *ast.AssignStmt:
+			if n.Tok == token.DEFINE && len(n.Lhs) == len(n.Rhs) {
+				for i, l := range n.Lhs {
+					if id, ok := l.(*ast.Ident); ok {
+						add(id, n.Rhs[i])
+					}
+				}
+			}
+		case *ast.ValueSpec:
+			if len(n.Names) == len(n.Values) {
+				for i, id := range n.Names {
+					add(id, n.Values[i])
+				}
+			}
+		}
+		return true
+	})
 }
 
 func flattenParams(ft *ast.FuncType) []Param {
@@ -242,6 +318,9 @@ func (m *Module) lookupFunc(fc *fileCtx, call *ast.CallExpr) *FuncInfo {
 			return m.localFunc(p, id.Name)
 		}
 	case *ast.Ident:
+		if fun.Obj != nil && fun.Obj.Kind == ast.Var {
+			return p.closures[fun.Obj]
+		}
 		if fun.Obj != nil && fun.Obj.Kind != ast.Fun {
 			return nil
 		}

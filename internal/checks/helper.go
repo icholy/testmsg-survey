@@ -2,6 +2,7 @@ package checks
 
 import (
 	"go/ast"
+	"sort"
 )
 
 // HelperInfo describes a function that forwards one of its error parameters,
@@ -46,16 +47,18 @@ func (m *Module) resolveHelpers() {
 	for _, f := range m.Files {
 		ctxs[f] = m.fileCtx(f)
 	}
-	for _, f := range m.Files {
-		for _, decl := range f.AST.Decls {
-			fd, ok := decl.(*ast.FuncDecl)
-			if !ok || fd.Body == nil {
-				continue
-			}
-			if fi := m.funcByDecl(f.Pkg, fd); fi != nil {
-				funcs = append(funcs, fi)
-			}
+	keys := make([]pkgKey, 0, len(m.pkgs))
+	for k := range m.pkgs {
+		keys = append(keys, k)
+	}
+	sort.Slice(keys, func(i, j int) bool {
+		if keys[i].dir != keys[j].dir {
+			return keys[i].dir < keys[j].dir
 		}
+		return keys[i].name < keys[j].name
+	})
+	for _, k := range keys {
+		funcs = append(funcs, m.pkgs[k].all...)
 	}
 	for round := 0; round < maxHelperRounds; round++ {
 		changed := false
@@ -72,20 +75,12 @@ func (m *Module) resolveHelpers() {
 	}
 }
 
-// funcByDecl returns the FuncInfo for a declaration.
-func (m *Module) funcByDecl(p *Package, fd *ast.FuncDecl) *FuncInfo {
-	if fd.Recv == nil {
-		if fi := p.funcs[fd.Name.Name]; fi != nil && fi.Decl == fd {
-			return fi
-		}
+// funcByNode returns the FuncInfo for a declaration or closure literal.
+func (m *Module) funcByNode(p *Package, n ast.Node) *FuncInfo {
+	if p == nil {
 		return nil
 	}
-	for _, fi := range p.methods[fd.Name.Name] {
-		if fi.Decl == fd {
-			return fi
-		}
-	}
-	return nil
+	return p.byNode[n]
 }
 
 func (m *Module) fileCtx(f *File) *fileCtx {
@@ -103,7 +98,7 @@ func isErrorType(e ast.Expr) bool {
 func (fc *fileCtx) helperInfo(fi *FuncInfo) *HelperInfo {
 	errParams := map[string]int{}
 	for i, p := range fi.Params {
-		if isErrorType(p.Type) && !p.Variadic && p.Name != "_" && !assignedIn(fi.Decl.Body, p.Name) {
+		if isErrorType(p.Type) && !p.Variadic && p.Name != "_" && !assignedIn(fi.Body(), p.Name) {
 			errParams[p.Name] = i
 		}
 	}
@@ -133,8 +128,12 @@ func (fc *fileCtx) helperInfo(fi *FuncInfo) *HelperInfo {
 		fc.helperMode = false
 		fc.allowed = nil
 	}()
+	// Walk the whole declaration so that closures see the parameters of
+	// the enclosing function (usually t), but only consider nodes inside the
+	// function being analysed.
+	root := fi.Node()
 	walk(fi.Decl, func(n ast.Node, s stack) {
-		if info != nil {
+		if info != nil || !s.contains(root) {
 			return
 		}
 		// Only the message parameters of the sink that is found count.
@@ -146,7 +145,7 @@ func (fc *fileCtx) helperInfo(fi *FuncInfo) *HelperInfo {
 				return
 			}
 			idx, ok := errParams[id.Name]
-			if !ok || shadowed(s, fi.Decl, id.Name) {
+			if !ok || shadowed(s, root, id.Name) {
 				return
 			}
 			_, sink, bare, ok := fc.ifSink(n.Body, id.Name, s)
@@ -163,7 +162,7 @@ func (fc *fileCtx) helperInfo(fi *FuncInfo) *HelperInfo {
 				return
 			}
 			idx, ok := errParams[id.Name]
-			if !ok || shadowed(s, fi.Decl, id.Name) {
+			if !ok || shadowed(s, root, id.Name) {
 				return
 			}
 			info = &HelperInfo{ErrParam: idx, Bare: bare, Sink: sink}
@@ -207,8 +206,8 @@ func assignedIn(body *ast.BlockStmt, name string) bool {
 
 // shadowed reports whether name is redeclared as a parameter of a function
 // literal between the declaration and the current node.
-func shadowed(s stack, decl *ast.FuncDecl, name string) bool {
-	for i := len(s) - 1; i >= 0 && s[i] != decl; i-- {
+func shadowed(s stack, root ast.Node, name string) bool {
+	for i := len(s) - 1; i >= 0 && s[i] != root; i-- {
 		lit, ok := s[i].(*ast.FuncLit)
 		if !ok {
 			continue
@@ -280,6 +279,9 @@ func helperName(fi *FuncInfo) string {
 		prefix = fi.File.Pkg.Dir
 	}
 	d := fi.Decl
+	if fi.Lit != nil {
+		return prefix + "." + d.Name.Name + "." + fi.Var
+	}
 	if d.Recv == nil || len(d.Recv.List) == 0 {
 		return prefix + "." + d.Name.Name
 	}

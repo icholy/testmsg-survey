@@ -9,6 +9,7 @@ import (
 	"go/token"
 	"strconv"
 	"strings"
+	"unicode"
 )
 
 // Mechanism tags how an error check fails the test.
@@ -26,6 +27,10 @@ type Check struct {
 	File      string    `json:"file"`
 	Line      int       `json:"line"`
 	Mechanism Mechanism `json:"mechanism"`
+	// Func is the kind of top-level function the check is in: "test",
+	// "benchmark", "fuzz", "example" or "other" (helpers, TestMain, package
+	// level closures).
+	Func string `json:"func"`
 	// Sink names the failing call, such as "testing.Fatal",
 	// "github.com/stretchr/testify/require.NoError" or "helper:mustOpen".
 	Sink string `json:"sink"`
@@ -189,6 +194,16 @@ func (fc *fileCtx) isTestingType(e ast.Expr) bool {
 
 // stack is the chain of enclosing nodes during traversal.
 type stack []ast.Node
+
+// contains reports whether n is in the stack.
+func (s stack) contains(n ast.Node) bool {
+	for _, x := range s {
+		if x == n {
+			return true
+		}
+	}
+	return false
+}
 
 // funcParams returns the parameter lists of the enclosing functions, innermost
 // first.
@@ -521,6 +536,36 @@ func (fc *fileCtx) describeCall(call *ast.CallExpr) (string, string) {
 		return fc.text(fun), ""
 	}
 	return fc.text(call.Fun), ""
+}
+
+// funcKind classifies the enclosing top-level function by the go test naming
+// rules: a prefix followed by the end of the name or a non-lower-case
+// character.
+func funcKind(s stack) string {
+	for _, n := range s {
+		fd, ok := n.(*ast.FuncDecl)
+		if !ok {
+			continue
+		}
+		if fd.Recv != nil {
+			return "other"
+		}
+		name := fd.Name.Name
+		if name == "TestMain" {
+			return "other"
+		}
+		for _, k := range []struct{ prefix, kind string }{
+			{"Test", "test"}, {"Benchmark", "benchmark"}, {"Fuzz", "fuzz"}, {"Example", "example"},
+		} {
+			if rest, ok := strings.CutPrefix(name, k.prefix); ok {
+				if rest == "" || !unicode.IsLower(rune(rest[0])) {
+					return k.kind
+				}
+			}
+		}
+		return "other"
+	}
+	return "other"
 }
 
 // walk calls fn for every node under root with the stack of enclosing nodes,
