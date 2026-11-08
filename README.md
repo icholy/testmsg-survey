@@ -105,6 +105,24 @@ Methods called on a receiver of unknown type are matched by method name and
 argument shape, and only in packages where some file imports the library
 (test suites are often declared in one file and used in others).
 
+### Amendment, 2026-11-08: libraries added after the first data collection
+
+The first run over the Go project and popular tiers left large numbers of
+unresolved calls in a few repositories, from assertion libraries that were not
+in the table above. The libraries below were added after seeing that data, so
+results are reported for both lists: `results/v1` uses the original table and
+`results/v2` adds these.
+
+| Library | Sinks | Message arguments |
+| --- | --- | --- |
+| `github.com/gogf/gf/test/gtest`, `github.com/gogf/gf/v2/test/gtest` | `AssertNil(X)`, and `Assert(X, nil)` / `AssertEQ(X, nil)`, as package functions or methods on `*gtest.T`; `gtest.Error` and `gtest.Fatal` in an `if X != nil` body | none for the asserts; the arguments for `Error` and `Fatal` |
+| `k8s.io/kubernetes/test/e2e/framework` | `ExpectNoError`, `ExpectNoErrorWithOffset` | `explain` |
+| `github.com/smallstep/assert` | `FatalError`, `NoError`, `Nil` | `msg` |
+
+`*gtest.T` also counts as a testing value, so `t.Fatal(err)` on it is a
+direct sink. The function-name list for error-typed sinks gains
+`ExpectNoError`, `ExpectNoErrorWithOffset` and `FatalError`.
+
 ### Classification
 
 Every check site is classified as bare or contextual.

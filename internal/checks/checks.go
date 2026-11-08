@@ -180,7 +180,14 @@ func (fc *fileCtx) isTestingType(e ast.Expr) bool {
 		e, ptr = star.X, true
 	}
 	sel, ok := e.(*ast.SelectorExpr)
-	if !ok || fc.pkgOf(sel.X) != "testing" {
+	if !ok {
+		return false
+	}
+	if isGtest(fc.pkgOf(sel.X)) {
+		// gogf's *gtest.T wraps *testing.T and has Error and Fatal methods.
+		return ptr && sel.Sel.Name == "T"
+	}
+	if fc.pkgOf(sel.X) != "testing" {
 		return false
 	}
 	switch sel.Sel.Name {
@@ -393,6 +400,14 @@ func (fc *fileCtx) ifSink(body *ast.BlockStmt, errName string, s stack) (Mechani
 		if id, ok := call.Fun.(*ast.Ident); ok && id.Name == "panic" && id.Obj == nil && len(call.Args) == 1 {
 			if !found {
 				mech, sink, found = Panic, "panic", true
+			}
+			msgs = append(msgs, Message{Args: call.Args})
+			continue
+		}
+		if sel, ok := call.Fun.(*ast.SelectorExpr); ok && (sel.Sel.Name == "Error" || sel.Sel.Name == "Fatal") && isGtest(fc.pkgOf(sel.X)) {
+			// gtest.Error and gtest.Fatal fail the test without a *testing.T.
+			if !found || mech == Panic {
+				mech, sink, found = Library, fc.pkgOf(sel.X)+"."+sel.Sel.Name, true
 			}
 			msgs = append(msgs, Message{Args: call.Args})
 			continue

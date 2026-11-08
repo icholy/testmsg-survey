@@ -489,6 +489,63 @@ func TestX(t *testing.T) {
 				"library github.com/alecthomas/assert/v2.NoError bare run@.",
 		},
 		{
+			name: "gtest",
+			src: `
+import (
+	"testing"
+	"github.com/gogf/gf/v2/test/gtest"
+)
+func TestX(t *testing.T) {
+	gtest.C(t, func(t *gtest.T) {
+		err := run()
+		t.AssertNil(err)
+		t.Assert(err, nil)
+		t.AssertNE(err, nil)
+		gtest.AssertNil(err)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if err != nil {
+			gtest.Error(err)
+		}
+		if err != nil {
+			gtest.Fatal("decode", name, err)
+		}
+	})
+}`,
+			want: "library gtest.T.AssertNil bare run@.\n" +
+				"library gtest.T.Assert bare run@.\n" +
+				"library github.com/gogf/gf/v2/test/gtest.AssertNil bare run@.\n" +
+				"direct testing.Fatal bare run@.\n" +
+				"library github.com/gogf/gf/v2/test/gtest.Error bare run@.\n" +
+				"library github.com/gogf/gf/v2/test/gtest.Fatal contextual run@.",
+		},
+		{
+			name: "kubernetes framework and smallstep",
+			src: `
+import (
+	"testing"
+	"k8s.io/kubernetes/test/e2e/framework"
+	"github.com/smallstep/assert"
+)
+func TestX(t *testing.T) {
+	err := run()
+	framework.ExpectNoError(err)
+	framework.ExpectNoError(err, "creating pod %s", name)
+	framework.ExpectNoErrorWithOffset(1, run())
+	assert.FatalError(t, err)
+	assert.NoError(t, err, "parse")
+	assert.Nil(t, err)
+	assert.Error(t, err)
+}`,
+			want: "library k8s.io/kubernetes/test/e2e/framework.ExpectNoError bare run@.\n" +
+				"library k8s.io/kubernetes/test/e2e/framework.ExpectNoError contextual run@.\n" +
+				"library k8s.io/kubernetes/test/e2e/framework.ExpectNoErrorWithOffset bare run@.\n" +
+				"library github.com/smallstep/assert.FatalError bare run@.\n" +
+				"library github.com/smallstep/assert.NoError contextual run@.\n" +
+				"library github.com/smallstep/assert.Nil bare run@.",
+		},
+		{
 			name: "no library imported",
 			src: `
 import "testing"

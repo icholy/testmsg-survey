@@ -29,6 +29,12 @@ const (
 	shoenigMust    = "github.com/shoenig/test/must"
 	testdeep       = "github.com/maxatome/go-testdeep/td"
 	be             = "github.com/carlmjohnson/be"
+
+	// Added after the first data collection; see the README.
+	gtestV1      = "github.com/gogf/gf/test/gtest"
+	gtestV2      = "github.com/gogf/gf/v2/test/gtest"
+	k8sFramework = "k8s.io/kubernetes/test/e2e/framework"
+	smallstep    = "github.com/smallstep/assert"
 )
 
 // libraries is every assertion library path. Calls into these libraries are
@@ -37,7 +43,11 @@ var libraries = []string{
 	testifyAssert, testifyRequire, testifySuite, gotestTools, gotestToolsV3,
 	quicktestOld, quicktestNew, checkV1, gomega, matryerIs, goconvey,
 	alecthomas, shoenigTest, shoenigMust, testdeep, be,
+	gtestV1, gtestV2, k8sFramework, smallstep,
 }
+
+// isGtest reports whether path is gogf's gtest package.
+func isGtest(path string) bool { return path == gtestV1 || path == gtestV2 }
 
 // isLibrary reports whether path is an assertion library.
 func isLibrary(path string) bool {
@@ -64,6 +74,9 @@ var libraryMethods = map[string]bool{
 	"IsType": true, "Implements": true, "Panics": true, "Assert": true,
 	"Check": true, "Expect": true, "Equals": true, "So": true,
 	"Cmp": true, "CmpError": true, "CmpErrorIs": true,
+	"AssertEQ": true, "AssertNE": true, "AssertNQ": true, "AssertGT": true,
+	"AssertGE": true, "AssertLT": true, "AssertLE": true, "AssertIN": true,
+	"AssertNI": true, "AssertNil": true,
 }
 
 // typedSinks are library functions whose asserted parameter has type error,
@@ -73,6 +86,7 @@ var libraryMethods = map[string]bool{
 var typedSinks = map[string]bool{
 	"NoError": true, "NoErrorf": true, "NilError": true, "NoErr": true,
 	"NilErr": true, "CmpNoError": true, "RequireNoError": true,
+	"ExpectNoError": true, "ExpectNoErrorWithOffset": true, "FatalError": true,
 }
 
 // asserted returns the asserted error expression for a sink argument. If
@@ -177,6 +191,31 @@ func (fc *fileCtx) librarySinkNamed(call *ast.CallExpr, name, pkg string, args [
 			}
 		}
 		return "", nil, false, false
+	case gtestV1, gtestV2:
+		if s, e, ok := gtestAssert(name, args); ok {
+			return pkg + "." + s, e, true, true
+		}
+		return "", nil, false, false
+	case k8sFramework:
+		switch name {
+		case "ExpectNoError":
+			if id, bare, ok := msgAt(0); ok {
+				return sink(pkg), id, bare, true
+			}
+		case "ExpectNoErrorWithOffset":
+			if id, bare, ok := msgAt(1); ok {
+				return sink(pkg), id, bare, true
+			}
+		}
+		return "", nil, false, false
+	case smallstep:
+		switch name {
+		case "FatalError", "NoError", "Nil":
+			if id, bare, ok := msgAt(1); ok {
+				return sink(pkg), id, bare, true
+			}
+		}
+		return "", nil, false, false
 	case be:
 		if name == "NilErr" && len(args) == 2 {
 			if id, ok := asserted(args[1], true); ok {
@@ -245,12 +284,38 @@ func (fc *fileCtx) librarySinkNamed(call *ast.CallExpr, name, pkg string, args [
 			return matryerIs + ".NoErr", id, !fc.hasLineComment(call), true
 		}
 	}
+	if fc.importsAny(gtestV1, gtestV2) {
+		// t.AssertNil(err) where t is *gtest.T.
+		if s, e, ok := gtestAssert(name, args); ok {
+			return "gtest.T." + s, e, true, true
+		}
+	}
 	if fc.importsAny(gomega) {
 		if s, id, bare, ok := fc.gomegaSink(call); ok {
 			return s, id, bare, true
 		}
 	}
 	return "", nil, false, false
+}
+
+// gtestAssert matches gtest's AssertNil(err), Assert(err, nil) and
+// AssertEQ(err, nil). None of them take a message, so they are always bare.
+func gtestAssert(name string, args []ast.Expr) (string, ast.Expr, bool) {
+	switch name {
+	case "AssertNil":
+		if len(args) == 1 {
+			if id, ok := errorValue(args[0]); ok {
+				return name, id, true
+			}
+		}
+	case "Assert", "AssertEQ":
+		if len(args) == 2 && isNil(args[1]) {
+			if id, ok := errorValue(args[0]); ok {
+				return name, id, true
+			}
+		}
+	}
+	return "", nil, false
 }
 
 // gomegaSink matches Expect(err).NotTo(HaveOccurred()) and its variants.
