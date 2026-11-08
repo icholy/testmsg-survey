@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "Mrs4s/go-cqhttp",
+  "commit": "a5923f179b360331786a6509eb33481e775a7bd1",
+  "test_files": 5,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

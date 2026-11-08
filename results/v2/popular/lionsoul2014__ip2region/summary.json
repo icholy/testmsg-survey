@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "lionsoul2014/ip2region",
+  "commit": "6a276cc7c4f9f2d7ff1d8ace14b91af59752f943",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 75
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 75
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 0,
+      "contextual": 75
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 61
+    }
+  },
+  "unresolved_count": 0
+}

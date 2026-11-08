@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "gofr-dev/gofr",
+  "commit": "b8747c3233e7a05d89d60ae2fdaf5bf3b40fb812",
+  "test_files": 350,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1744,
+    "contextual": 433
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 39,
+      "contextual": 124
+    },
+    "helper": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1687,
+      "contextual": 309
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 174,
+      "contextual": 47
+    },
+    "test": {
+      "bare": 1568,
+      "contextual": 386
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 142,
+      "contextual": 18
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1545,
+      "contextual": 282
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "helper": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 6,
+      "contextual": 27
+    },
+    "testing.Fatal": {
+      "bare": 15,
+      "contextual": 9
+    },
+    "testing.Fatalf": {
+      "bare": 17,
+      "contextual": 85
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 249
+}

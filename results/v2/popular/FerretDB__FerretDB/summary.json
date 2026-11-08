@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "FerretDB/FerretDB",
+  "commit": "799235dab9e350655e72e65a0b24d849f7d68143",
+  "test_files": 124,
+  "parse_errors": 0,
+  "total": {
+    "bare": 830,
+    "contextual": 44
+  },
+  "by_mechanism": {
+    "helper": {
+      "bare": 68,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 761,
+      "contextual": 44
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 61,
+      "contextual": 20
+    },
+    "test": {
+      "bare": 763,
+      "contextual": 24
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 48,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 713,
+      "contextual": 42
+    },
+    "helper": {
+      "bare": 68,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 178
+}

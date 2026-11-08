@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "sashabaranov/go-openai",
+  "commit": "dd54fd29688ae9934688a2928be0abbd8647a812",
+  "test_files": 49,
+  "parse_errors": 0,
+  "total": {
+    "bare": 20,
+    "contextual": 289
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 10,
+      "contextual": 48
+    },
+    "helper": {
+      "bare": 9,
+      "contextual": 241
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 19,
+      "contextual": 285
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 9,
+      "contextual": 241
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 13
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 8,
+      "contextual": 34
+    }
+  },
+  "unresolved_count": 76
+}

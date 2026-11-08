@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "golang/groupcache",
+  "commit": "2c02b8208cf8c02a3e358cb1d9b60950647543fc",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 7,
+    "contextual": 5
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 6,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 6,
+      "contextual": 5
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 6,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

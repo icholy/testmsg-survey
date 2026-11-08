@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "cloudnative-pg/cloudnative-pg",
+  "commit": "db022ef8cc9a3a52b4460e8aa62a21b90b7fc710",
+  "test_files": 446,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3737,
+    "contextual": 44
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 3730,
+      "contextual": 44
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 3737,
+      "contextual": 44
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 329,
+      "contextual": 12
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ShouldNot(HaveOccurred)": {
+      "bare": 118,
+      "contextual": 3
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 871,
+      "contextual": 5
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 2397,
+      "contextual": 24
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 19
+}

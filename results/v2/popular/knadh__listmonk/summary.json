@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "knadh/listmonk",
+  "commit": "91b76ece31fc3265334582c112833e0672cca95b",
+  "test_files": 2,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3,
+    "contextual": 2
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

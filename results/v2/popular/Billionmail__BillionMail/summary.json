@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "Billionmail/BillionMail",
+  "commit": "fc36c76c050c3775c5e899faf7403cf0262d2744",
+  "test_files": 45,
+  "parse_errors": 0,
+  "total": {
+    "bare": 117,
+    "contextual": 11
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "library": {
+      "bare": 117,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 117,
+      "contextual": 11
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 18,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 99,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "unresolved_count": 0
+}

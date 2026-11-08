@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "gophish/gophish",
+  "commit": "95618469799295e2c0fec980805a2dfbb818816b",
+  "test_files": 28,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 95
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 91
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 11
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 43
+    },
+    "test": {
+      "bare": 0,
+      "contextual": 41
+    }
+  },
+  "by_sink": {
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 91
+    }
+  },
+  "unresolved_count": 1
+}

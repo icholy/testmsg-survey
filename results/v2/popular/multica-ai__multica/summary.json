@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "multica-ai/multica",
+  "commit": "73975653323750d04c27047ea9c986ef06bdf6a1",
+  "test_files": 1474,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2643,
+    "contextual": 10913
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2631,
+      "contextual": 10912
+    },
+    "panic": {
+      "bare": 12,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 247,
+      "contextual": 1568
+    },
+    "test": {
+      "bare": 2396,
+      "contextual": 9345
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 12,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 47,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 195
+    },
+    "testing.Fatal": {
+      "bare": 2417,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 165,
+      "contextual": 10589
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 23
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 96
+    }
+  },
+  "unresolved_count": 32
+}

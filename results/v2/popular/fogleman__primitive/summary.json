@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "fogleman/primitive",
+  "commit": "0373c216458be1c4b40655b796a3aefedf8b7d23",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

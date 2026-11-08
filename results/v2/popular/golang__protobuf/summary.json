@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "golang/protobuf",
+  "commit": "1e63d3449048d4fb4c71c2f074ba5a9fad8443c9",
+  "test_files": 13,
+  "parse_errors": 0,
+  "total": {
+    "bare": 35,
+    "contextual": 159
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 25,
+      "contextual": 146
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 13
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 9,
+      "contextual": 17
+    },
+    "test": {
+      "bare": 26,
+      "contextual": 142
+    }
+  },
+  "by_sink": {
+    "log.Panicf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 11
+    },
+    "testing.Error": {
+      "bare": 8,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 46
+    },
+    "testing.Fatal": {
+      "bare": 16,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 96
+    }
+  },
+  "unresolved_count": 0
+}

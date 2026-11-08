@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "oauth2-proxy/oauth2-proxy",
+  "commit": "ea755ac07aa200acc22e02f95d25b91de6c9fe20",
+  "test_files": 115,
+  "parse_errors": 0,
+  "total": {
+    "bare": 751,
+    "contextual": 7
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 62,
+      "contextual": 7
+    },
+    "library": {
+      "bare": 676,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 455,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 296,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 107,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 340,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 149,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 51,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 60,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 5
+}

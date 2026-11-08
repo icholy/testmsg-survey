@@ -1,0 +1,94 @@
+{
+  "tier": "popular",
+  "repo": "beego/beego",
+  "commit": "939cfde380bb9f15844ad633b84f037f7da21584",
+  "test_files": 134,
+  "parse_errors": 0,
+  "total": {
+    "bare": 429,
+    "contextual": 827
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 131,
+      "contextual": 50
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 776
+    },
+    "library": {
+      "bare": 282,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 16,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 61,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 351,
+      "contextual": 820
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 236,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 42,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 776
+    },
+    "panic": {
+      "bare": 16,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 39,
+      "contextual": 5
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 9
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.FailNow": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 85,
+      "contextual": 33
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 8
+}

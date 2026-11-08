@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "go-acme/lego",
+  "commit": "a6d49ddf1edad742bca32d07d36a01d11f37d8a7",
+  "test_files": 547,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2695,
+    "contextual": 58
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 2685,
+      "contextual": 58
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 53,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 2642,
+      "contextual": 57
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 2664,
+      "contextual": 55
+    },
+    "helper": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 15
+}

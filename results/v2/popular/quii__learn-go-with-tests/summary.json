@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "quii/learn-go-with-tests",
+  "commit": "592e9f747e9e851af40eb0a5cb0ac4fe86ef18a6",
+  "test_files": 220,
+  "parse_errors": 0,
+  "total": {
+    "bare": 69,
+    "contextual": 49
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 49
+    },
+    "helper": {
+      "bare": 62,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 45
+    },
+    "test": {
+      "bare": 68,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 62,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 7,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 41
+    }
+  },
+  "unresolved_count": 17
+}

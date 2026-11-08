@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "authelia/authelia",
+  "commit": "32b0bdac395efc707bc098757afa232177965736",
+  "test_files": 359,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3406,
+    "contextual": 24
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "helper": {
+      "bare": 36,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 3273,
+      "contextual": 21
+    },
+    "panic": {
+      "bare": 97,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 676,
+      "contextual": 15
+    },
+    "test": {
+      "bare": 2725,
+      "contextual": 9
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 892,
+      "contextual": 6
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1982,
+      "contextual": 4
+    },
+    "helper": {
+      "bare": 36,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 54,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 43,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 395,
+      "contextual": 10
+    },
+    "testify.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 22
+}

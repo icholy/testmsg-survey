@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "adnanh/webhook",
+  "commit": "2bbdeb9f90b5f98c7b7b8976881efd6da9f69571",
+  "test_files": 3,
+  "parse_errors": 0,
+  "total": {
+    "bare": 7,
+    "contextual": 12
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 12
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 7
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 5,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 6
+    }
+  },
+  "unresolved_count": 0
+}

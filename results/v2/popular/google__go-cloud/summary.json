@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "google/go-cloud",
+  "commit": "2169294b4630a323fa7a8480cd8a28650ccd7f5c",
+  "test_files": 157,
+  "parse_errors": 0,
+  "total": {
+    "bare": 696,
+    "contextual": 251
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 422,
+      "contextual": 244
+    },
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 261,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 49,
+      "contextual": 10
+    },
+    "example": {
+      "bare": 254,
+      "contextual": 7
+    },
+    "other": {
+      "bare": 22,
+      "contextual": 34
+    },
+    "test": {
+      "bare": 371,
+      "contextual": 200
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 252,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 4,
+      "contextual": 7
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 19,
+      "contextual": 21
+    },
+    "testing.Errorf": {
+      "bare": 6,
+      "contextual": 122
+    },
+    "testing.Fatal": {
+      "bare": 386,
+      "contextual": 9
+    },
+    "testing.Fatalf": {
+      "bare": 11,
+      "contextual": 90
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 25
+}

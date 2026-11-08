@@ -1,0 +1,15 @@
+{
+  "tier": "go",
+  "repo": "golang/time",
+  "commit": "fb013b3d305a26f5ef5350a6eaffc7c87a200383",
+  "test_files": 2,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

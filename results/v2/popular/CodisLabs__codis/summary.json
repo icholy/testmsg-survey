@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "CodisLabs/codis",
+  "commit": "de1ad026e329561c22e2a3035fbfe89dc7fef764",
+  "test_files": 23,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 78
+}

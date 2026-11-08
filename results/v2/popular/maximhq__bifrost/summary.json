@@ -1,0 +1,102 @@
+{
+  "tier": "popular",
+  "repo": "maximhq/bifrost",
+  "commit": "6e640279b36337820f2088fb85f6e78f339063c3",
+  "test_files": 1262,
+  "parse_errors": 0,
+  "total": {
+    "bare": 15446,
+    "contextual": 5728
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1120,
+      "contextual": 4803
+    },
+    "helper": {
+      "bare": 20,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 14304,
+      "contextual": 901
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 21
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 149,
+      "contextual": 50
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 1122,
+      "contextual": 641
+    },
+    "test": {
+      "bare": 14175,
+      "contextual": 5035
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 16,
+      "contextual": 11
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 115,
+      "contextual": 136
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 652,
+      "contextual": 168
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 13521,
+      "contextual": 581
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "helper": {
+      "bare": 20,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 21
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 10,
+      "contextual": 211
+    },
+    "testing.Fatal": {
+      "bare": 642,
+      "contextual": 10
+    },
+    "testing.Fatalf": {
+      "bare": 466,
+      "contextual": 4450
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 123
+    }
+  },
+  "unresolved_count": 198
+}

@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "rakyll/hey",
+  "commit": "5626f79b8698df6daf9b25799c9805c6acc96740",
+  "test_files": 2,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 3
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

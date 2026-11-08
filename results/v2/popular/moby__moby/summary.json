@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "moby/moby",
+  "commit": "402d0a16f131d93ee89f1b06cb5fc8c98e766dfc",
+  "test_files": 865,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6714,
+    "contextual": 1163
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1219,
+      "contextual": 555
+    },
+    "helper": {
+      "bare": 66,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 5359,
+      "contextual": 599
+    },
+    "panic": {
+      "bare": 70,
+      "contextual": 9
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 45,
+      "contextual": 3
+    },
+    "example": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 1723,
+      "contextual": 663
+    },
+    "test": {
+      "bare": 4933,
+      "contextual": 495
+    }
+  },
+  "by_sink": {
+    "gotest.tools/v3/assert.Assert": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "gotest.tools/v3/assert.Check": {
+      "bare": 287,
+      "contextual": 24
+    },
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 5052,
+      "contextual": 575
+    },
+    "helper": {
+      "bare": 66,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 11,
+      "contextual": 1
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 59,
+      "contextual": 7
+    },
+    "testing.Error": {
+      "bare": 57,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 70
+    },
+    "testing.Fatal": {
+      "bare": 1143,
+      "contextual": 43
+    },
+    "testing.Fatalf": {
+      "bare": 17,
+      "contextual": 426
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 11
+    }
+  },
+  "unresolved_count": 24
+}

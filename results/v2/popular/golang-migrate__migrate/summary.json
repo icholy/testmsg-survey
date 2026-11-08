@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "golang-migrate/migrate",
+  "commit": "504568a3cbd23b8754760f55a3d89aec1b0c4963",
+  "test_files": 50,
+  "parse_errors": 0,
+  "total": {
+    "bare": 605,
+    "contextual": 47
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 557,
+      "contextual": 43
+    },
+    "library": {
+      "bare": 32,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 16,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 14,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 178,
+      "contextual": 18
+    },
+    "test": {
+      "bare": 410,
+      "contextual": 26
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 28,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "log.Fatal": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 3
+    },
+    "testify.NoError": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 85,
+      "contextual": 7
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "testing.Fatal": {
+      "bare": 469,
+      "contextual": 12
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 16
+    }
+  },
+  "unresolved_count": 0
+}

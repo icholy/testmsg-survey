@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "projectdiscovery/katana",
+  "commit": "f099e5dce61198a61c75d481d4611e528b074be9",
+  "test_files": 83,
+  "parse_errors": 0,
+  "total": {
+    "bare": 323,
+    "contextual": 52
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 10
+    },
+    "library": {
+      "bare": 320,
+      "contextual": 42
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 17,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 306,
+      "contextual": 49
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 4,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 314,
+      "contextual": 39
+    },
+    "testify.NoError": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 1
+}

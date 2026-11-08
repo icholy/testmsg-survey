@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "navidrome/navidrome",
+  "commit": "6a38dc988b43727d0a0d4bf4724bdce8944aaa18",
+  "test_files": 471,
+  "parse_errors": 0,
+  "total": {
+    "bare": 5398,
+    "contextual": 50
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 40,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 5331,
+      "contextual": 45
+    },
+    "panic": {
+      "bare": 26,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 5369,
+      "contextual": 50
+    },
+    "test": {
+      "bare": 16,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 263,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 231,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 1482,
+      "contextual": 6
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 3351,
+      "contextual": 39
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 26,
+      "contextual": 5
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 32,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 6,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 18
+}

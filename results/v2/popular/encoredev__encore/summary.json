@@ -1,0 +1,94 @@
+{
+  "tier": "popular",
+  "repo": "encoredev/encore",
+  "commit": "120539615ae0559a9c228c3ad118041f9176610b",
+  "test_files": 172,
+  "parse_errors": 0,
+  "total": {
+    "bare": 541,
+    "contextual": 105
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 309,
+      "contextual": 65
+    },
+    "helper": {
+      "bare": 72,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 156,
+      "contextual": 38
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 7,
+      "contextual": 1
+    },
+    "fuzz": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 126,
+      "contextual": 49
+    },
+    "test": {
+      "bare": 407,
+      "contextual": 55
+    }
+  },
+  "by_sink": {
+    "github.com/frankban/quicktest.C.Assert": {
+      "bare": 88,
+      "contextual": 22
+    },
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 68,
+      "contextual": 16
+    },
+    "helper": {
+      "bare": 72,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 21
+    },
+    "testing.Fatal": {
+      "bare": 303,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 42
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 25
+}

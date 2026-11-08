@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "esimov/caire",
+  "commit": "24c28d08e6124f597bbce7755633afc87ea44bf3",
+  "test_files": 9,
+  "parse_errors": 0,
+  "total": {
+    "bare": 40,
+    "contextual": 15
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 13
+    },
+    "library": {
+      "bare": 37,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 31,
+      "contextual": 13
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 36,
+      "contextual": 2
+    },
+    "testify.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 13
+    }
+  },
+  "unresolved_count": 0
+}

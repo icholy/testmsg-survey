@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "lima-vm/lima",
+  "commit": "2f466781ad87550400254d7c08d7605040ba10a7",
+  "test_files": 134,
+  "parse_errors": 0,
+  "total": {
+    "bare": 921,
+    "contextual": 53
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 21
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 918,
+      "contextual": 32
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 55,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 859,
+      "contextual": 46
+    }
+  },
+  "by_sink": {
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 918,
+      "contextual": 32
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 11
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "unresolved_count": 0
+}

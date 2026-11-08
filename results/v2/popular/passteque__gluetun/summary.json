@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "passteque/gluetun",
+  "commit": "47af5ea32fd7eadc588313599a8ecf886d80a4a8",
+  "test_files": 181,
+  "parse_errors": 0,
+  "total": {
+    "bare": 377,
+    "contextual": 35
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 11,
+      "contextual": 2
+    },
+    "library": {
+      "bare": 366,
+      "contextual": 33
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 64,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 313,
+      "contextual": 34
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 120,
+      "contextual": 6
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 246,
+      "contextual": 20
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 16
+}

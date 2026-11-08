@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "junegunn/fzf",
+  "commit": "c7bf2b8eea25952dd257a466c0afa72faae206fb",
+  "test_files": 31,
+  "parse_errors": 0,
+  "total": {
+    "bare": 17,
+    "contextual": 9
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 16,
+      "contextual": 9
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 13,
+      "contextual": 9
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

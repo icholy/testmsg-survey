@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "heroiclabs/nakama",
+  "commit": "48335942699609b8742393f33495b2c8a4d79c47",
+  "test_files": 45,
+  "parse_errors": 0,
+  "total": {
+    "bare": 221,
+    "contextual": 265
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 181,
+      "contextual": 172
+    },
+    "library": {
+      "bare": 38,
+      "contextual": 92
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 10,
+      "contextual": 12
+    },
+    "test": {
+      "bare": 211,
+      "contextual": 253
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 5,
+      "contextual": 79
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 33,
+      "contextual": 13
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 13
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 169,
+      "contextual": 9
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 144
+    }
+  },
+  "unresolved_count": 22
+}

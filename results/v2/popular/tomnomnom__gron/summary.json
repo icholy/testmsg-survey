@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "tomnomnom/gron",
+  "commit": "88a6234ea2d0c487090988182ad9a7cdf6def924",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 7,
+    "contextual": 26
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 26
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 7,
+      "contextual": 22
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 7,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 25
+    }
+  },
+  "unresolved_count": 0
+}

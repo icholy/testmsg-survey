@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "a-h/templ",
+  "commit": "dd6c9861fa78fb6d602da9b1ed1dc54ae7752ffe",
+  "test_files": 171,
+  "parse_errors": 0,
+  "total": {
+    "bare": 239,
+    "contextual": 377
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 231,
+      "contextual": 377
+    },
+    "library": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 8,
+      "contextual": 5
+    },
+    "fuzz": {
+      "bare": 14,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 3,
+      "contextual": 17
+    },
+    "test": {
+      "bare": 214,
+      "contextual": 353
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 9,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 9,
+      "contextual": 103
+    },
+    "testing.Fatal": {
+      "bare": 76,
+      "contextual": 9
+    },
+    "testing.Fatalf": {
+      "bare": 126,
+      "contextual": 264
+    },
+    "testing.Skip": {
+      "bare": 11,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 1
+}

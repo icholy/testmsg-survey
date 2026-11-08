@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "jmoiron/sqlx",
+  "commit": "41dac167fdad5e3fd81d66cafba0951dc6823a30",
+  "test_files": 7,
+  "parse_errors": 0,
+  "total": {
+    "bare": 227,
+    "contextual": 141
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 179,
+      "contextual": 23
+    },
+    "helper": {
+      "bare": 38,
+      "contextual": 118
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 226,
+      "contextual": 140
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 38,
+      "contextual": 118
+    },
+    "log.Fatal": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 68,
+      "contextual": 3
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 18
+    },
+    "testing.Fatal": {
+      "bare": 110,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 24
+}

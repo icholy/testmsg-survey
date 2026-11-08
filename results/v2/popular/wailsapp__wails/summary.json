@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "wailsapp/wails",
+  "commit": "035f5c8d76ffb81fc62c3cae7ada3fbe43fad0e5",
+  "test_files": 649,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3699,
+    "contextual": 709
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1683,
+      "contextual": 641
+    },
+    "helper": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 2002,
+      "contextual": 68
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 144,
+      "contextual": 9
+    },
+    "fuzz": {
+      "bare": 6,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 244,
+      "contextual": 49
+    },
+    "test": {
+      "bare": 3305,
+      "contextual": 650
+    }
+  },
+  "by_sink": {
+    "github.com/matryer/is.NoErr": {
+      "bare": 19,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 42,
+      "contextual": 18
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1917,
+      "contextual": 47
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "helper": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 24,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 25,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 65
+    },
+    "testing.Fail": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 1642,
+      "contextual": 17
+    },
+    "testing.Fatalf": {
+      "bare": 12,
+      "contextual": 489
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 49
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 20
+    }
+  },
+  "unresolved_count": 8
+}

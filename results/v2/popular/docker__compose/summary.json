@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "docker/compose",
+  "commit": "95bbca758244b94ec03a83911bb040a45b82e3fb",
+  "test_files": 192,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1010,
+    "contextual": 50
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 40,
+      "contextual": 8
+    },
+    "library": {
+      "bare": 969,
+      "contextual": 42
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 59,
+      "contextual": 10
+    },
+    "test": {
+      "bare": 951,
+      "contextual": 40
+    }
+  },
+  "by_sink": {
+    "gotest.tools/v3/assert.Check": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 968,
+      "contextual": 40
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 40,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 6
+}

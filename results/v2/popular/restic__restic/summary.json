@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "restic/restic",
+  "commit": "c734245fd3ae9bcac8ab3aaafb4482d4b5d0ae92",
+  "test_files": 220,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1259,
+    "contextual": 75
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 211,
+      "contextual": 73
+    },
+    "helper": {
+      "bare": 1031,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 17,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 388,
+      "contextual": 32
+    },
+    "test": {
+      "bare": 849,
+      "contextual": 43
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 1031,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 17,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 19,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 22
+    },
+    "testing.Fatal": {
+      "bare": 184,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 47
+    },
+    "testing.Skip": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 139
+}

@@ -1,0 +1,30 @@
+{
+  "tier": "go",
+  "repo": "golang/xerrors",
+  "commit": "7835f813f4da395c9a1f7c0fe732a63d1c79d331",
+  "test_files": 8,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

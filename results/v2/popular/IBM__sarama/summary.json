@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "IBM/sarama",
+  "commit": "b66113a8905e23f2c407b61b729924cde252b665",
+  "test_files": 163,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1075,
+    "contextual": 105
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 550,
+      "contextual": 99
+    },
+    "helper": {
+      "bare": 40,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 465,
+      "contextual": 6
+    },
+    "panic": {
+      "bare": 20,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "example": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 132,
+      "contextual": 25
+    },
+    "test": {
+      "bare": 924,
+      "contextual": 78
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 443,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "helper": {
+      "bare": 40,
+      "contextual": 0
+    },
+    "log.Fatalln": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 120,
+      "contextual": 48
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 29
+    },
+    "testing.Fatal": {
+      "bare": 412,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 16,
+      "contextual": 19
+    }
+  },
+  "unresolved_count": 5
+}

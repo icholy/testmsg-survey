@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "go-vgo/robotgo",
+  "commit": "b54c11c0b7e7793731080af9d358e3a28f537b51",
+  "test_files": 36,
+  "parse_errors": 0,
+  "total": {
+    "bare": 111,
+    "contextual": 46
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 111,
+      "contextual": 46
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 12,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 97,
+      "contextual": 40
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 18
+    },
+    "testing.Fatal": {
+      "bare": 104,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 17
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 51
+}

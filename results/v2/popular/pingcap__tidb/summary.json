@@ -1,0 +1,130 @@
+{
+  "tier": "popular",
+  "repo": "pingcap/tidb",
+  "commit": "b98174386ec52467f1fd23eeb6b09e10fe8e77d5",
+  "test_files": 2060,
+  "parse_errors": 0,
+  "total": {
+    "bare": 29053,
+    "contextual": 781
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 271,
+      "contextual": 42
+    },
+    "helper": {
+      "bare": 85,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 28617,
+      "contextual": 712
+    },
+    "panic": {
+      "bare": 80,
+      "contextual": 27
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 248,
+      "contextual": 8
+    },
+    "fuzz": {
+      "bare": 17,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 3342,
+      "contextual": 128
+    },
+    "test": {
+      "bare": 25446,
+      "contextual": 643
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 52,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 205,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 391,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nilf": {
+      "bare": 1,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 27484,
+      "contextual": 524
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 176
+    },
+    "helper": {
+      "bare": 85,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 9
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 79,
+      "contextual": 17
+    },
+    "testify.Nil": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 480,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "testing.Fail": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 262,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 20
+    },
+    "testing.Skip": {
+      "bare": 2,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 235
+}

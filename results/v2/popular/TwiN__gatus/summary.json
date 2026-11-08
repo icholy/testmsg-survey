@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "TwiN/gatus",
+  "commit": "4b84fa2d591a364325b17d81ade755523508dc0b",
+  "test_files": 102,
+  "parse_errors": 0,
+  "total": {
+    "bare": 152,
+    "contextual": 234
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 152,
+      "contextual": 234
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "other": {
+      "bare": 1,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 151,
+      "contextual": 224
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 41,
+      "contextual": 88
+    },
+    "testing.Errorf": {
+      "bare": 43,
+      "contextual": 37
+    },
+    "testing.Fatal": {
+      "bare": 43,
+      "contextual": 53
+    },
+    "testing.Fatalf": {
+      "bare": 25,
+      "contextual": 56
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,46 @@
+{
+  "tier": "go",
+  "repo": "golang/benchmarks",
+  "commit": "4a545adeb0d5e7170d0c5633a6f04be94529fde3",
+  "test_files": 10,
+  "parse_errors": 0,
+  "total": {
+    "bare": 27,
+    "contextual": 29
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 27,
+      "contextual": 29
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 23,
+      "contextual": 29
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 25,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 22
+    }
+  },
+  "unresolved_count": 0
+}

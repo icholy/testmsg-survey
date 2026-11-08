@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "GoAdminGroup/go-admin",
+  "commit": "c47763c7bb630a742edf33c01aa7010f7a37a33d",
+  "test_files": 43,
+  "parse_errors": 0,
+  "total": {
+    "bare": 5,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 13
+}

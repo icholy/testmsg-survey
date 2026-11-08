@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "mickael-kerjean/filestash",
+  "commit": "366b4a80806a672e4ed3589b574fa71a31b950ee",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

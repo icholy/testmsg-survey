@@ -1,0 +1,102 @@
+{
+  "tier": "popular",
+  "repo": "gastownhall/beads",
+  "commit": "2edea9ced8c6f6124b6c157896ae53a0e09ff7be",
+  "test_files": 2476,
+  "parse_errors": 0,
+  "total": {
+    "bare": 8139,
+    "contextual": 19808
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4927,
+      "contextual": 19627
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 42
+    },
+    "library": {
+      "bare": 3206,
+      "contextual": 137
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 93
+    },
+    "other": {
+      "bare": 2604,
+      "contextual": 3024
+    },
+    "test": {
+      "bare": 5534,
+      "contextual": 16691
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 9,
+      "contextual": 4
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1253,
+      "contextual": 95
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 42
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "testify.NoError": {
+      "bare": 1944,
+      "contextual": 35
+    },
+    "testing.Error": {
+      "bare": 44,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 24,
+      "contextual": 475
+    },
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 4512,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 346,
+      "contextual": 18897
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 62
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 190
+    }
+  },
+  "unresolved_count": 218
+}

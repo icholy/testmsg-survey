@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "go-gorm/gorm",
+  "commit": "ead4e04ba7c6a49654649131e587133b1d9f3eca",
+  "test_files": 93,
+  "parse_errors": 0,
+  "total": {
+    "bare": 126,
+    "contextual": 898
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 123,
+      "contextual": 898
+    },
+    "library": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 125,
+      "contextual": 892
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 99,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 9,
+      "contextual": 236
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 11,
+      "contextual": 661
+    }
+  },
+  "unresolved_count": 53
+}

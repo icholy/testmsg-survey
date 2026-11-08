@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "hackstoic/golang-open-source-projects",
+  "commit": "91537ae63b58ef13adcd4f65855cbd3680cc7915",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

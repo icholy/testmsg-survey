@@ -1,0 +1,94 @@
+{
+  "tier": "popular",
+  "repo": "XTLS/Xray-core",
+  "commit": "3a88ccb2d35d588bd1481d38bbf75942effb9fc5",
+  "test_files": 278,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1799,
+    "contextual": 296
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 621,
+      "contextual": 292
+    },
+    "helper": {
+      "bare": 873,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 305,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 40,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 133,
+      "contextual": 34
+    },
+    "test": {
+      "bare": 1623,
+      "contextual": 262
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 9,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 284,
+      "contextual": 1
+    },
+    "helper": {
+      "bare": 873,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 72,
+      "contextual": 6
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 21
+    },
+    "testing.Fatal": {
+      "bare": 535,
+      "contextual": 13
+    },
+    "testing.Fatalf": {
+      "bare": 13,
+      "contextual": 251
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 4
+}

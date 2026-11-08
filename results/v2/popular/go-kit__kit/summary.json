@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "go-kit/kit",
+  "commit": "78fbbceece7bbcf073bee814a7772f4397ea756c",
+  "test_files": 94,
+  "parse_errors": 0,
+  "total": {
+    "bare": 205,
+    "contextual": 75
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 196,
+      "contextual": 75
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 14,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 184,
+      "contextual": 62
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 17,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 9
+    },
+    "testing.Fatal": {
+      "bare": 172,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 64
+    }
+  },
+  "unresolved_count": 3
+}

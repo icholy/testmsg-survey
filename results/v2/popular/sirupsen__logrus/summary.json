@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "sirupsen/logrus",
+  "commit": "6ef0748d1177dadaeee9aa79ffef604570f487d7",
+  "test_files": 26,
+  "parse_errors": 0,
+  "total": {
+    "bare": 44,
+    "contextual": 34
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 26
+    },
+    "library": {
+      "bare": 39,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 38,
+      "contextual": 31
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 39,
+      "contextual": 8
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 18
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 1
+}

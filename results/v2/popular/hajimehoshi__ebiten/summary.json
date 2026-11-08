@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "hajimehoshi/ebiten",
+  "commit": "fe690c024caa9547dcc3a914e4a218b6b530decf",
+  "test_files": 211,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1087,
+    "contextual": 139
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1071,
+      "contextual": 138
+    },
+    "panic": {
+      "bare": 16,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 95,
+      "contextual": 27
+    },
+    "test": {
+      "bare": 973,
+      "contextual": 112
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "log.Fatalln": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 103,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 11,
+      "contextual": 83
+    },
+    "testing.Fatal": {
+      "bare": 957,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 51
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 4
+}

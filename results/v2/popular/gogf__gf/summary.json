@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "gogf/gf",
+  "commit": "e226709f09d7809d8e6fcf68c4aeee50253976ce",
+  "test_files": 969,
+  "parse_errors": 0,
+  "total": {
+    "bare": 29982,
+    "contextual": 122
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 433,
+      "contextual": 119
+    },
+    "library": {
+      "bare": 29486,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 63,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 20,
+      "contextual": 1
+    },
+    "example": {
+      "bare": 50,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 353,
+      "contextual": 10
+    },
+    "test": {
+      "bare": 29559,
+      "contextual": 111
+    }
+  },
+  "by_sink": {
+    "github.com/gogf/gf/v2/test/gtest.AssertNil": {
+      "bare": 796,
+      "contextual": 0
+    },
+    "github.com/gogf/gf/v2/test/gtest.Error": {
+      "bare": 1306,
+      "contextual": 0
+    },
+    "github.com/gogf/gf/v2/test/gtest.Fatal": {
+      "bare": 540,
+      "contextual": 0
+    },
+    "gtest.T.Assert": {
+      "bare": 179,
+      "contextual": 0
+    },
+    "gtest.T.AssertEQ": {
+      "bare": 52,
+      "contextual": 0
+    },
+    "gtest.T.AssertNil": {
+      "bare": 26613,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 63,
+      "contextual": 3
+    },
+    "testing.Error": {
+      "bare": 10,
+      "contextual": 17
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 37
+    },
+    "testing.Fatal": {
+      "bare": 423,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 65
+    }
+  },
+  "unresolved_count": 161
+}

@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "NoFxAiOS/nofx",
+  "commit": "65e9037b452707c216d9746ea2c942fd1843badc",
+  "test_files": 144,
+  "parse_errors": 0,
+  "total": {
+    "bare": 204,
+    "contextual": 222
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 198,
+      "contextual": 221
+    },
+    "library": {
+      "bare": 6,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 10,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 194,
+      "contextual": 211
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 5,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 27
+    },
+    "testing.Fatal": {
+      "bare": 179,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 7,
+      "contextual": 187
+    }
+  },
+  "unresolved_count": 17
+}

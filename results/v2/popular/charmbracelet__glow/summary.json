@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "charmbracelet/glow",
+  "commit": "8b0600fa445535b9c53194c0d4f7fe3cf700ef3e",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 11,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 11,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

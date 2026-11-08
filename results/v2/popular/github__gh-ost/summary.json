@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "github/gh-ost",
+  "commit": "dd44453f489bdeb8bee5b93194a0a481e001e598",
+  "test_files": 23,
+  "parse_errors": 0,
+  "total": {
+    "bare": 401,
+    "contextual": 9
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 7
+    },
+    "library": {
+      "bare": 395,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 261,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 140,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 132,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 261,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 3
+}

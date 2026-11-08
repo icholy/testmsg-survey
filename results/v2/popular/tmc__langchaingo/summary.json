@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "tmc/langchaingo",
+  "commit": "381d4a36d0f79d03b85c15e3ff303be62916be5a",
+  "test_files": 234,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1349,
+    "contextual": 127
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 171,
+      "contextual": 118
+    },
+    "library": {
+      "bare": 1153,
+      "contextual": 8
+    },
+    "panic": {
+      "bare": 25,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 139,
+      "contextual": 27
+    },
+    "test": {
+      "bare": 1196,
+      "contextual": 100
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 125,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1017,
+      "contextual": 6
+    },
+    "log.Fatal": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 10,
+      "contextual": 17
+    },
+    "testing.Fatal": {
+      "bare": 129,
+      "contextual": 8
+    },
+    "testing.Fatalf": {
+      "bare": 30,
+      "contextual": 73
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 18
+    }
+  },
+  "unresolved_count": 10
+}

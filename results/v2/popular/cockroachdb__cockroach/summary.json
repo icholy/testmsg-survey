@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "cockroachdb/cockroach",
+  "commit": "d30c905fff79ef825adc96bcc647f1872a90f2ff",
+  "test_files": 3109,
+  "parse_errors": 0,
+  "total": {
+    "bare": 25316,
+    "contextual": 1511
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 6462,
+      "contextual": 1013
+    },
+    "helper": {
+      "bare": 72,
+      "contextual": 26
+    },
+    "library": {
+      "bare": 18564,
+      "contextual": 455
+    },
+    "panic": {
+      "bare": 218,
+      "contextual": 17
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 554,
+      "contextual": 17
+    },
+    "example": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2625,
+      "contextual": 313
+    },
+    "test": {
+      "bare": 22123,
+      "contextual": 1181
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 33,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 355,
+      "contextual": 10
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 496,
+      "contextual": 11
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 17654,
+      "contextual": 394
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 38
+    },
+    "helper": {
+      "bare": 72,
+      "contextual": 26
+    },
+    "panic": {
+      "bare": 218,
+      "contextual": 17
+    },
+    "testify.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 25,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 319,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 41,
+      "contextual": 236
+    },
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 5958,
+      "contextual": 45
+    },
+    "testing.Fatalf": {
+      "bare": 143,
+      "contextual": 728
+    }
+  },
+  "unresolved_count": 508
+}

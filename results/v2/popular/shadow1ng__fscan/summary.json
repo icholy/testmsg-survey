@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "shadow1ng/fscan",
+  "commit": "2ede41d743b87743b11f69e85dd37c634c1c0ef6",
+  "test_files": 136,
+  "parse_errors": 0,
+  "total": {
+    "bare": 147,
+    "contextual": 334
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 147,
+      "contextual": 334
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 7,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 139,
+      "contextual": 327
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 30
+    },
+    "testing.Fatal": {
+      "bare": 69,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 73,
+      "contextual": 299
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 1,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 0
+}

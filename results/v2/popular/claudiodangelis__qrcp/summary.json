@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "claudiodangelis/qrcp",
+  "commit": "2759e61c5ec9d3976fed7acc74049a34110b245f",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 4,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "canopy-network/canopy",
+  "commit": "83af2a0cb63c83cfa2b420264755c8541895b8ad",
+  "test_files": 73,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2010,
+    "contextual": 46
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 72,
+      "contextual": 37
+    },
+    "library": {
+      "bare": 1936,
+      "contextual": 9
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 168,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 1842,
+      "contextual": 46
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1936,
+      "contextual": 9
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 59,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 12,
+      "contextual": 36
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

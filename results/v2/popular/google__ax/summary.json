@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "google/ax",
+  "commit": "241bc4d0c682a6898da5f718a9ec84fe7c9197f9",
+  "test_files": 24,
+  "parse_errors": 0,
+  "total": {
+    "bare": 58,
+    "contextual": 228
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 58,
+      "contextual": 228
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 8,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 50,
+      "contextual": 215
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "testing.Fatal": {
+      "bare": 54,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 220
+    }
+  },
+  "unresolved_count": 2
+}

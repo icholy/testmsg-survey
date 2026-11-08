@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "kunchenguid/no-mistakes",
+  "commit": "1cde687d426657351396898e4cb277c1e6a22050",
+  "test_files": 804,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6435,
+    "contextual": 3851
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 6391,
+      "contextual": 3849
+    },
+    "helper": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 22,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 905,
+      "contextual": 511
+    },
+    "test": {
+      "bare": 5530,
+      "contextual": 3340
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 22,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 73
+    },
+    "testing.Fatal": {
+      "bare": 6143,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 229,
+      "contextual": 3728
+    },
+    "testing.Skip": {
+      "bare": 3,
+      "contextual": 25
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 22
+    }
+  },
+  "unresolved_count": 19
+}

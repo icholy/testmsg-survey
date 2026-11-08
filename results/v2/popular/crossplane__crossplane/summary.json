@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "crossplane/crossplane",
+  "commit": "58de5a256dd94f4609e081de349f6d85bdc02b34",
+  "test_files": 131,
+  "parse_errors": 0,
+  "total": {
+    "bare": 31,
+    "contextual": 42
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 17,
+      "contextual": 42
+    },
+    "panic": {
+      "bare": 14,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 18,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 11,
+      "contextual": 37
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "testing.Fatal": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 29
+    },
+    "testing.Skip": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

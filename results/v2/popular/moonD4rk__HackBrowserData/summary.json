@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "moonD4rk/HackBrowserData",
+  "commit": "c9c8f6eedabe6a1fa6a22c9e043209a19e9d55f2",
+  "test_files": 86,
+  "parse_errors": 0,
+  "total": {
+    "bare": 485,
+    "contextual": 29
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 19
+    },
+    "library": {
+      "bare": 485,
+      "contextual": 10
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 145,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 340,
+      "contextual": 24
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 484,
+      "contextual": 9
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 17
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,110 @@
+{
+  "tier": "popular",
+  "repo": "kedacore/keda",
+  "commit": "2132ca760b608037c059586c1ea681e99282f1e8",
+  "test_files": 366,
+  "parse_errors": 0,
+  "total": {
+    "bare": 823,
+    "contextual": 915
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 93,
+      "contextual": 338
+    },
+    "library": {
+      "bare": 730,
+      "contextual": 576
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 358,
+      "contextual": 494
+    },
+    "test": {
+      "bare": 465,
+      "contextual": 421
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(BeNil)": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 38,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 293,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 44,
+      "contextual": 4
+    },
+    "github.com/stretchr/testify/assert.Nilf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 172,
+      "contextual": 34
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 339
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 154,
+      "contextual": 20
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 5,
+      "contextual": 174
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 12,
+      "contextual": 44
+    },
+    "testing.Errorf": {
+      "bare": 4,
+      "contextual": 91
+    },
+    "testing.Fail": {
+      "bare": 29,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 23,
+      "contextual": 92
+    },
+    "testing.Fatalf": {
+      "bare": 25,
+      "contextual": 111
+    }
+  },
+  "unresolved_count": 5
+}

@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "TheAlgorithms/Go",
+  "commit": "5ba447ec5ff3d1213de65b92e726ee74c5d5cc19",
+  "test_files": 222,
+  "parse_errors": 0,
+  "total": {
+    "bare": 61,
+    "contextual": 82
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 59,
+      "contextual": 79
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 53,
+      "contextual": 74
+    }
+  },
+  "by_sink": {
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 50,
+      "contextual": 8
+    },
+    "testing.Errorf": {
+      "bare": 7,
+      "contextual": 31
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 40
+    }
+  },
+  "unresolved_count": 0
+}

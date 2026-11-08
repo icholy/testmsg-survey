@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "plandex-ai/plandex",
+  "commit": "e2d772072efadbe41d2946d97d79be55532dbab5",
+  "test_files": 6,
+  "parse_errors": 3,
+  "total": {
+    "bare": 1,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

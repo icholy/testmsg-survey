@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "go-martini/martini",
+  "commit": "22fa46961aabd2665cf3f1343b146d20028f5071",
+  "test_files": 7,
+  "parse_errors": 0,
+  "total": {
+    "bare": 14,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 14,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 14,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 14,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 1
+}

@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "stretchr/testify",
+  "commit": "87a7b9d57689f6579db2da795ab8deeab29cb724",
+  "test_files": 21,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3,
+    "contextual": 6
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 5
+    },
+    "library": {
+      "bare": 2,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 5
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testify.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 7
+}

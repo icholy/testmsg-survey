@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "emirpasic/gods",
+  "commit": "1d83d5ae39fbb0de45a60365791ff1c8b9bae953",
+  "test_files": 24,
+  "parse_errors": 0,
+  "total": {
+    "bare": 66,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 66,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 66,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 66,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

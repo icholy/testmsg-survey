@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "labstack/echo",
+  "commit": "7af8fac5354e53294c8d14fdd7dd4006dbaffd52",
+  "test_files": 66,
+  "parse_errors": 0,
+  "total": {
+    "bare": 564,
+    "contextual": 5
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 17,
+      "contextual": 2
+    },
+    "library": {
+      "bare": 546,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 10,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 551,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 499,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 45,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 2
+}

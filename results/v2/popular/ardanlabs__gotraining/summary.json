@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "ardanlabs/gotraining",
+  "commit": "b906d60a4f9174d4953f258c849fa8e881a142e6",
+  "test_files": 74,
+  "parse_errors": 5,
+  "total": {
+    "bare": 5,
+    "contextual": 38
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 38
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 37
+    }
+  },
+  "by_sink": {
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 38
+    }
+  },
+  "unresolved_count": 0
+}

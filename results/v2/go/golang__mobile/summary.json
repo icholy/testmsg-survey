@@ -1,0 +1,70 @@
+{
+  "tier": "go",
+  "repo": "golang/mobile",
+  "commit": "19777044486779222400e9ca16c4306f9c6dbfa9",
+  "test_files": 25,
+  "parse_errors": 0,
+  "total": {
+    "bare": 104,
+    "contextual": 97
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 100,
+      "contextual": 93
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 4
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 23,
+      "contextual": 41
+    },
+    "test": {
+      "bare": 79,
+      "contextual": 55
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 27
+    },
+    "testing.Fatal": {
+      "bare": 93,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 45
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 11
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

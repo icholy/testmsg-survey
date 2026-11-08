@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "caddyserver/caddy",
+  "commit": "e3271947ee053b0c43df2fad88a36728482bc3ff",
+  "test_files": 183,
+  "parse_errors": 0,
+  "total": {
+    "bare": 529,
+    "contextual": 636
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 359,
+      "contextual": 634
+    },
+    "library": {
+      "bare": 165,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 6,
+      "contextual": 5
+    },
+    "fuzz": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 74,
+      "contextual": 89
+    },
+    "test": {
+      "bare": 448,
+      "contextual": 542
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 157,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 6,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 135
+    },
+    "testing.Fail": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 321,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 20,
+      "contextual": 492
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 6
+    }
+  },
+  "unresolved_count": 8
+}

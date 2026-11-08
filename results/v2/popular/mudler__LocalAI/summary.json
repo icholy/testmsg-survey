@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "mudler/LocalAI",
+  "commit": "a1669aa5d9e99a047962cb03c74e41daf8247200",
+  "test_files": 2474,
+  "parse_errors": 0,
+  "total": {
+    "bare": 19031,
+    "contextual": 879
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 208,
+      "contextual": 37
+    },
+    "helper": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 18787,
+      "contextual": 842
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 18755,
+      "contextual": 844
+    },
+    "test": {
+      "bare": 274,
+      "contextual": 35
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 7479,
+      "contextual": 416
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 77,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 7507,
+      "contextual": 187
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 3724,
+      "contextual": 239
+    },
+    "helper": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "testing.Fatal": {
+      "bare": 189,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 28
+    }
+  },
+  "unresolved_count": 385
+}

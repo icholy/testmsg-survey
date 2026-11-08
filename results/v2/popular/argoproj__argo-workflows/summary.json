@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "argoproj/argo-workflows",
+  "commit": "45e810c8f15eec84c13c3a3e9d8dc6d14b97d068",
+  "test_files": 374,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3355,
+    "contextual": 146
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 40,
+      "contextual": 32
+    },
+    "library": {
+      "bare": 3283,
+      "contextual": 107
+    },
+    "panic": {
+      "bare": 32,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 428,
+      "contextual": 44
+    },
+    "test": {
+      "bare": 2923,
+      "contextual": 102
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 27,
+      "contextual": 12
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 3204,
+      "contextual": 95
+    },
+    "panic": {
+      "bare": 32,
+      "contextual": 7
+    },
+    "testify.NoError": {
+      "bare": 52,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 30,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 25
+    }
+  },
+  "unresolved_count": 12
+}

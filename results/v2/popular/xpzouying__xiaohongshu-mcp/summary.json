@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "xpzouying/xiaohongshu-mcp",
+  "commit": "3b352aa075d63cd5ebae546c9fe7d7d9b81fa7c9",
+  "test_files": 32,
+  "parse_errors": 0,
+  "total": {
+    "bare": 88,
+    "contextual": 11
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 9,
+      "contextual": 9
+    },
+    "library": {
+      "bare": 79,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 81,
+      "contextual": 11
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 25,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 54,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 6,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 6
+    }
+  },
+  "unresolved_count": 0
+}

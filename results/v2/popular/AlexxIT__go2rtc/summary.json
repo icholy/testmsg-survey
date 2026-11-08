@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "AlexxIT/go2rtc",
+  "commit": "990f4de3cc21d1cca917d02d0bc40f2fabe75a49",
+  "test_files": 37,
+  "parse_errors": 0,
+  "total": {
+    "bare": 91,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 91,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 89,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 62,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 18,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 1
+}

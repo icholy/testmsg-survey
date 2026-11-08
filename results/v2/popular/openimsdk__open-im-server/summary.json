@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "openimsdk/open-im-server",
+  "commit": "9502a1a15fe63f6342fb1e2d8068346a82f278d8",
+  "test_files": 27,
+  "parse_errors": 0,
+  "total": {
+    "bare": 71,
+    "contextual": 3
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "helper": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 37,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 66,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 37,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 1
+}

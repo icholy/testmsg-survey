@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "Shopify/toxiproxy",
+  "commit": "49299d8838525126e09c85ebe0ba89940a3261e5",
+  "test_files": 22,
+  "parse_errors": 0,
+  "total": {
+    "bare": 19,
+    "contextual": 180
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 19,
+      "contextual": 180
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 8,
+      "contextual": 6
+    },
+    "other": {
+      "bare": 3,
+      "contextual": 17
+    },
+    "test": {
+      "bare": 8,
+      "contextual": 157
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 64
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 16,
+      "contextual": 104
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 3
+}

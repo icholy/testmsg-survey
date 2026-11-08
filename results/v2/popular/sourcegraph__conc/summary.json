@@ -1,0 +1,34 @@
+{
+  "tier": "popular",
+  "repo": "sourcegraph/conc",
+  "commit": "5f936abd7ae87036af1f75c95fb9d0daaf00116b",
+  "test_files": 13,
+  "parse_errors": 0,
+  "total": {
+    "bare": 13,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 13,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 13,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 12,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

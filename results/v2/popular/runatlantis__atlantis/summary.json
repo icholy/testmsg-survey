@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "runatlantis/atlantis",
+  "commit": "dcbc0e21be4cd6f791ad8e8d411d8bf76865e441",
+  "test_files": 173,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2086,
+    "contextual": 46
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 53,
+      "contextual": 38
+    },
+    "helper": {
+      "bare": 1993,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 38,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 107,
+      "contextual": 15
+    },
+    "test": {
+      "bare": 1979,
+      "contextual": 31
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 31,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 1993,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 8
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "testing.FailNow": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 48,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 19
+    }
+  },
+  "unresolved_count": 339
+}

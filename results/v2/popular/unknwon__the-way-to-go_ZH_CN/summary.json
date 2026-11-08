@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "unknwon/the-way-to-go_ZH_CN",
+  "commit": "7a54d34d3657084b6a59e5618bd069b912d571aa",
+  "test_files": 5,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

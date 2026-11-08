@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "gohugoio/hugo",
+  "commit": "2d6cf3a851f3d003c2246f74448ebfc086db6418",
+  "test_files": 394,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1019,
+    "contextual": 194
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 188,
+      "contextual": 128
+    },
+    "helper": {
+      "bare": 87,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 709,
+      "contextual": 39
+    },
+    "panic": {
+      "bare": 35,
+      "contextual": 27
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 61,
+      "contextual": 3
+    },
+    "example": {
+      "bare": 23,
+      "contextual": 27
+    },
+    "other": {
+      "bare": 47,
+      "contextual": 9
+    },
+    "test": {
+      "bare": 888,
+      "contextual": 155
+    }
+  },
+  "by_sink": {
+    "github.com/frankban/quicktest.C.Assert": {
+      "bare": 709,
+      "contextual": 39
+    },
+    "helper": {
+      "bare": 87,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 18,
+      "contextual": 12
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 15
+    },
+    "panic": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 20,
+      "contextual": 3
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 44
+    },
+    "testing.Fatal": {
+      "bare": 157,
+      "contextual": 12
+    },
+    "testing.Fatalf": {
+      "bare": 6,
+      "contextual": 68
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 28
+}

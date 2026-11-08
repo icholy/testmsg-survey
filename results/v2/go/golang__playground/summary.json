@@ -1,0 +1,38 @@
+{
+  "tier": "go",
+  "repo": "golang/playground",
+  "commit": "c2dc5323013d0e31a9bc3d4e849bf49353cb3fa5",
+  "test_files": 7,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3,
+    "contextual": 18
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 18
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 3,
+      "contextual": 18
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 12
+    }
+  },
+  "unresolved_count": 0
+}

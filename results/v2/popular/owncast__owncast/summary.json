@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "owncast/owncast",
+  "commit": "fa55a12641373b9b5ef3336f960c35b51fcda440",
+  "test_files": 143,
+  "parse_errors": 0,
+  "total": {
+    "bare": 298,
+    "contextual": 460
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 267,
+      "contextual": 460
+    },
+    "panic": {
+      "bare": 31,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 81,
+      "contextual": 34
+    },
+    "test": {
+      "bare": 217,
+      "contextual": 423
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 31,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 19,
+      "contextual": 8
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 96
+    },
+    "testing.Fatal": {
+      "bare": 239,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 9,
+      "contextual": 353
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

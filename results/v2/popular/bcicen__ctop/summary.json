@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "bcicen/ctop",
+  "commit": "59f00dd6aaebf48f3bc501e174f75f815c2619f0",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

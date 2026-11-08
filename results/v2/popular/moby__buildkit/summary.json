@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "moby/buildkit",
+  "commit": "cedaeca8850a2bb536bbd1db72419f3cf491bdb5",
+  "test_files": 318,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6141,
+    "contextual": 121
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 9,
+      "contextual": 46
+    },
+    "library": {
+      "bare": 6124,
+      "contextual": 75
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 26,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 3463,
+      "contextual": 38
+    },
+    "test": {
+      "bare": 2652,
+      "contextual": 83
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 6106,
+      "contextual": 58
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 17
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 8,
+      "contextual": 10
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 26
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 10
+}

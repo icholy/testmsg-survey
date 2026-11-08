@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "QuantumNous/new-api",
+  "commit": "8faf1d45e8c101974dc7483324d3d91c8a462ffe",
+  "test_files": 309,
+  "parse_errors": 0,
+  "total": {
+    "bare": 5798,
+    "contextual": 188
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 65,
+      "contextual": 118
+    },
+    "library": {
+      "bare": 5732,
+      "contextual": 62
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 566,
+      "contextual": 34
+    },
+    "test": {
+      "bare": 5218,
+      "contextual": 154
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 76,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 94,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 5560,
+      "contextual": 57
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 8
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 64,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 116
+    }
+  },
+  "unresolved_count": 16
+}

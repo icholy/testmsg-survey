@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "nsqio/nsq",
+  "commit": "85cf10c09c6c3c86160d6f0eb156f62d0efc1648",
+  "test_files": 26,
+  "parse_errors": 0,
+  "total": {
+    "bare": 73,
+    "contextual": 2
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 8,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 65,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 63,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 9,
+      "contextual": 1
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 65,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 7,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 525
+}

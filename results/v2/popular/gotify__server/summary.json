@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "gotify/server",
+  "commit": "5ce7f0ac9ecf9b59d8dfbef2835cd5719ae50a73",
+  "test_files": 53,
+  "parse_errors": 0,
+  "total": {
+    "bare": 464,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 463,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 384,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 80,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 90,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 237,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 133,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testify.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 4
+}

@@ -1,0 +1,78 @@
+{
+  "tier": "go",
+  "repo": "golang/pkgsite",
+  "commit": "e1e99e5868f1b61f9fc37e997b1ae981c8671033",
+  "test_files": 181,
+  "parse_errors": 0,
+  "total": {
+    "bare": 593,
+    "contextual": 150
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 566,
+      "contextual": 149
+    },
+    "helper": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 11,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 75,
+      "contextual": 31
+    },
+    "test": {
+      "bare": 505,
+      "contextual": 119
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 12
+    },
+    "testing.Fatal": {
+      "bare": 556,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 136
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 13
+}

@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "samber/lo",
+  "commit": "6f5a63afb19f34755bea97f2b37a0a7f3814f80c",
+  "test_files": 63,
+  "parse_errors": 0,
+  "total": {
+    "bare": 89,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 89,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 89,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testify.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 86,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "stakater/Reloader",
+  "commit": "a2e3b24d8b29007a466eec2762e8a99265254478",
+  "test_files": 47,
+  "parse_errors": 0,
+  "total": {
+    "bare": 863,
+    "contextual": 45
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 17
+    },
+    "library": {
+      "bare": 863,
+      "contextual": 28
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 821,
+      "contextual": 25
+    },
+    "test": {
+      "bare": 42,
+      "contextual": 20
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 812,
+      "contextual": 20
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 9,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 42,
+      "contextual": 3
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 14
+    }
+  },
+  "unresolved_count": 4
+}

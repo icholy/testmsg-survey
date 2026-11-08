@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "mvdan/sh",
+  "commit": "5943e49d40d22467e60056a0f39ba58fb8fc767a",
+  "test_files": 36,
+  "parse_errors": 0,
+  "total": {
+    "bare": 153,
+    "contextual": 20
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 97,
+      "contextual": 17
+    },
+    "library": {
+      "bare": 54,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 4,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 9,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 137,
+      "contextual": 14
+    }
+  },
+  "by_sink": {
+    "github.com/go-quicktest/qt.Assert": {
+      "bare": 54,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 85,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 8,
+      "contextual": 14
+    },
+    "testing.Skip": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 2
+}

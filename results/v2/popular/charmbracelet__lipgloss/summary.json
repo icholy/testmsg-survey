@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "charmbracelet/lipgloss",
+  "commit": "19f011f1cc573e5d2bf9d7a9c4f14d429647759e",
+  "test_files": 16,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 3
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

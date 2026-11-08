@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "redis/go-redis",
+  "commit": "5cba5e182946cf18a757718938bc43910e589466",
+  "test_files": 332,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1589,
+    "contextual": 1796
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 936,
+      "contextual": 1794
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 650,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 84,
+      "contextual": 8
+    },
+    "example": {
+      "bare": 640,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 64,
+      "contextual": 115
+    },
+    "test": {
+      "bare": 801,
+      "contextual": 1673
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 650,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 24,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 166
+    },
+    "testing.Fatal": {
+      "bare": 866,
+      "contextual": 5
+    },
+    "testing.Fatalf": {
+      "bare": 43,
+      "contextual": 1356
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 264
+    }
+  },
+  "unresolved_count": 138
+}

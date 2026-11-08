@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "spf13/viper",
+  "commit": "528f7416c4b56a4948673984b190bf8713f0c3c4",
+  "test_files": 12,
+  "parse_errors": 0,
+  "total": {
+    "bare": 114,
+    "contextual": 35
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 113,
+      "contextual": 32
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 106,
+      "contextual": 35
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 104,
+      "contextual": 32
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "mark3labs/mcp-go",
+  "commit": "acf999d599ff294f82b586d787d6d793daf2f9be",
+  "test_files": 210,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1515,
+    "contextual": 579
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 46,
+      "contextual": 513
+    },
+    "library": {
+      "bare": 1469,
+      "contextual": 66
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 87,
+      "contextual": 12
+    },
+    "test": {
+      "bare": 1418,
+      "contextual": 567
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 114,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 32,
+      "contextual": 12
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1320,
+      "contextual": 45
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 80
+    },
+    "testing.Fatal": {
+      "bare": 37,
+      "contextual": 17
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 416
+    }
+  },
+  "unresolved_count": 5
+}

@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "v2fly/domain-list-community",
+  "commit": "e8d7a10a15bf662c927a40a3aa680bae86379608",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 8
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "unresolved_count": 0
+}

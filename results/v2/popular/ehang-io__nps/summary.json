@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "ehang-io/nps",
+  "commit": "ab648d6f0c618c690a7a79948a7ebd686e1cdafc",
+  "test_files": 2,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 4
+}

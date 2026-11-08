@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "tsenart/vegeta",
+  "commit": "cf5811269046c672a604b1eb352204d30f16ae4a",
+  "test_files": 11,
+  "parse_errors": 0,
+  "total": {
+    "bare": 21,
+    "contextual": 17
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 20,
+      "contextual": 17
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 21,
+      "contextual": 17
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 16,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 11
+    }
+  },
+  "unresolved_count": 2
+}

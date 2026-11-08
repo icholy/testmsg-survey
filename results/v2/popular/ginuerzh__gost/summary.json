@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "ginuerzh/gost",
+  "commit": "a33fdbf4c98034f4bfeeaea9868909822b9c526d",
+  "test_files": 22,
+  "parse_errors": 0,
+  "total": {
+    "bare": 197,
+    "contextual": 6
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 195,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 109,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 86,
+      "contextual": 5
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 163,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 32,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 2
+}

@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "gruntwork-io/terragrunt",
+  "commit": "0fa02c2575fa8256d1e6d12fc553381fb74f3dbb",
+  "test_files": 913,
+  "parse_errors": 0,
+  "total": {
+    "bare": 9696,
+    "contextual": 483
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 67,
+      "contextual": 28
+    },
+    "library": {
+      "bare": 9624,
+      "contextual": 455
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 108,
+      "contextual": 4
+    },
+    "fuzz": {
+      "bare": 14,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 889,
+      "contextual": 87
+    },
+    "test": {
+      "bare": 8685,
+      "contextual": 390
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 73,
+      "contextual": 27
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 9551,
+      "contextual": 415
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 63,
+      "contextual": 8
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 13
+    }
+  },
+  "unresolved_count": 28
+}

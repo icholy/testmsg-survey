@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "kubernetes-sigs/kind",
+  "commit": "46b5d280a425a0e50511712d84b31a0a36a7191f",
+  "test_files": 35,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3,
+    "contextual": 47
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 47
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 22
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 25
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 4
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 43
+    }
+  },
+  "unresolved_count": 8
+}

@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "ViRb3/wgcf",
+  "commit": "de6bba7147dc965a1b8e4de113a709750697ccea",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 14,
+    "contextual": 5
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 14,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 14,
+      "contextual": 5
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 0
+}

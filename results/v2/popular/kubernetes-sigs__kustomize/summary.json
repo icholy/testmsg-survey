@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "kubernetes-sigs/kustomize",
+  "commit": "10dc7fa02fff51041ebefed9e22d149ef85a6fd1",
+  "test_files": 324,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1740,
+    "contextual": 264
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 186,
+      "contextual": 234
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 5
+    },
+    "library": {
+      "bare": 1464,
+      "contextual": 25
+    },
+    "panic": {
+      "bare": 88,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "example": {
+      "bare": 80,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 89,
+      "contextual": 31
+    },
+    "test": {
+      "bare": 1570,
+      "contextual": 231
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 273,
+      "contextual": 7
+    },
+    "github.com/stretchr/testify/require.Nilf": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1085,
+      "contextual": 14
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 5
+    },
+    "log.Fatal": {
+      "bare": 73,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 103,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 3
+    },
+    "testing.Errorf": {
+      "bare": 20,
+      "contextual": 36
+    },
+    "testing.Fatal": {
+      "bare": 58,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 101,
+      "contextual": 161
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 34
+    }
+  },
+  "unresolved_count": 4
+}

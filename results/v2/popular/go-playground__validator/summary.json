@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "go-playground/validator",
+  "commit": "19397f2388e436535f8705c7f8eae3521d9b4e6e",
+  "test_files": 26,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 9
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 186
+}

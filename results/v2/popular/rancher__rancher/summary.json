@@ -1,0 +1,114 @@
+{
+  "tier": "popular",
+  "repo": "rancher/rancher",
+  "commit": "aa049bded514a5038fe8f9eda62a43452c94b250",
+  "test_files": 570,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3576,
+    "contextual": 530
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 422,
+      "contextual": 285
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 3147,
+      "contextual": 244
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1320,
+      "contextual": 172
+    },
+    "test": {
+      "bare": 2248,
+      "contextual": 358
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 65,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.Nilf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 703,
+      "contextual": 85
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 10
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1512,
+      "contextual": 82
+    },
+    "gopkg.in/check.v1.C.Assert": {
+      "bare": 38,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 1
+    },
+    "testify.Nil": {
+      "bare": 38,
+      "contextual": 4
+    },
+    "testify.NoError": {
+      "bare": 786,
+      "contextual": 58
+    },
+    "testing.Error": {
+      "bare": 14,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 8,
+      "contextual": 96
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 352,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 47,
+      "contextual": 184
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 363
+}

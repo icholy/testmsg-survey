@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "PuerkitoBio/goquery",
+  "commit": "e48e1f40885ad753631b429783b991fe263c7816",
+  "test_files": 22,
+  "parse_errors": 0,
+  "total": {
+    "bare": 38,
+    "contextual": 1
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 30,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 30,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 28,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

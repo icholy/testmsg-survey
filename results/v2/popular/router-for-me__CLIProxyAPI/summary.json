@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "router-for-me/CLIProxyAPI",
+  "commit": "681ce41b6e44c45b15b79378b003909d6ba29e68",
+  "test_files": 1225,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2089,
+    "contextual": 7143
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2086,
+      "contextual": 7136
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 7,
+      "contextual": 11
+    },
+    "other": {
+      "bare": 163,
+      "contextual": 378
+    },
+    "test": {
+      "bare": 1919,
+      "contextual": 6754
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 134,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 387
+    },
+    "testing.Fatal": {
+      "bare": 1835,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 117,
+      "contextual": 6738
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 128
+}

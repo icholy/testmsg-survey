@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "uber-go/zap",
+  "commit": "4892335e05f14bce8a98a69a577fcf3844a42623",
+  "test_files": 77,
+  "parse_errors": 0,
+  "total": {
+    "bare": 61,
+    "contextual": 112
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 44,
+      "contextual": 112
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 13,
+      "contextual": 2
+    },
+    "example": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 41,
+      "contextual": 102
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 29,
+      "contextual": 68
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 15,
+      "contextual": 44
+    },
+    "helper": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 10,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 4
+}

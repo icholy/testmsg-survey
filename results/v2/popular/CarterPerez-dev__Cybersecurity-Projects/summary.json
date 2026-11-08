@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "CarterPerez-dev/Cybersecurity-Projects",
+  "commit": "6c8ac8547cf52edaa06935e637a1fe11ac45b865",
+  "test_files": 322,
+  "parse_errors": 0,
+  "total": {
+    "bare": 921,
+    "contextual": 945
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 203,
+      "contextual": 918
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 713,
+      "contextual": 27
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 97,
+      "contextual": 159
+    },
+    "test": {
+      "bare": 824,
+      "contextual": 786
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 713,
+      "contextual": 27
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 17
+    },
+    "testing.Fatal": {
+      "bare": 201,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 893
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "unresolved_count": 1
+}

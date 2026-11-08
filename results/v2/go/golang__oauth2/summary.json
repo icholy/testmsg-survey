@@ -1,0 +1,66 @@
+{
+  "tier": "go",
+  "repo": "golang/oauth2",
+  "commit": "0f01e8215572819016fac21b005f5f32ba407798",
+  "test_files": 31,
+  "parse_errors": 0,
+  "total": {
+    "bare": 68,
+    "contextual": 139
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 55,
+      "contextual": 139
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 52,
+      "contextual": 133
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 31
+    },
+    "testing.Fatal": {
+      "bare": 37,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 108
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "chromedp/chromedp",
+  "commit": "94001c576609403535c275b745d4d8485976b4aa",
+  "test_files": 44,
+  "parse_errors": 0,
+  "total": {
+    "bare": 493,
+    "contextual": 44
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 409,
+      "contextual": 42
+    },
+    "panic": {
+      "bare": 84,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 84,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 78,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 325,
+      "contextual": 36
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 84,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 298,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 103,
+      "contextual": 35
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 2
+}

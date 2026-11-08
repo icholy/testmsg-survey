@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "istio/istio",
+  "commit": "4a9f777488679185c126c62b8b9ee0081504c917",
+  "test_files": 781,
+  "parse_errors": 0,
+  "total": {
+    "bare": 985,
+    "contextual": 746
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 709,
+      "contextual": 732
+    },
+    "library": {
+      "bare": 246,
+      "contextual": 6
+    },
+    "panic": {
+      "bare": 30,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 10,
+      "contextual": 5
+    },
+    "fuzz": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 199,
+      "contextual": 163
+    },
+    "test": {
+      "bare": 774,
+      "contextual": 578
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 85,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(BeNil)": {
+      "bare": 29,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 45,
+      "contextual": 3
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 57,
+      "contextual": 2
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "panic": {
+      "bare": 30,
+      "contextual": 4
+    },
+    "testing.Error": {
+      "bare": 30,
+      "contextual": 10
+    },
+    "testing.Errorf": {
+      "bare": 14,
+      "contextual": 198
+    },
+    "testing.Fatal": {
+      "bare": 640,
+      "contextual": 60
+    },
+    "testing.Fatalf": {
+      "bare": 25,
+      "contextual": 463
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 648
+}

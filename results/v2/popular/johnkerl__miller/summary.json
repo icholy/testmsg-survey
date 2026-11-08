@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "johnkerl/miller",
+  "commit": "9a1ca268353ef576934088ac2ced30f1c986046e",
+  "test_files": 62,
+  "parse_errors": 0,
+  "total": {
+    "bare": 138,
+    "contextual": 19
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 50,
+      "contextual": 18
+    },
+    "library": {
+      "bare": 88,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 12,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 123,
+      "contextual": 16
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 32,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 43,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 39,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 10,
+      "contextual": 9
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

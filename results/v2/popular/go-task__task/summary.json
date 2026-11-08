@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "go-task/task",
+  "commit": "f31a5d606793895a8fc0b757b09f466475629810",
+  "test_files": 41,
+  "parse_errors": 0,
+  "total": {
+    "bare": 395,
+    "contextual": 20
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 10
+    },
+    "library": {
+      "bare": 388,
+      "contextual": 10
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 38,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 357,
+      "contextual": 17
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 26,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 362,
+      "contextual": 9
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 4
+}

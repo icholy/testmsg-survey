@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "BishopFox/sliver",
+  "commit": "4c2e8d4bdac79eb7c22143d54f49025faac5d1e6",
+  "test_files": 285,
+  "parse_errors": 1,
+  "total": {
+    "bare": 419,
+    "contextual": 1920
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 373,
+      "contextual": 1837
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 33,
+      "contextual": 83
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 79,
+      "contextual": 229
+    },
+    "test": {
+      "bare": 339,
+      "contextual": 1691
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testify.Nil": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 10,
+      "contextual": 83
+    },
+    "testing.Error": {
+      "bare": 12,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 44
+    },
+    "testing.Fatal": {
+      "bare": 330,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 30,
+      "contextual": 1785
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 12
+}

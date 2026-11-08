@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "greyireland/algorithm-pattern",
+  "commit": "6c5cb6d4414098a71e2d44d4ab8d6c807f17e995",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

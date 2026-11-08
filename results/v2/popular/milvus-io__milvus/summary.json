@@ -1,0 +1,118 @@
+{
+  "tier": "popular",
+  "repo": "milvus-io/milvus",
+  "commit": "686b129ca584fe2e8ae88b06ead95ffa03bad56a",
+  "test_files": 2555,
+  "parse_errors": 0,
+  "total": {
+    "bare": 33382,
+    "contextual": 2914
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 190,
+      "contextual": 90
+    },
+    "helper": {
+      "bare": 178,
+      "contextual": 2251
+    },
+    "library": {
+      "bare": 32900,
+      "contextual": 532
+    },
+    "panic": {
+      "bare": 114,
+      "contextual": 41
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 181,
+      "contextual": 3
+    },
+    "example": {
+      "bare": 4,
+      "contextual": 39
+    },
+    "fuzz": {
+      "bare": 4,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 8773,
+      "contextual": 306
+    },
+    "test": {
+      "bare": 24420,
+      "contextual": 2565
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 264,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 9798,
+      "contextual": 120
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 148,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 15575,
+      "contextual": 310
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "helper": {
+      "bare": 178,
+      "contextual": 2251
+    },
+    "log.Fatal": {
+      "bare": 6,
+      "contextual": 39
+    },
+    "panic": {
+      "bare": 108,
+      "contextual": 2
+    },
+    "testify.Nil": {
+      "bare": 31,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 7084,
+      "contextual": 89
+    },
+    "testify.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 12
+    },
+    "testing.Fatal": {
+      "bare": 167,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 63
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 15
+    }
+  },
+  "unresolved_count": 399
+}

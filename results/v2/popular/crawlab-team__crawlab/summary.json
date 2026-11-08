@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "crawlab-team/crawlab",
+  "commit": "0485310def8b4f31ea20997846a8d5e7dfc681e5",
+  "test_files": 32,
+  "parse_errors": 0,
+  "total": {
+    "bare": 436,
+    "contextual": 22
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 22
+    },
+    "library": {
+      "bare": 431,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 432,
+      "contextual": 22
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 414,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 12
+}

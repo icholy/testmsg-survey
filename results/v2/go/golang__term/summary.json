@@ -1,0 +1,38 @@
+{
+  "tier": "go",
+  "repo": "golang/term",
+  "commit": "0851034afad912733699827b3bb94436f059797f",
+  "test_files": 2,
+  "parse_errors": 0,
+  "total": {
+    "bare": 4,
+    "contextual": 8
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 4,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 0
+}

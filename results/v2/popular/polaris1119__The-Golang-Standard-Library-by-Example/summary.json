@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "polaris1119/The-Golang-Standard-Library-by-Example",
+  "commit": "c466fcc58c288e6bc93b02769b799c3c7a4eb56b",
+  "test_files": 10,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 2
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

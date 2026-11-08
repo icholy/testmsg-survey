@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "gopherjs/gopherjs",
+  "commit": "490705b1d6fc7d5bd9202ac41888e146183328eb",
+  "test_files": 110,
+  "parse_errors": 0,
+  "total": {
+    "bare": 7,
+    "contextual": 39
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 39
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 6,
+      "contextual": 31
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 5,
+      "contextual": 4
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 32
+    }
+  },
+  "unresolved_count": 2
+}

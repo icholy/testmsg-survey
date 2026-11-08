@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "amir20/dozzle",
+  "commit": "be08accb2b336056f1e5b182944ead2f755a3400",
+  "test_files": 170,
+  "parse_errors": 0,
+  "total": {
+    "bare": 753,
+    "contextual": 76
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 16,
+      "contextual": 7
+    },
+    "library": {
+      "bare": 733,
+      "contextual": 69
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 69,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 682,
+      "contextual": 74
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 70,
+      "contextual": 11
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 660,
+      "contextual": 58
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 0
+}

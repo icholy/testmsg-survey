@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "tinygo-org/tinygo",
+  "commit": "84f34a382e2f1314f3b52821477434671ab55fab",
+  "test_files": 131,
+  "parse_errors": 0,
+  "total": {
+    "bare": 298,
+    "contextual": 238
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 290,
+      "contextual": 238
+    },
+    "helper": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 49,
+      "contextual": 50
+    },
+    "test": {
+      "bare": 240,
+      "contextual": 188
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 12,
+      "contextual": 14
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 53
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 275,
+      "contextual": 49
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 121
+    },
+    "testing.Skip": {
+      "bare": 2,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

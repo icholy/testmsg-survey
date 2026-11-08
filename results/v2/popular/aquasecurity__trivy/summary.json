@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "aquasecurity/trivy",
+  "commit": "c22582a1a226379b070041a9e76dcd615c343328",
+  "test_files": 603,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1440,
+    "contextual": 57
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 8,
+      "contextual": 7
+    },
+    "library": {
+      "bare": 1430,
+      "contextual": 50
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 182,
+      "contextual": 16
+    },
+    "test": {
+      "bare": 1256,
+      "contextual": 41
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1412,
+      "contextual": 45
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 18
+}

@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "yetone/magpie",
+  "commit": "c6bdc172a01e1eb8713c596e33e1ef703eb9b4ee",
+  "test_files": 3842,
+  "parse_errors": 0,
+  "total": {
+    "bare": 16347,
+    "contextual": 1277
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 16183,
+      "contextual": 1277
+    },
+    "helper": {
+      "bare": 144,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 20,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 29,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1543,
+      "contextual": 206
+    },
+    "test": {
+      "bare": 14775,
+      "contextual": 1071
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 144,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 34,
+      "contextual": 19
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 137
+    },
+    "testing.Fatal": {
+      "bare": 16130,
+      "contextual": 90
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 952
+    },
+    "testing.Skip": {
+      "bare": 18,
+      "contextual": 70
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 28
+}

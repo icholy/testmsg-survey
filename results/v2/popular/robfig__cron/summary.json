@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "robfig/cron",
+  "commit": "bc59245fe10efaed9d51b56900192527ed733435",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6,
+    "contextual": 3
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 5,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

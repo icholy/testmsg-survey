@@ -1,0 +1,70 @@
+{
+  "tier": "go",
+  "repo": "golang/perf",
+  "commit": "be2c69fb417e05de5fec05c732911f4c5f172606",
+  "test_files": 46,
+  "parse_errors": 0,
+  "total": {
+    "bare": 54,
+    "contextual": 65
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 46,
+      "contextual": 65
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "example": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 10,
+      "contextual": 9
+    },
+    "test": {
+      "bare": 38,
+      "contextual": 54
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 12
+    },
+    "testing.Fail": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 20,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 12,
+      "contextual": 50
+    }
+  },
+  "unresolved_count": 1
+}

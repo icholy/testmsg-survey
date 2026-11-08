@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "charmbracelet/bubbletea",
+  "commit": "67b4c7a8a2b34a0b1ce15261b0c705bc7e1a04b7",
+  "test_files": 11,
+  "parse_errors": 0,
+  "total": {
+    "bare": 27,
+    "contextual": 3
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 27,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 26,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

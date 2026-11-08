@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "patrickmn/go-cache",
+  "commit": "46f407853014144407b6c2ec7ccc76bf67958d93",
+  "test_files": 2,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 63
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 63
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 1,
+      "contextual": 61
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 60
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

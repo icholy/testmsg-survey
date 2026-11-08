@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "Tencent/WeKnora",
+  "commit": "e3fb2335bf3f8cadd32142380c60b2677a27bf99",
+  "test_files": 2018,
+  "parse_errors": 0,
+  "total": {
+    "bare": 12489,
+    "contextual": 2105
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 813,
+      "contextual": 1812
+    },
+    "library": {
+      "bare": 11668,
+      "contextual": 292
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1177,
+      "contextual": 181
+    },
+    "test": {
+      "bare": 11309,
+      "contextual": 1924
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 130,
+      "contextual": 13
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 11523,
+      "contextual": 276
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 1
+    },
+    "testify.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 29,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 97
+    },
+    "testing.Fatal": {
+      "bare": 653,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 126,
+      "contextual": 1693
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 15
+    }
+  },
+  "unresolved_count": 55
+}

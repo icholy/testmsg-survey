@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "nektos/act",
+  "commit": "2540ba6c49dfbafe167d655e4044921cd2ed19e7",
+  "test_files": 55,
+  "parse_errors": 0,
+  "total": {
+    "bare": 465,
+    "contextual": 51
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 15,
+      "contextual": 4
+    },
+    "library": {
+      "bare": 443,
+      "contextual": 47
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 29,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 436,
+      "contextual": 43
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 49,
+      "contextual": 14
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 136,
+      "contextual": 30
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 225,
+      "contextual": 1
+    },
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testify.Nil": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 12,
+      "contextual": 2
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 6
+}

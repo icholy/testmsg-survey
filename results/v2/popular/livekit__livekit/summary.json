@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "livekit/livekit",
+  "commit": "eb9ea3d3634d9fbad02b0516a9f4ddb1f510b9ef",
+  "test_files": 148,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1141,
+    "contextual": 28
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 11,
+      "contextual": 13
+    },
+    "library": {
+      "bare": 1124,
+      "contextual": 12
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 134,
+      "contextual": 16
+    },
+    "test": {
+      "bare": 1003,
+      "contextual": 11
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1116,
+      "contextual": 12
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 12
+    }
+  },
+  "unresolved_count": 17
+}

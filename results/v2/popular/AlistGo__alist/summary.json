@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "AlistGo/alist",
+  "commit": "92e745360766cce32564f94a468cb576f577d27e",
+  "test_files": 70,
+  "parse_errors": 0,
+  "total": {
+    "bare": 125,
+    "contextual": 202
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 121,
+      "contextual": 201
+    },
+    "library": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 121,
+      "contextual": 194
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 31,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 26
+    },
+    "testing.Fatal": {
+      "bare": 88,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 175
+    }
+  },
+  "unresolved_count": 3
+}

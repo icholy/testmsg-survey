@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "grpc-ecosystem/grpc-gateway",
+  "commit": "2110b33727d90a5f5818dcfe443cd49b430c7140",
+  "test_files": 56,
+  "parse_errors": 0,
+  "total": {
+    "bare": 49,
+    "contextual": 753
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 47,
+      "contextual": 753
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 175
+    },
+    "test": {
+      "bare": 42,
+      "contextual": 578
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 4,
+      "contextual": 321
+    },
+    "testing.Fatal": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 19,
+      "contextual": 432
+    }
+  },
+  "unresolved_count": 2
+}

@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "inancgumus/learngo",
+  "commit": "3c475a78e54336c6255e925ff66b8ef4da6a2ae7",
+  "test_files": 22,
+  "parse_errors": 1,
+  "total": {
+    "bare": 2,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

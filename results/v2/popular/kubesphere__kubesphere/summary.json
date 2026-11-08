@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "kubesphere/kubesphere",
+  "commit": "04a29b5c601470fa6bc2f2e92358dcb802a0d414",
+  "test_files": 75,
+  "parse_errors": 0,
+  "total": {
+    "bare": 165,
+    "contextual": 60
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 95,
+      "contextual": 60
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 64,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 70,
+      "contextual": 10
+    },
+    "test": {
+      "bare": 95,
+      "contextual": 49
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(BeNil)": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 24,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 13,
+      "contextual": 17
+    },
+    "testing.Fatal": {
+      "bare": 57,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 20,
+      "contextual": 37
+    }
+  },
+  "unresolved_count": 2
+}

@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "dlvhdr/gh-dash",
+  "commit": "e6752f8f2cf10f650d4f6e136385ba70f57d11f1",
+  "test_files": 36,
+  "parse_errors": 0,
+  "total": {
+    "bare": 62,
+    "contextual": 32
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 6,
+      "contextual": 31
+    },
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 43,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 54,
+      "contextual": 32
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 43,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 28
+    }
+  },
+  "unresolved_count": 0
+}

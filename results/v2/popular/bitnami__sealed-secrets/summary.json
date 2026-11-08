@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "bitnami/sealed-secrets",
+  "commit": "53625dfe02d8e807122f08f53fd6d9ee774b131b",
+  "test_files": 17,
+  "parse_errors": 0,
+  "total": {
+    "bare": 155,
+    "contextual": 112
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 105,
+      "contextual": 112
+    },
+    "library": {
+      "bare": 46,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 63,
+      "contextual": 9
+    },
+    "test": {
+      "bare": 92,
+      "contextual": 103
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 46,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 13
+    },
+    "testing.Fatal": {
+      "bare": 103,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 99
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,110 @@
+{
+  "tier": "popular",
+  "repo": "TencentCloud/CubeSandbox",
+  "commit": "c44a81d254ca542398df312c5e24331a716da336",
+  "test_files": 666,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2538,
+    "contextual": 2346
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 837,
+      "contextual": 2276
+    },
+    "helper": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1671,
+      "contextual": 65
+    },
+    "panic": {
+      "bare": 16,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 18,
+      "contextual": 5
+    },
+    "other": {
+      "bare": 347,
+      "contextual": 320
+    },
+    "test": {
+      "bare": 2173,
+      "contextual": 2021
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 45,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 291,
+      "contextual": 31
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1252,
+      "contextual": 13
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "helper": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 16,
+      "contextual": 4
+    },
+    "testify.NoError": {
+      "bare": 83,
+      "contextual": 4
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 61
+    },
+    "testing.FailNow": {
+      "bare": 33,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 759,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 42,
+      "contextual": 2200
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 11
+    }
+  },
+  "unresolved_count": 40
+}

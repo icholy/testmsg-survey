@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "kataras/iris",
+  "commit": "7bedaf55a0b64bbb2248a5845a2c60d81a30996a",
+  "test_files": 61,
+  "parse_errors": 0,
+  "total": {
+    "bare": 39,
+    "contextual": 19
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 37,
+      "contextual": 19
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 9,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 28,
+      "contextual": 16
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 37,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 19
+    }
+  },
+  "unresolved_count": 11
+}

@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "muesli/duf",
+  "commit": "6019e3adaa50db095712d452b42f52b69c1ca21c",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

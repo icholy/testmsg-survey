@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "miniflux/v2",
+  "commit": "9447aaeceb98ebdf7c4528b3e96dc5b44b35af5b",
+  "test_files": 99,
+  "parse_errors": 0,
+  "total": {
+    "bare": 769,
+    "contextual": 369
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 768,
+      "contextual": 369
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 8,
+      "contextual": 15
+    },
+    "test": {
+      "bare": 761,
+      "contextual": 350
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 15,
+      "contextual": 10
+    },
+    "testing.Errorf": {
+      "bare": 10,
+      "contextual": 32
+    },
+    "testing.Fatal": {
+      "bare": 541,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 202,
+      "contextual": 325
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "ahmetb/kubectx",
+  "commit": "12ad6fb22e8c546ee2b54e7de38aa51c906832f7",
+  "test_files": 22,
+  "parse_errors": 0,
+  "total": {
+    "bare": 99,
+    "contextual": 29
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 99,
+      "contextual": 29
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 98,
+      "contextual": 25
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 96,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 27
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

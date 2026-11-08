@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "SagerNet/sing-box",
+  "commit": "8295e4910f14d3041c948d2ad74bf3af384a064d",
+  "test_files": 107,
+  "parse_errors": 0,
+  "total": {
+    "bare": 772,
+    "contextual": 63
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 135,
+      "contextual": 61
+    },
+    "library": {
+      "bare": 631,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 249,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 512,
+      "contextual": 59
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 631,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 133,
+      "contextual": 17
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 42
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 3
+}

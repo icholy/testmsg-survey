@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "go-kratos/kratos",
+  "commit": "dd0fb7df1e325daf5ffb9c30862be8f1091763eb",
+  "test_files": 126,
+  "parse_errors": 0,
+  "total": {
+    "bare": 459,
+    "contextual": 156
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 437,
+      "contextual": 151
+    },
+    "panic": {
+      "bare": 22,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 36,
+      "contextual": 22
+    },
+    "test": {
+      "bare": 417,
+      "contextual": 134
+    }
+  },
+  "by_sink": {
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "log.Panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 128,
+      "contextual": 9
+    },
+    "testing.Errorf": {
+      "bare": 22,
+      "contextual": 86
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 269,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 17,
+      "contextual": 53
+    }
+  },
+  "unresolved_count": 2
+}

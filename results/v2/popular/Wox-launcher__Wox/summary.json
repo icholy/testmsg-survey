@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "Wox-launcher/Wox",
+  "commit": "7f5524ded8ea851e10d1dde58993b08237304407",
+  "test_files": 1238,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2920,
+    "contextual": 2205
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2739,
+      "contextual": 2203
+    },
+    "library": {
+      "bare": 176,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 13,
+      "contextual": 2
+    },
+    "fuzz": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 223,
+      "contextual": 647
+    },
+    "test": {
+      "bare": 2681,
+      "contextual": 1556
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 16,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 158,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 109
+    },
+    "testing.Fatal": {
+      "bare": 2711,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2052
+    },
+    "testing.Skip": {
+      "bare": 4,
+      "contextual": 32
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 6
+}

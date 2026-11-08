@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "pranshuparmar/witr",
+  "commit": "9e54a0507a4b3025fe8c3ecb329c7cb8da627995",
+  "test_files": 100,
+  "parse_errors": 0,
+  "total": {
+    "bare": 22,
+    "contextual": 95
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 22,
+      "contextual": 95
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 14,
+      "contextual": 89
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 85
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 0
+}

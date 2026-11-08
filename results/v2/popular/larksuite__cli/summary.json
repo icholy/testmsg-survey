@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "larksuite/cli",
+  "commit": "05ac58ffa089fe7a171205ac1d1e97ee50196ec8",
+  "test_files": 1356,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3873,
+    "contextual": 5834
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2597,
+      "contextual": 5717
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 84
+    },
+    "library": {
+      "bare": 1256,
+      "contextual": 25
+    },
+    "panic": {
+      "bare": 14,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 229,
+      "contextual": 551
+    },
+    "test": {
+      "bare": 3641,
+      "contextual": 5283
+    }
+  },
+  "by_sink": {
+    "github.com/smartystreets/goconvey/convey.So": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1252,
+      "contextual": 25
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 84
+    },
+    "panic": {
+      "bare": 14,
+      "contextual": 8
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 13,
+      "contextual": 130
+    },
+    "testing.Fatal": {
+      "bare": 1057,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1524,
+      "contextual": 5558
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 26
+    }
+  },
+  "unresolved_count": 690
+}

@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "benbjohnson/litestream",
+  "commit": "ae54416a488918243d86271565d311085a75e757",
+  "test_files": 84,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1955,
+    "contextual": 1112
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1626,
+      "contextual": 1109
+    },
+    "library": {
+      "bare": 327,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "fuzz": {
+      "bare": 7,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 154,
+      "contextual": 95
+    },
+    "test": {
+      "bare": 1794,
+      "contextual": 1013
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 327,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 16,
+      "contextual": 62
+    },
+    "testing.Fatal": {
+      "bare": 1520,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 78,
+      "contextual": 1039
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 1
+}

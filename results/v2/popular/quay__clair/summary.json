@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "quay/clair",
+  "commit": "2f1f7d22e020fdc310890b9c58d407d229aa4b48",
+  "test_files": 44,
+  "parse_errors": 0,
+  "total": {
+    "bare": 127,
+    "contextual": 64
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 125,
+      "contextual": 62
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 52,
+      "contextual": 30
+    },
+    "test": {
+      "bare": 72,
+      "contextual": 34
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 84,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 9
+    },
+    "testing.Fail": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 35,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 53
+    }
+  },
+  "unresolved_count": 1
+}

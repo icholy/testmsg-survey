@@ -1,0 +1,101 @@
+{
+  "tier": "popular",
+  "repo": "trufflesecurity/trufflehog",
+  "commit": "f8221ca52ac51bf66228d6ec3691f3ea0782ae15",
+  "test_files": 2029,
+  "parse_errors": 1,
+  "test_parse_errors": [
+    "pkg/detectors/asanapersonalaccesstoken/asanapersonalaccesstoken_integration_test.go"
+  ],
+  "total": {
+    "bare": 3079,
+    "contextual": 1420
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1768,
+      "contextual": 1351
+    },
+    "helper": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1292,
+      "contextual": 66
+    },
+    "panic": {
+      "bare": 18,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 913,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 83,
+      "contextual": 29
+    },
+    "test": {
+      "bare": 2083,
+      "contextual": 1391
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 106,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 484,
+      "contextual": 57
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 693,
+      "contextual": 9
+    },
+    "helper": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 779,
+      "contextual": 37
+    },
+    "testing.Fail": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 961,
+      "contextual": 33
+    },
+    "testing.Fatalf": {
+      "bare": 16,
+      "contextual": 1278
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 16
+}

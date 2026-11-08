@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "siderolabs/talos",
+  "commit": "6bcc0fd3f76c7af3876757160a8cc8d27257bc62",
+  "test_files": 974,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6634,
+    "contextual": 106
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 21,
+      "contextual": 38
+    },
+    "helper": {
+      "bare": 96,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 6500,
+      "contextual": 60
+    },
+    "panic": {
+      "bare": 17,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 8,
+      "contextual": 8
+    },
+    "fuzz": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2559,
+      "contextual": 33
+    },
+    "test": {
+      "bare": 4052,
+      "contextual": 65
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 399,
+      "contextual": 9
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 3802,
+      "contextual": 46
+    },
+    "helper": {
+      "bare": 96,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "panic": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 2289,
+      "contextual": 5
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 15
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 10
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 6
+    }
+  },
+  "unresolved_count": 24
+}

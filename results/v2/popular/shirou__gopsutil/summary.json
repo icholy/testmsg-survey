@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "shirou/gopsutil",
+  "commit": "99f3589ad2c49ee485f762987f20a0a24436cf4c",
+  "test_files": 48,
+  "parse_errors": 0,
+  "total": {
+    "bare": 238,
+    "contextual": 94
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 15
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 230,
+      "contextual": 79
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 229,
+      "contextual": 94
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 208,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 1,
+      "contextual": 70
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 0
+}

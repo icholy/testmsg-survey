@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "ltaoo/wx_channels_download",
+  "commit": "83ef4b634d7996695d66f432fb39e851956bd3a2",
+  "test_files": 13,
+  "parse_errors": 0,
+  "total": {
+    "bare": 137,
+    "contextual": 10
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 137,
+      "contextual": 10
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 137,
+      "contextual": 5
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 136,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

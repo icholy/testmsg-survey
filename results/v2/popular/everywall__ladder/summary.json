@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "everywall/ladder",
+  "commit": "d8f8ce46bee7a24adbe75b0ec97e60b1e44c09f7",
+  "test_files": 3,
+  "parse_errors": 0,
+  "total": {
+    "bare": 7,
+    "contextual": 10
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 10
+    },
+    "library": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 6,
+      "contextual": 10
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

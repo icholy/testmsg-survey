@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "loft-sh/vcluster",
+  "commit": "a8ab30eab6f27b183a80783f4e5854c1a2eb6ef5",
+  "test_files": 164,
+  "parse_errors": 0,
+  "total": {
+    "bare": 493,
+    "contextual": 223
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 23,
+      "contextual": 221
+    },
+    "library": {
+      "bare": 464,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 50,
+      "contextual": 27
+    },
+    "test": {
+      "bare": 443,
+      "contextual": 196
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "gotest.tools/assert.NilError": {
+      "bare": 276,
+      "contextual": 0
+    },
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 182,
+      "contextual": 2
+    },
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 6,
+      "contextual": 216
+    }
+  },
+  "unresolved_count": 10
+}

@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "microsoft/TypeScript",
+  "commit": "f7973164a5f079a2d8b88d0fdb39347222549124",
+  "test_files": 4627,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1428,
+    "contextual": 30
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 121,
+      "contextual": 24
+    },
+    "helper": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1299,
+      "contextual": 6
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 21,
+      "contextual": 1
+    },
+    "fuzz": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 100,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 1304,
+      "contextual": 27
+    }
+  },
+  "by_sink": {
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 1299,
+      "contextual": 6
+    },
+    "helper": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 120,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 20
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 213
+}

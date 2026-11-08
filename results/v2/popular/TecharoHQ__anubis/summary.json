@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "TecharoHQ/anubis",
+  "commit": "f197f9a6235d255000c7b654ac478354a6e4bd02",
+  "test_files": 112,
+  "parse_errors": 0,
+  "total": {
+    "bare": 197,
+    "contextual": 290
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 197,
+      "contextual": 289
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 4,
+      "contextual": 2
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 25,
+      "contextual": 56
+    },
+    "test": {
+      "bare": 168,
+      "contextual": 229
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 4,
+      "contextual": 17
+    },
+    "testing.Fatal": {
+      "bare": 180,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 270
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 10
+}

@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "tidwall/gjson",
+  "commit": "a825fa56d6aca9ba0ac2a103cba8041c898b7d39",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 9,
+    "contextual": 1
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

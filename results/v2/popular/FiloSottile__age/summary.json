@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "FiloSottile/age",
+  "commit": "b74dce4cdbe35b5e5f66c06d9612b72f89028758",
+  "test_files": 14,
+  "parse_errors": 0,
+  "total": {
+    "bare": 235,
+    "contextual": 68
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 234,
+      "contextual": 39
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 29
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 1,
+      "contextual": 28
+    },
+    "fuzz": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 38,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 186,
+      "contextual": 27
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 28
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 18
+    },
+    "testing.Fatal": {
+      "bare": 228,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 17
+    },
+    "testing.Skip": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

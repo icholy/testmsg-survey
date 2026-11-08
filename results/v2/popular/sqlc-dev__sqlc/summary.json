@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "sqlc-dev/sqlc",
+  "commit": "3ad8b20fb02b5bea81591b673da0758b8685d951",
+  "test_files": 50,
+  "parse_errors": 0,
+  "total": {
+    "bare": 223,
+    "contextual": 47
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 222,
+      "contextual": 47
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 44,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 172,
+      "contextual": 44
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "testing.Fatal": {
+      "bare": 188,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 26
+    },
+    "testing.Skip": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 1
+}

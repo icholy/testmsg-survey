@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "apache/casbin",
+  "commit": "c92cc6a070e65dc621210c8d451de3092683cd1c",
+  "test_files": 50,
+  "parse_errors": 0,
+  "total": {
+    "bare": 129,
+    "contextual": 235
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 122,
+      "contextual": 235
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 34,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 28,
+      "contextual": 15
+    },
+    "test": {
+      "bare": 67,
+      "contextual": 220
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 21,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 46
+    },
+    "testing.Fatal": {
+      "bare": 100,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 185
+    }
+  },
+  "unresolved_count": 0
+}

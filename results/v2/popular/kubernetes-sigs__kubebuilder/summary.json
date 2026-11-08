@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "kubernetes-sigs/kubebuilder",
+  "commit": "f9c0b302b05d08a6afb1f047d64554df9ffee727",
+  "test_files": 149,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2020,
+    "contextual": 99
+  },
+  "by_mechanism": {
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 2013,
+      "contextual": 99
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2020,
+      "contextual": 99
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 1083,
+      "contextual": 91
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 809,
+      "contextual": 8
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 119,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 5
+}

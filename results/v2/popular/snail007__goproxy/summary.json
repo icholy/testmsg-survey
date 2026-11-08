@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "snail007/goproxy",
+  "commit": "e6d6a821db80e7f47ee6e981a144984e1d4ddb3d",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}
