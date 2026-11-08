@@ -10,6 +10,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"sort"
+	"strconv"
 	"strings"
 
 	"golang.org/x/mod/modfile"
@@ -54,6 +55,7 @@ type Package struct {
 	closures map[*ast.Object]*FuncInfo
 	all      []*FuncInfo
 	byNode   map[ast.Node]*FuncInfo
+	imports  map[string]bool // every path imported by a file in the package
 }
 
 // FuncInfo is a function or method declaration, or a function literal
@@ -169,6 +171,7 @@ func Load(root, fallbackPath string) (*Module, error) {
 				structs:  map[string]*ast.StructType{},
 				closures: map[*ast.Object]*FuncInfo{},
 				byNode:   map[ast.Node]*FuncInfo{},
+				imports:  map[string]bool{},
 			}
 			m.pkgs[key] = pkg
 			if pkg.Path != "" && !strings.HasSuffix(pkg.Name, "_test") && pkg.Name != "main" {
@@ -216,8 +219,13 @@ func joinPath(modPath, dir, modDir string) string {
 	return modPath + "/" + rel
 }
 
-// index records the declarations of a file.
+// index records the declarations and imports of a file.
 func (p *Package) index(f *File) {
+	for _, imp := range f.AST.Imports {
+		if path, err := strconv.Unquote(imp.Path.Value); err == nil {
+			p.imports[path] = true
+		}
+	}
 	for _, decl := range f.AST.Decls {
 		switch d := decl.(type) {
 		case *ast.FuncDecl:
@@ -324,7 +332,18 @@ func (m *Module) lookupFunc(fc *fileCtx, call *ast.CallExpr) *FuncInfo {
 		if fun.Obj != nil && fun.Obj.Kind != ast.Fun {
 			return nil
 		}
-		return m.localFunc(p, fun.Name)
+		if fi := m.localFunc(p, fun.Name); fi != nil {
+			return fi
+		}
+		// A function from a dot-imported package in the module.
+		for _, path := range fc.dotImports {
+			if q := m.byPath[path]; q != nil {
+				if fi := q.funcs[fun.Name]; fi != nil {
+					return fi
+				}
+			}
+		}
+		return nil
 	case *ast.SelectorExpr:
 		if path := fc.pkgOf(fun.X); path != "" {
 			if q := m.byPath[path]; q != nil {

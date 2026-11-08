@@ -227,6 +227,45 @@ func TestX(t *testing.T) {
 			want: "helper helper:example.com/m.Must bare run@.",
 		},
 		{
+			name: "dot-imported helper package",
+			files: map[string]string{
+				"go.mod": "module example.com/m\n",
+				"testing/testing.go": `package testing
+import "testing"
+func Ok(tb testing.TB, err error) {
+	if err != nil {
+		tb.Fatal(err)
+	}
+}`,
+				"cmd/cmd_test.go": `package cmd
+import (
+	"testing"
+	. "example.com/m/testing"
+)
+func TestX(t *testing.T) {
+	Ok(t, run())
+}`,
+			},
+			want: "helper helper:example.com/m/testing.Ok bare run@.",
+		},
+		{
+			name: "suite methods in a file without the import",
+			files: map[string]string{
+				"go.mod": "module example.com/m\n",
+				"suite_test.go": `package p
+import "github.com/stretchr/testify/suite"
+type testSuite struct{ suite.Suite }`,
+				"x_test.go": `package p
+func (s *testSuite) TestX() {
+	err := run()
+	s.Require().NoError(err)
+	s.NoError(err)
+}`,
+			},
+			want: "library testify.NoError bare run@.\n" +
+				"library testify.NoError bare run@.",
+		},
+		{
 			name: "closure helpers",
 			files: map[string]string{
 				"go.mod": "module example.com/m\n",

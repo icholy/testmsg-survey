@@ -76,7 +76,8 @@ non-nil. Every sink has a **mechanism** tag.
   (`check := func(err error) {...}`), and can call other helpers. The set is computed as a fixed point over every `.go` file in the
   module, including non-test files (for example `internal/testutil`). Imports
   within the module are resolved to directories using the `go.mod` module
-  path, or the repository path for code with no `go.mod`. A parameter is
+  path, or the repository path for code with no `go.mod`. Dot imports of
+  packages in the module are followed. A parameter is
   forwarded unchanged only if it is never assigned or redeclared in the
   helper body. Methods are resolved by name when exactly one method of that
   name is declared in the package. Calls to helpers outside the module are
@@ -101,7 +102,8 @@ Library sinks, matched by import path so aliased imports resolve:
 | `github.com/carlmjohnson/be` | `NilErr` | none |
 
 Methods called on a receiver of unknown type are matched by method name and
-argument shape, and only in files that import the library.
+argument shape, and only in packages where some file imports the library
+(test suites are often declared in one file and used in others).
 
 ### Classification
 

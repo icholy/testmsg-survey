@@ -305,10 +305,12 @@ func calleeName(call *ast.CallExpr) string {
 	return ""
 }
 
-// imports2 reports whether the file imports any of the paths.
+// importsAny reports whether the file, or any file in its package, imports
+// any of the paths. Suite methods such as s.Require().NoError are often
+// called from files that do not import the library themselves.
 func (fc *fileCtx) importsAny(paths ...string) bool {
 	for _, p := range paths {
-		if fc.importsPath[p] {
+		if fc.importsPath[p] || (fc.pkg != nil && fc.pkg.imports[p]) {
 			return true
 		}
 	}
