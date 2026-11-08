@@ -54,19 +54,24 @@ type fileCtx struct {
 	src     []byte
 	name    string
 	imports map[string]string // local name -> import path
-	pkgPath string            // import path of the file's package, if known
-	helpers *Helpers
+	// importsPath holds every imported path, including dot and blank
+	// imports, and dotImports the dot-imported ones.
+	importsPath map[string]bool
+	dotImports  []string
+	pkgPath     string // import path of the file's package, if known
+	helpers     *Helpers
 }
 
 func newFileCtx(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath string, helpers *Helpers) *fileCtx {
 	fc := &fileCtx{
-		fset:    fset,
-		file:    file,
-		src:     src,
-		name:    name,
-		imports: map[string]string{},
-		pkgPath: pkgPath,
-		helpers: helpers,
+		fset:        fset,
+		file:        file,
+		src:         src,
+		name:        name,
+		imports:     map[string]string{},
+		importsPath: map[string]bool{},
+		pkgPath:     pkgPath,
+		helpers:     helpers,
 	}
 	for _, imp := range file.Imports {
 		path, err := strconv.Unquote(imp.Path.Value)
@@ -79,6 +84,10 @@ func newFileCtx(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath s
 			local = imp.Name.Name
 		default:
 			local = defaultImportName(path)
+		}
+		fc.importsPath[path] = true
+		if local == "." {
+			fc.dotImports = append(fc.dotImports, path)
 		}
 		if local == "_" || local == "." {
 			continue
@@ -320,37 +329,52 @@ func (fc *fileCtx) ifSink(body *ast.BlockStmt, errName string, s stack, allowed 
 	return mech, sink, bare, true
 }
 
-// producer finds the call that produced the error named errName for the if
-// statement at the top of the stack, from the if initialiser or the closest
-// earlier assignment in the same statement list.
-func (fc *fileCtx) producer(ifs *ast.IfStmt, errName string, s stack) (string, string) {
-	if call := assignedCall(ifs.Init, errName); call != nil {
-		return fc.describeCall(call)
-	}
-	var list []ast.Stmt
-	if len(s) >= 2 {
-		switch p := s[len(s)-2].(type) {
-		case *ast.BlockStmt:
-			list = p.List
-		case *ast.CaseClause:
-			list = p.Body
-		case *ast.CommClause:
-			list = p.Body
-		}
-	}
-	idx := -1
-	for i, stmt := range list {
-		if stmt == ifs {
-			idx = i
-			break
-		}
-	}
-	for i := idx - 1; i >= 0; i-- {
-		if call := assignedCall(list[i], errName); call != nil {
-			return fc.describeCall(call)
-		}
-		if assigns(list[i], errName) {
-			break
+// producer finds the call that produced the error named errName for the
+// node at the top of the stack. It looks at the initialisers of enclosing if
+// statements and at earlier assignments in the enclosing statement lists,
+// stopping at the nearest function boundary.
+func (fc *fileCtx) producer(errName string, s stack) (string, string) {
+	for i := len(s) - 1; i >= 0; i-- {
+		switch n := s[i].(type) {
+		case *ast.FuncDecl, *ast.FuncLit:
+			return "", ""
+		case *ast.IfStmt:
+			if call := assignedCall(n.Init, errName); call != nil {
+				return fc.describeCall(call)
+			}
+		case *ast.BlockStmt, *ast.CaseClause, *ast.CommClause:
+			if i+1 >= len(s) {
+				continue
+			}
+			var list []ast.Stmt
+			switch p := n.(type) {
+			case *ast.BlockStmt:
+				list = p.List
+			case *ast.CaseClause:
+				list = p.Body
+			case *ast.CommClause:
+				list = p.Body
+			}
+			idx := -1
+			for j, stmt := range list {
+				if ast.Node(stmt) == s[i+1] {
+					idx = j
+					break
+				}
+			}
+			for j := idx - 1; j >= 0; j-- {
+				if call := assignedCall(list[j], errName); call != nil {
+					return fc.describeCall(call)
+				}
+				if assigns(list[j], errName) {
+					return "", ""
+				}
+			}
+			if idx > 0 {
+				// An earlier statement in this list was examined without
+				// finding an assignment; keep looking outwards.
+				continue
+			}
 		}
 	}
 	return "", ""

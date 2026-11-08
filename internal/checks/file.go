@@ -21,6 +21,27 @@ func AnalyzeFile(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath 
 	fc := newFileCtx(fset, file, src, name, pkgPath, helpers)
 	var res FileResult
 	walk(file, func(n ast.Node, s stack) {
+		if call, ok := n.(*ast.CallExpr); ok {
+			sink, errID, bare, ok := fc.librarySink(call)
+			if !ok {
+				return
+			}
+			c := Check{
+				File:      name,
+				Line:      fc.line(call),
+				Mechanism: Library,
+				Sink:      sink,
+				Bare:      bare,
+				Code:      fc.text(call),
+			}
+			if call, ok := errID.(*ast.CallExpr); ok {
+				c.Producer, c.ProducerPkg = fc.describeCall(call)
+			} else if name := errName(errID); name != "" {
+				c.Producer, c.ProducerPkg = fc.producer(name, s)
+			}
+			res.Checks = append(res.Checks, c)
+			return
+		}
 		ifs, ok := n.(*ast.IfStmt)
 		if !ok {
 			return
@@ -41,7 +62,7 @@ func AnalyzeFile(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath 
 			Bare:      bare,
 			Code:      fc.text(ifs),
 		}
-		c.Producer, c.ProducerPkg = fc.producer(ifs, errID.Name, s)
+		c.Producer, c.ProducerPkg = fc.producer(errID.Name, s)
 		res.Checks = append(res.Checks, c)
 	})
 	return res

@@ -58,8 +58,13 @@ non-nil. Every sink has a **mechanism** tag.
   `Log` and `Logf` calls at the top level of the same body count toward the
   message. Compound conditions such as `err != nil && !os.IsNotExist(err)`
   are not sinks.
-- **library**: a call to one of the assertion functions listed below, with an
-  error value as the asserted argument.
+- **library**: a call to one of the assertion functions listed below. For
+  functions whose asserted parameter has type `error` (`NoError`,
+  `NoErrorf`, `NilError`, `NoErr`, `NilErr`, `CmpNoError`, `RequireNoError`,
+  and gomega's `Succeed`), any expression counts, including a call such as
+  `require.NoError(t, f())`. For functions that accept any value (`Nil`,
+  `Assert`, `Check`, `IsNil`, `BeNil`, `ShouldBeNil`), the asserted argument
+  must be an error value.
 - **panic**: `panic(X)`, `log.Fatal`, `log.Fatalf`, `log.Panic` or
   `log.Panicf` in an `if X != nil` body, with `X` an error value.
 - **helper**: a call to a function that passes one of its parameters,

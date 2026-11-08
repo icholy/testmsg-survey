@@ -311,3 +311,201 @@ func TestDefaultImportName(t *testing.T) {
 		}
 	}
 }
+
+func TestLibrary(t *testing.T) {
+	tests := []struct {
+		name string
+		src  string
+		want string
+	}{
+		{
+			name: "testify functions",
+			src: `
+import (
+	"os"
+	"testing"
+	"github.com/stretchr/testify/assert"
+	req "github.com/stretchr/testify/require"
+)
+func TestX(t *testing.T) {
+	f, err := os.Open("x")
+	req.NoError(t, err)
+	req.NoError(t, os.Remove("x"))
+	assert.NoError(t, err, "unexpected error")
+	assert.NoErrorf(t, err, "open %s", name)
+	assert.Nil(t, err)
+	assert.Nil(t, f)
+	assert.Error(t, err)
+	if !assert.NoError(t, err) {
+		return
+	}
+}`,
+			want: "library github.com/stretchr/testify/require.NoError bare os.Open@os\n" +
+				"library github.com/stretchr/testify/require.NoError bare os.Remove@os\n" +
+				"library github.com/stretchr/testify/assert.NoError bare os.Open@os\n" +
+				"library github.com/stretchr/testify/assert.NoErrorf contextual os.Open@os\n" +
+				"library github.com/stretchr/testify/assert.Nil bare os.Open@os\n" +
+				"library github.com/stretchr/testify/assert.NoError bare os.Open@os",
+		},
+		{
+			name: "testify methods",
+			src: `
+import (
+	"testing"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/suite"
+)
+func TestX(t *testing.T) {
+	a := assert.New(t)
+	a.NoError(run())
+	err := run()
+	a.NoError(err)
+}
+func (s *S) TestY() {
+	err := run()
+	s.NoError(err)
+	s.Require().NoError(err, "running %s", name)
+}`,
+			want: "library testify.NoError bare run@.\n" +
+				"library testify.NoError bare run@.\n" +
+				"library testify.NoError bare run@.\n" +
+				"library testify.NoError contextual run@.",
+		},
+		{
+			name: "gotest.tools",
+			src: `
+import (
+	"testing"
+	"gotest.tools/v3/assert"
+)
+func TestX(t *testing.T) {
+	err := run()
+	assert.NilError(t, err)
+	assert.Assert(t, err)
+	assert.Check(t, err, "running %s", name)
+	assert.Assert(t, ok)
+}`,
+			want: "library gotest.tools/v3/assert.NilError bare run@.\n" +
+				"library gotest.tools/v3/assert.Assert bare run@.\n" +
+				"library gotest.tools/v3/assert.Check contextual run@.",
+		},
+		{
+			name: "quicktest",
+			src: `
+import (
+	"testing"
+	qt "github.com/frankban/quicktest"
+)
+func TestX(t *testing.T) {
+	c := qt.New(t)
+	err := run()
+	c.Assert(err, qt.IsNil)
+	c.Assert(err, qt.IsNil, qt.Commentf("running %s", name))
+	qt.Assert(t, err, qt.IsNil)
+	c.Assert(err, qt.Not(qt.IsNil))
+}`,
+			want: "library github.com/frankban/quicktest.C.Assert bare run@.\n" +
+				"library github.com/frankban/quicktest.C.Assert contextual run@.\n" +
+				"library github.com/frankban/quicktest.Assert bare run@.",
+		},
+		{
+			name: "go-quicktest and check.v1",
+			src: `
+import (
+	"testing"
+	"github.com/go-quicktest/qt"
+	. "gopkg.in/check.v1"
+)
+func TestX(t *testing.T) {
+	err := run()
+	qt.Assert(t, qt.IsNil(err))
+	qt.Check(t, qt.IsNil(err), qt.Commentf("%v", name))
+}
+func (s *S) TestY(c *C) {
+	err := run()
+	c.Assert(err, IsNil)
+	c.Check(err, IsNil, Commentf("error: %v", err))
+}`,
+			want: "library github.com/go-quicktest/qt.Assert bare run@.\n" +
+				"library github.com/go-quicktest/qt.Check contextual run@.\n" +
+				"library gopkg.in/check.v1.C.Assert bare run@.\n" +
+				"library gopkg.in/check.v1.C.Check bare run@.",
+		},
+		{
+			name: "gomega",
+			src: `
+import (
+	. "github.com/onsi/ginkgo/v2"
+	. "github.com/onsi/gomega"
+)
+var _ = It("works", func() {
+	err := run()
+	Expect(err).NotTo(HaveOccurred())
+	Expect(err).ToNot(HaveOccurred(), "running %s", name)
+	Ω(err).ShouldNot(HaveOccurred())
+	Expect(run()).To(Succeed())
+	Expect(err).To(BeNil())
+	Expect(err).To(HaveOccurred())
+	g.Expect(err).NotTo(HaveOccurred())
+})`,
+			want: "library github.com/onsi/gomega.NotTo(HaveOccurred) bare run@.\n" +
+				"library github.com/onsi/gomega.ToNot(HaveOccurred) contextual run@.\n" +
+				"library github.com/onsi/gomega.ShouldNot(HaveOccurred) bare run@.\n" +
+				"library github.com/onsi/gomega.To(Succeed) bare run@.\n" +
+				"library github.com/onsi/gomega.To(BeNil) bare run@.\n" +
+				"library github.com/onsi/gomega.NotTo(HaveOccurred) bare run@.",
+		},
+		{
+			name: "is, goconvey, testdeep, be, shoenig, alecthomas",
+			src: `
+import (
+	"testing"
+	"github.com/matryer/is"
+	. "github.com/smartystreets/goconvey/convey"
+	"github.com/maxatome/go-testdeep/td"
+	"github.com/carlmjohnson/be"
+	"github.com/shoenig/test/must"
+	"github.com/alecthomas/assert/v2"
+)
+func TestX(t *testing.T) {
+	is := is.New(t)
+	err := run()
+	is.NoErr(err)
+	is.NoErr(err) // open config
+	So(err, ShouldBeNil)
+	td.CmpNoError(t, err)
+	td.CmpNoError(t, err, "running %s", name)
+	be.NilErr(t, err)
+	must.NoError(t, err)
+	assert.NoError(t, err)
+}`,
+			want: "library github.com/matryer/is.NoErr bare run@.\n" +
+				"library github.com/matryer/is.NoErr contextual run@.\n" +
+				"library github.com/smartystreets/goconvey/convey.So bare run@.\n" +
+				"library github.com/maxatome/go-testdeep/td.CmpNoError bare run@.\n" +
+				"library github.com/maxatome/go-testdeep/td.CmpNoError contextual run@.\n" +
+				"library github.com/carlmjohnson/be.NilErr bare run@.\n" +
+				"library github.com/shoenig/test/must.NoError bare run@.\n" +
+				"library github.com/alecthomas/assert/v2.NoError bare run@.",
+		},
+		{
+			name: "no library imported",
+			src: `
+import "testing"
+func TestX(t *testing.T) {
+	err := run()
+	s.NoError(err)
+	c.Assert(err, IsNil)
+}`,
+			want: "",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := summary(analyze(t, tt.src))
+			if got != tt.want {
+				t.Errorf("got:\n%s\nwant:\n%s", got, tt.want)
+			}
+		})
+	}
+}
