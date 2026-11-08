@@ -3,67 +3,176 @@ package checks
 import (
 	"go/ast"
 	"go/token"
+	"strings"
 )
 
-// Helpers is the set of helper sinks known for a module. It is filled in by
-// the fixed-point pass over the module before test files are analysed.
-type Helpers struct{}
-
-// FileResult is the result of analysing one test file.
-type FileResult struct {
+// Result is the result of analysing a module.
+type Result struct {
 	Checks     []Check
 	Unresolved []Unresolved
+	// TestFiles is the number of _test.go files analysed.
+	TestFiles int
 }
 
-// AnalyzeFile finds the error checks in one parsed test file. pkgPath is the
-// import path of the file's package, or "" if unknown.
-func AnalyzeFile(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath string, helpers *Helpers) FileResult {
-	fc := newFileCtx(fset, file, src, name, pkgPath, helpers)
-	var res FileResult
-	walk(file, func(n ast.Node, s stack) {
-		if call, ok := n.(*ast.CallExpr); ok {
-			sink, errID, bare, ok := fc.librarySink(call)
-			if !ok {
-				return
-			}
-			c := Check{
-				File:      name,
-				Line:      fc.line(call),
-				Mechanism: Library,
-				Sink:      sink,
-				Bare:      bare,
-				Code:      fc.text(call),
-			}
-			if call, ok := errID.(*ast.CallExpr); ok {
-				c.Producer, c.ProducerPkg = fc.describeCall(call)
-			} else if name := errName(errID); name != "" {
-				c.Producer, c.ProducerPkg = fc.producer(name, s)
-			}
-			res.Checks = append(res.Checks, c)
-			return
+// Analyze resolves helpers across the module and then finds the error checks
+// in every _test.go file.
+func (m *Module) Analyze() Result {
+	m.resolveHelpers()
+	var res Result
+	for _, f := range m.Files {
+		if !f.Test {
+			continue
 		}
-		ifs, ok := n.(*ast.IfStmt)
-		if !ok {
-			return
-		}
-		errID, ok := nilCheck(ifs.Cond)
-		if !ok {
-			return
-		}
-		mech, sink, bare, ok := fc.ifSink(ifs.Body, errID.Name, s, nil)
-		if !ok {
-			return
-		}
-		c := Check{
-			File:      name,
-			Line:      fc.line(ifs),
-			Mechanism: mech,
-			Sink:      sink,
-			Bare:      bare,
-			Code:      fc.text(ifs),
-		}
-		c.Producer, c.ProducerPkg = fc.producer(errID.Name, s)
-		res.Checks = append(res.Checks, c)
-	})
+		res.TestFiles++
+		m.fileCtx(f).analyze(&res)
+	}
 	return res
+}
+
+// AnalyzeFile finds the error checks in one parsed test file on its own,
+// without helper resolution.
+func AnalyzeFile(fset *token.FileSet, file *ast.File, src []byte, name string) Result {
+	var res Result
+	newFileCtx(fset, file, src, name, nil, nil).analyze(&res)
+	return res
+}
+
+func (fc *fileCtx) analyze(res *Result) {
+	walk(fc.file, func(n ast.Node, s stack) {
+		switch n := n.(type) {
+		case *ast.CallExpr:
+			fc.analyzeCall(n, s, res)
+		case *ast.IfStmt:
+			fc.analyzeIf(n, s, res)
+		}
+	})
+}
+
+func (fc *fileCtx) analyzeIf(ifs *ast.IfStmt, s stack, res *Result) {
+	errID, ok := nilCheck(ifs.Cond)
+	if !ok {
+		return
+	}
+	mech, sink, bare, ok := fc.ifSink(ifs.Body, errID.Name, s)
+	if !ok || fc.insideHelper(s, errID.Name) {
+		return
+	}
+	c := Check{
+		File:      fc.name,
+		Line:      fc.line(ifs),
+		Mechanism: mech,
+		Sink:      sink,
+		Bare:      bare,
+		Code:      fc.text(ifs),
+	}
+	c.Producer, c.ProducerPkg = fc.producer(errID.Name, s)
+	res.Checks = append(res.Checks, c)
+}
+
+func (fc *fileCtx) analyzeCall(call *ast.CallExpr, s stack, res *Result) {
+	mech := Library
+	sink, e, bare, ok := fc.librarySink(call)
+	if !ok {
+		mech = Helper
+		sink, e, bare, ok = fc.helperCall(call)
+	}
+	if !ok {
+		fc.unresolved(call, s, res)
+		return
+	}
+	if fc.insideHelper(s, errName(e)) {
+		return
+	}
+	c := Check{
+		File:      fc.name,
+		Line:      fc.line(call),
+		Mechanism: mech,
+		Sink:      sink,
+		Bare:      bare,
+		Code:      fc.text(call),
+	}
+	if inner, ok := e.(*ast.CallExpr); ok {
+		c.Producer, c.ProducerPkg = fc.describeCall(inner)
+	} else if name := errName(e); name != "" {
+		c.Producer, c.ProducerPkg = fc.producer(name, s)
+	}
+	res.Checks = append(res.Checks, c)
+}
+
+// insideHelper reports whether the node at the top of the stack is inside a
+// helper whose forwarded error parameter is errName. Such sinks are counted
+// at the helper's call sites instead.
+func (fc *fileCtx) insideHelper(s stack, errName string) bool {
+	if fc.mod == nil || errName == "" {
+		return false
+	}
+	for i := len(s) - 1; i >= 0; i-- {
+		switch n := s[i].(type) {
+		case *ast.FuncLit:
+			for _, p := range flattenParams(n.Type) {
+				if p.Name == errName {
+					return false
+				}
+			}
+		case *ast.FuncDecl:
+			fi := fc.mod.funcByDecl(fc.pkg, n)
+			if fi == nil || fi.Helper == nil {
+				return false
+			}
+			return fi.Params[fi.Helper.ErrParam].Name == errName
+		}
+	}
+	return false
+}
+
+// unresolved records a statement call that passes an error value to a
+// function that is not a known sink, outside the standard library and not on
+// a testing value.
+func (fc *fileCtx) unresolved(call *ast.CallExpr, s stack, res *Result) {
+	if len(s) < 2 {
+		return
+	}
+	if _, ok := s[len(s)-2].(*ast.ExprStmt); !ok {
+		return
+	}
+	hasErr := false
+	for _, a := range call.Args {
+		if _, ok := errorValue(a); ok {
+			hasErr = true
+			break
+		}
+	}
+	if !hasErr {
+		return
+	}
+	switch fun := ast.Unparen(call.Fun).(type) {
+	case *ast.Ident:
+		if fun.Obj == nil && builtins[fun.Name] {
+			return
+		}
+	case *ast.SelectorExpr:
+		if path := fc.pkgOf(fun.X); path != "" && isStdlib(path) {
+			return
+		}
+		if fc.isTestingValue(fun.X, s) {
+			return
+		}
+	}
+	res.Unresolved = append(res.Unresolved, Unresolved{
+		File: fc.name,
+		Line: fc.line(call),
+		Call: fc.text(call),
+	})
+}
+
+var builtins = map[string]bool{
+	"panic": true, "print": true, "println": true, "close": true,
+	"delete": true, "append": true, "copy": true, "clear": true,
+}
+
+// isStdlib reports whether an import path belongs to the standard library:
+// its first element has no dot.
+func isStdlib(path string) bool {
+	first, _, _ := strings.Cut(path, "/")
+	return !strings.Contains(first, ".")
 }

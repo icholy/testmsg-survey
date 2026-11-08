@@ -17,7 +17,7 @@ func analyze(t *testing.T, src string) []Check {
 	if err != nil {
 		t.Fatalf("parse: %v", err)
 	}
-	return AnalyzeFile(fset, f, []byte(src), "p_test.go", "example.com/p", nil).Checks
+	return AnalyzeFile(fset, f, []byte(src), "p_test.go").Checks
 }
 
 // summary renders checks as "mechanism sink bare|contextual producer@pkg".

@@ -58,11 +58,15 @@ type fileCtx struct {
 	// imports, and dotImports the dot-imported ones.
 	importsPath map[string]bool
 	dotImports  []string
-	pkgPath     string // import path of the file's package, if known
-	helpers     *Helpers
+	mod         *Module
+	pkg         *Package // nil when analysing a lone file
+
+	// helperMode and allowed are set while a helper body is analysed.
+	helperMode bool
+	allowed    func(ast.Expr) bool
 }
 
-func newFileCtx(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath string, helpers *Helpers) *fileCtx {
+func newFileCtx(fset *token.FileSet, file *ast.File, src []byte, name string, mod *Module, pkg *Package) *fileCtx {
 	fc := &fileCtx{
 		fset:        fset,
 		file:        file,
@@ -70,8 +74,8 @@ func newFileCtx(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath s
 		name:        name,
 		imports:     map[string]string{},
 		importsPath: map[string]bool{},
-		pkgPath:     pkgPath,
-		helpers:     helpers,
+		mod:         mod,
+		pkg:         pkg,
 	}
 	for _, imp := range file.Imports {
 		path, err := strconv.Unquote(imp.Path.Value)
@@ -82,6 +86,9 @@ func newFileCtx(fset *token.FileSet, file *ast.File, src []byte, name, pkgPath s
 		switch {
 		case imp.Name != nil:
 			local = imp.Name.Name
+		case mod != nil && mod.byPath[path] != nil:
+			// A package in the module: use its declared name.
+			local = mod.byPath[path].Name
 		default:
 			local = defaultImportName(path)
 		}
@@ -207,9 +214,30 @@ func (fc *fileCtx) isTestingValue(e ast.Expr, s stack) bool {
 		sel, ok := call.Fun.(*ast.SelectorExpr)
 		return ok && sel.Sel.Name == "T"
 	}
+	if sel, ok := e.(*ast.SelectorExpr); ok {
+		// h.t where h is the receiver and t is a field of testing type.
+		if st := fc.receiverStruct(sel.X, s); st != nil {
+			for _, f := range st.Fields.List {
+				for _, n := range f.Names {
+					if n.Name == sel.Sel.Name {
+						return fc.isTestingType(f.Type)
+					}
+				}
+			}
+		}
+		return false
+	}
 	id, ok := e.(*ast.Ident)
 	if !ok {
 		return false
+	}
+	if st := fc.receiverStruct(id, s); st != nil {
+		// h.Fatal(err) where the receiver's struct embeds a testing type.
+		for _, f := range st.Fields.List {
+			if len(f.Names) == 0 && fc.isTestingType(f.Type) {
+				return true
+			}
+		}
 	}
 	for _, ft := range s.funcTypes() {
 		if ft.Params == nil {
@@ -224,6 +252,40 @@ func (fc *fileCtx) isTestingValue(e ast.Expr, s stack) bool {
 		}
 	}
 	return false
+}
+
+// receiverStruct returns the struct type of the enclosing method's receiver
+// if e is the receiver identifier.
+func (fc *fileCtx) receiverStruct(e ast.Expr, s stack) *ast.StructType {
+	id, ok := e.(*ast.Ident)
+	if !ok || fc.pkg == nil {
+		return nil
+	}
+	for i := len(s) - 1; i >= 0; i-- {
+		fd, ok := s[i].(*ast.FuncDecl)
+		if !ok {
+			continue
+		}
+		if fd.Recv == nil || len(fd.Recv.List) != 1 || len(fd.Recv.List[0].Names) != 1 || fd.Recv.List[0].Names[0].Name != id.Name {
+			return nil
+		}
+		typ := fd.Recv.List[0].Type
+		if star, ok := typ.(*ast.StarExpr); ok {
+			typ = star.X
+		}
+		switch t := typ.(type) {
+		case *ast.IndexExpr:
+			typ = t.X
+		case *ast.IndexListExpr:
+			typ = t.X
+		}
+		name, ok := typ.(*ast.Ident)
+		if !ok {
+			return nil
+		}
+		return fc.pkg.structs[name.Name]
+	}
+	return nil
 }
 
 // reportMethods are the testing methods that fail or skip a test.
@@ -243,6 +305,15 @@ var logFuncs = map[string]bool{
 
 // nilCheck returns the error value X if cond is X != nil or nil != X.
 func nilCheck(cond ast.Expr) (*ast.Ident, bool) {
+	id, ok := nilCheckAny(cond)
+	if !ok || !isErrorName(id.Name) {
+		return nil, false
+	}
+	return id, true
+}
+
+// nilCheckAny returns the identifier X if cond is X != nil or nil != X.
+func nilCheckAny(cond ast.Expr) (*ast.Ident, bool) {
 	bin, ok := ast.Unparen(cond).(*ast.BinaryExpr)
 	if !ok || bin.Op != token.NEQ {
 		return nil, false
@@ -254,7 +325,8 @@ func nilCheck(cond ast.Expr) (*ast.Ident, bool) {
 	if !isNil(y) {
 		return nil, false
 	}
-	return errorValue(x)
+	id, ok := ast.Unparen(x).(*ast.Ident)
+	return id, ok
 }
 
 func isNil(e ast.Expr) bool {
@@ -274,8 +346,8 @@ func (fc *fileCtx) testingCall(call *ast.CallExpr, s stack) (string, bool) {
 
 // ifSink inspects the body of if X != nil and returns the sink it contains,
 // if any. It returns the mechanism, the sink name and whether the messages
-// are bare. allowed is passed through to bareArgs.
-func (fc *fileCtx) ifSink(body *ast.BlockStmt, errName string, s stack, allowed func(ast.Expr) bool) (Mechanism, string, bool, bool) {
+// are bare.
+func (fc *fileCtx) ifSink(body *ast.BlockStmt, errName string, s stack) (Mechanism, string, bool, bool) {
 	var (
 		mech  Mechanism
 		sink  string
@@ -322,7 +394,7 @@ func (fc *fileCtx) ifSink(body *ast.BlockStmt, errName string, s stack, allowed 
 	}
 	bare := true
 	for _, m := range msgs {
-		if !fc.bareArgs(m, errName, allowed) {
+		if !fc.bareArgs(m, errName) {
 			bare = false
 		}
 	}
@@ -451,11 +523,11 @@ func (fc *fileCtx) describeCall(call *ast.CallExpr) (string, string) {
 	return fc.text(call.Fun), ""
 }
 
-// walk calls fn for every node in the file with the stack of enclosing nodes,
+// walk calls fn for every node under root with the stack of enclosing nodes,
 // the last element of which is the node itself.
-func walk(file *ast.File, fn func(n ast.Node, s stack)) {
+func walk(root ast.Node, fn func(n ast.Node, s stack)) {
 	var s stack
-	ast.Inspect(file, func(n ast.Node) bool {
+	ast.Inspect(root, func(n ast.Node) bool {
 		if n == nil {
 			s = s[:len(s)-1]
 			return true

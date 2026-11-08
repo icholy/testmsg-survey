@@ -98,7 +98,7 @@ func (fc *fileCtx) librarySinkNamed(call *ast.CallExpr, name, pkg string, args [
 		if !ok {
 			return nil, false, false
 		}
-		return e, fc.bareArgs(Message{Args: args[i+1:], Format: true}, errName(e), nil), true
+		return e, fc.bareArgs(Message{Args: args[i+1:], Format: true}, errName(e)), true
 	}
 	sink := func(path string) string { return path + "." + name }
 
@@ -255,7 +255,7 @@ func (fc *fileCtx) gomegaSink(call *ast.CallExpr) (string, ast.Expr, bool, bool)
 	if !ok {
 		return "", nil, false, false
 	}
-	bare := fc.bareArgs(Message{Args: call.Args[1:], Format: true}, errName(id), nil)
+	bare := fc.bareArgs(Message{Args: call.Args[1:], Format: true}, errName(id))
 	return gomega + "." + sel.Sel.Name + "(" + calleeName(matcher) + ")", id, bare, true
 }
 
@@ -310,7 +310,7 @@ func (fc *fileCtx) bareComments(args []ast.Expr, errName string) bool {
 		if !ok || calleeName(call) != "Commentf" {
 			return false
 		}
-		if !fc.bareArgs(Message{Args: call.Args, Format: true}, errName, nil) {
+		if !fc.bareArgs(Message{Args: call.Args, Format: true}, errName) {
 			return false
 		}
 	}

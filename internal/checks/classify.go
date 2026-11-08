@@ -104,12 +104,13 @@ type Message struct {
 
 // bareArgs reports whether message arguments add nothing beyond the error
 // named errName. Each argument must be a bare string literal or the error.
-// allowed reports additional arguments that are permitted, such as helper
-// parameters already known to be bare.
-func (fc *fileCtx) bareArgs(m Message, errName string, allowed func(ast.Expr) bool) bool {
+// While a helper body is being analysed, any string literal is allowed (a
+// fixed message in a helper is the same at every call site), and fc.allowed
+// reports helper parameters that reach the message.
+func (fc *fileCtx) bareArgs(m Message, errName string) bool {
 	for _, a := range m.Args {
 		if s, ok := stringLit(a); ok {
-			if !bareText(s) {
+			if !fc.helperMode && !bareText(s) {
 				return false
 			}
 			continue
@@ -118,12 +119,12 @@ func (fc *fileCtx) bareArgs(m Message, errName string, allowed func(ast.Expr) bo
 			continue
 		}
 		if call, ok := ast.Unparen(a).(*ast.CallExpr); ok && fc.isPkgFunc(call, "fmt", "Errorf") {
-			if fc.bareArgs(Message{Args: call.Args, Format: true}, errName, allowed) {
+			if fc.bareArgs(Message{Args: call.Args, Format: true}, errName) {
 				continue
 			}
 			return false
 		}
-		if allowed != nil && allowed(a) {
+		if fc.allowed != nil && fc.allowed(a) {
 			continue
 		}
 		return false

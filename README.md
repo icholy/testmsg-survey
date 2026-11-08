@@ -54,7 +54,9 @@ non-nil. Every sink has a **mechanism** tag.
   top-level statement, a call to `Fatal`, `Fatalf`, `Error`, `Errorf`,
   `Skip`, `Skipf`, `Fail` or `FailNow` on a testing value. A testing value
   is an identifier declared as `*testing.T`, `*testing.B`, `*testing.F` or
-  `testing.TB` in an enclosing function, or a call `X.T()` (testify suites).
+  `testing.TB` in an enclosing function, a call `X.T()` (testify suites), a
+  field of testing type on the enclosing method's receiver (`h.t`), or the
+  receiver itself when its struct embeds a testing type.
   `Log` and `Logf` calls at the top level of the same body count toward the
   message. Compound conditions such as `err != nil && !os.IsNotExist(err)`
   are not sinks.
@@ -73,9 +75,12 @@ non-nil. Every sink has a **mechanism** tag.
   helpers. The set is computed as a fixed point over every `.go` file in the
   module, including non-test files (for example `internal/testutil`). Imports
   within the module are resolved to directories using the `go.mod` module
-  path. Calls to helpers outside the module are not resolved. A sink inside
-  a helper body that checks the forwarded parameter is not counted as a
-  check site of its own; its callers are.
+  path, or the repository path for code with no `go.mod`. A parameter is
+  forwarded unchanged only if it is never assigned or redeclared in the
+  helper body. Methods are resolved by name when exactly one method of that
+  name is declared in the package. Calls to helpers outside the module are
+  not resolved. A sink inside a helper body that checks the forwarded
+  parameter is not counted as a check site of its own; its callers are.
 
 Library sinks, matched by import path so aliased imports resolve:
 
