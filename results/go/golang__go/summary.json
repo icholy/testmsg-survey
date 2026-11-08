@@ -1,0 +1,113 @@
+{
+  "tier": "go",
+  "repo": "golang/go",
+  "commit": "be57ebb0f3c3ec056ccf39107a5d1380a51ff1c2",
+  "test_files": 1840,
+  "parse_errors": 85,
+  "test_parse_errors": [
+    "src/cmd/go/internal/web/http_test.go",
+    "src/net/http/internal/http2/transport_test.go",
+    "src/net/http/internal/http3/roundtrip_test.go",
+    "src/simd/internal/spec/mathlib_test.go",
+    "src/simd/internal/spec/string_test.go"
+  ],
+  "total": {
+    "bare": 5272,
+    "contextual": 5047
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4384,
+      "contextual": 4808
+    },
+    "helper": {
+      "bare": 264,
+      "contextual": 96
+    },
+    "panic": {
+      "bare": 624,
+      "contextual": 143
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 180,
+      "contextual": 114
+    },
+    "example": {
+      "bare": 429,
+      "contextual": 61
+    },
+    "fuzz": {
+      "bare": 11,
+      "contextual": 69
+    },
+    "other": {
+      "bare": 1497,
+      "contextual": 1303
+    },
+    "test": {
+      "bare": 3155,
+      "contextual": 3500
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 264,
+      "contextual": 96
+    },
+    "log.Fatal": {
+      "bare": 389,
+      "contextual": 27
+    },
+    "log.Fatalf": {
+      "bare": 2,
+      "contextual": 60
+    },
+    "log.Fatalln": {
+      "bare": 4,
+      "contextual": 2
+    },
+    "log.Panic": {
+      "bare": 26,
+      "contextual": 0
+    },
+    "log.Panicf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 203,
+      "contextual": 49
+    },
+    "testing.Error": {
+      "bare": 520,
+      "contextual": 68
+    },
+    "testing.Errorf": {
+      "bare": 38,
+      "contextual": 1328
+    },
+    "testing.Fail": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 3772,
+      "contextual": 337
+    },
+    "testing.Fatalf": {
+      "bare": 44,
+      "contextual": 2972
+    },
+    "testing.Skip": {
+      "bare": 7,
+      "contextual": 26
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 75
+    }
+  },
+  "unresolved_count": 287
+}

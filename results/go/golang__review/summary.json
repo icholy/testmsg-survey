@@ -1,0 +1,46 @@
+{
+  "tier": "go",
+  "repo": "golang/review",
+  "commit": "6c2c97b0f412fc91be975ada5e0628294794e570",
+  "test_files": 12,
+  "parse_errors": 0,
+  "total": {
+    "bare": 19,
+    "contextual": 9
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 19,
+      "contextual": 9
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 10,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 9,
+      "contextual": 5
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 7
+}

@@ -1,0 +1,66 @@
+{
+  "tier": "go",
+  "repo": "golang/oscar",
+  "commit": "d34ea8281ad6e8283159fbe1f9f65fd0da7c400c",
+  "test_files": 86,
+  "parse_errors": 0,
+  "total": {
+    "bare": 142,
+    "contextual": 16
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 130,
+      "contextual": 16
+    },
+    "helper": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 25,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 117,
+      "contextual": 13
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 124,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 10
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 51
+}

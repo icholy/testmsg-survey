@@ -1,0 +1,46 @@
+{
+  "tier": "go",
+  "repo": "golang/example",
+  "commit": "7f05d217867b2af52b0a28c6d1c91df97e1b5b39",
+  "test_files": 8,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}
