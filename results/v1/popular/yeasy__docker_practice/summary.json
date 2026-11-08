@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "yeasy/docker_practice",
+  "commit": "c803802f95471cd14e55d14c85fae66b13e3d620",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "imgproxy/imgproxy",
+  "commit": "e61e73036a1c69ae1c3351ae5da07bbf4d34acd4",
+  "test_files": 88,
+  "parse_errors": 0,
+  "total": {
+    "bare": 283,
+    "contextual": 14
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 11,
+      "contextual": 5
+    },
+    "library": {
+      "bare": 271,
+      "contextual": 9
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 11,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 162,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 110,
+      "contextual": 6
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 111,
+      "contextual": 6
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 160,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 5
+}

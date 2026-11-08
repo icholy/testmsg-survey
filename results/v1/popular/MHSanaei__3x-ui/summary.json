@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "MHSanaei/3x-ui",
+  "commit": "e535df03745c5ad003ae48e812024eb5fdc2124d",
+  "test_files": 662,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1175,
+    "contextual": 4376
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1172,
+      "contextual": 4367
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 7
+    },
+    "fuzz": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 201,
+      "contextual": 618
+    },
+    "test": {
+      "bare": 972,
+      "contextual": 3751
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 43
+    },
+    "testing.Fatal": {
+      "bare": 1099,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 59,
+      "contextual": 4315
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 6
+    }
+  },
+  "unresolved_count": 15
+}

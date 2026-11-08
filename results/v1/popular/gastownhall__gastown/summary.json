@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "gastownhall/gastown",
+  "commit": "466aa41c83ee73b1fa0eb79eb9d172fb1eca9476",
+  "test_files": 569,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2599,
+    "contextual": 6492
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2346,
+      "contextual": 6477
+    },
+    "library": {
+      "bare": 252,
+      "contextual": 15
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 114,
+      "contextual": 726
+    },
+    "test": {
+      "bare": 2484,
+      "contextual": 5766
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 13,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 239,
+      "contextual": 10
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 11
+    },
+    "testing.Errorf": {
+      "bare": 11,
+      "contextual": 218
+    },
+    "testing.Fatal": {
+      "bare": 2185,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 150,
+      "contextual": 6125
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 66
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 57
+    }
+  },
+  "unresolved_count": 8
+}

@@ -1,0 +1,70 @@
+{
+  "tier": "go",
+  "repo": "golang/image",
+  "commit": "6ec427f44e9adefbf3a629b2d871274088180c49",
+  "test_files": 30,
+  "parse_errors": 0,
+  "total": {
+    "bare": 69,
+    "contextual": 105
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 59,
+      "contextual": 100
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 8,
+      "contextual": 5
+    },
+    "other": {
+      "bare": 14,
+      "contextual": 44
+    },
+    "test": {
+      "bare": 44,
+      "contextual": 56
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 51
+    },
+    "testing.Fatal": {
+      "bare": 53,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 47
+    }
+  },
+  "unresolved_count": 0
+}

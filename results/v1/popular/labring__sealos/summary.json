@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "labring/sealos",
+  "commit": "871f713df1297feba4ee52c06f230ab265c9d691",
+  "test_files": 216,
+  "parse_errors": 0,
+  "total": {
+    "bare": 379,
+    "contextual": 620
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 299,
+      "contextual": 608
+    },
+    "library": {
+      "bare": 80,
+      "contextual": 12
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 65,
+      "contextual": 47
+    },
+    "test": {
+      "bare": 313,
+      "contextual": 569
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 29,
+      "contextual": 11
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 23,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 13,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 6,
+      "contextual": 85
+    },
+    "testing.Fatal": {
+      "bare": 279,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 518
+    }
+  },
+  "unresolved_count": 250
+}

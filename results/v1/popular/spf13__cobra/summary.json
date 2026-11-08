@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "spf13/cobra",
+  "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+  "test_files": 17,
+  "parse_errors": 0,
+  "total": {
+    "bare": 339,
+    "contextual": 35
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 256,
+      "contextual": 35
+    },
+    "helper": {
+      "bare": 83,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 330,
+      "contextual": 34
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 83,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 215,
+      "contextual": 17
+    },
+    "testing.Fatal": {
+      "bare": 25,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 18
+    }
+  },
+  "unresolved_count": 34
+}

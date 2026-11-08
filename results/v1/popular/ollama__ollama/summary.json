@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "ollama/ollama",
+  "commit": "d63b702609c4300a2ca07be2bdb0adb9834725e5",
+  "test_files": 488,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3615,
+    "contextual": 1782
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3500,
+      "contextual": 1779
+    },
+    "helper": {
+      "bare": 29,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 79,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 18,
+      "contextual": 2
+    },
+    "fuzz": {
+      "bare": 5,
+      "contextual": 5
+    },
+    "other": {
+      "bare": 300,
+      "contextual": 222
+    },
+    "test": {
+      "bare": 3292,
+      "contextual": 1553
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 65,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 29,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 3
+    },
+    "testing.Error": {
+      "bare": 22,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 28,
+      "contextual": 57
+    },
+    "testing.Fatal": {
+      "bare": 3346,
+      "contextual": 36
+    },
+    "testing.Fatalf": {
+      "bare": 104,
+      "contextual": 1671
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 12
+    }
+  },
+  "unresolved_count": 185
+}

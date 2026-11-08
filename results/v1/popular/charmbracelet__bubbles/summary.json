@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "charmbracelet/bubbles",
+  "commit": "1deada954e6eead9c054837f1cd3d669e912cd4d",
+  "test_files": 16,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

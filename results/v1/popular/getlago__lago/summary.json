@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "getlago/lago",
+  "commit": "beec883b7fb7117df679ed8161e50a9af5ce820e",
+  "test_files": 24,
+  "parse_errors": 0,
+  "total": {
+    "bare": 42,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 42,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 40,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 20,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

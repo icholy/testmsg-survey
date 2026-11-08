@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "cheat/cheat",
+  "commit": "b8098dc1b9de846d76e68102e03aeb0f918bb0da",
+  "test_files": 49,
+  "parse_errors": 0,
+  "total": {
+    "bare": 12,
+    "contextual": 178
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 12,
+      "contextual": 178
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 10
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 18
+    },
+    "test": {
+      "bare": 12,
+      "contextual": 148
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 40
+    },
+    "testing.Fatal": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 136
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

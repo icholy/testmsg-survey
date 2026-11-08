@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "therecipe/qt",
+  "commit": "c0c124a5770d357908f16fa57e0aa0ec6ccd3f91",
+  "test_files": 4,
+  "parse_errors": 0,
+  "total": {
+    "bare": 16,
+    "contextual": 2
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "library": {
+      "bare": 15,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 12,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

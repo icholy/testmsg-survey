@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "gofiber/fiber",
+  "commit": "8cb9f5dbcafd868705202506e43c773550fad270",
+  "test_files": 172,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1595,
+    "contextual": 61
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 46,
+      "contextual": 17
+    },
+    "helper": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1521,
+      "contextual": 44
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 150,
+      "contextual": 9
+    },
+    "fuzz": {
+      "bare": 5,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 180,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 1260,
+      "contextual": 45
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 52,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1469,
+      "contextual": 44
+    },
+    "helper": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 37,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 31
+}

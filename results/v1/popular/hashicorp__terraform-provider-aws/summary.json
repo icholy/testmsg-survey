@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "hashicorp/terraform-provider-aws",
+  "commit": "a2521e6bbf394a6206de534a9125ab973723c70c",
+  "test_files": 3448,
+  "parse_errors": 0,
+  "total": {
+    "bare": 298,
+    "contextual": 684
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 293,
+      "contextual": 664
+    },
+    "helper": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 20
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 4,
+      "contextual": 5
+    },
+    "other": {
+      "bare": 15,
+      "contextual": 364
+    },
+    "test": {
+      "bare": 279,
+      "contextual": 315
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 20
+    },
+    "testing.Error": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 16,
+      "contextual": 26
+    },
+    "testing.Fatal": {
+      "bare": 124,
+      "contextual": 4
+    },
+    "testing.Fatalf": {
+      "bare": 143,
+      "contextual": 632
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 19
+}

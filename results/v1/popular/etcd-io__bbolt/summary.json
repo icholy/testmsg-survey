@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "etcd-io/bbolt",
+  "commit": "da9d57a74ae81821605f402975b22d28d95a2b7e",
+  "test_files": 46,
+  "parse_errors": 0,
+  "total": {
+    "bare": 822,
+    "contextual": 73
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 460,
+      "contextual": 22
+    },
+    "library": {
+      "bare": 300,
+      "contextual": 47
+    },
+    "panic": {
+      "bare": 62,
+      "contextual": 4
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 57,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 65,
+      "contextual": 20
+    },
+    "test": {
+      "bare": 691,
+      "contextual": 53
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 41,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 259,
+      "contextual": 22
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 15
+    },
+    "log.Fatal": {
+      "bare": 58,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 4
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 452,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 15
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

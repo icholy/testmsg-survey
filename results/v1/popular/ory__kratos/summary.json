@@ -1,0 +1,94 @@
+{
+  "tier": "popular",
+  "repo": "ory/kratos",
+  "commit": "b86338da04a040247a07f46100a86dcfb3875909",
+  "test_files": 287,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3026,
+    "contextual": 42
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "helper": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 3016,
+      "contextual": 40
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 200,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 2825,
+      "contextual": 34
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 5,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 73,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 2937,
+      "contextual": 28
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "helper": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 36
+}

@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "JuliusBrussee/caveman",
+  "commit": "1e91f1306d602d4ca23618701b1185575ae1869b",
+  "test_files": 373,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1698,
+    "contextual": 703
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1688,
+      "contextual": 703
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 13,
+      "contextual": 1
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 313,
+      "contextual": 79
+    },
+    "test": {
+      "bare": 1372,
+      "contextual": 622
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 22
+    },
+    "testing.Fatal": {
+      "bare": 1679,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 671
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 1
+}

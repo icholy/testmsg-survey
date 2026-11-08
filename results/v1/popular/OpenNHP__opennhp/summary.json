@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "OpenNHP/opennhp",
+  "commit": "4b9315727d59871724b876ecdfd4adca0611fcec",
+  "test_files": 118,
+  "parse_errors": 0,
+  "total": {
+    "bare": 457,
+    "contextual": 464
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 457,
+      "contextual": 464
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 52,
+      "contextual": 49
+    },
+    "test": {
+      "bare": 404,
+      "contextual": 415
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 46
+    },
+    "testing.Fatal": {
+      "bare": 442,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 9,
+      "contextual": 395
+    },
+    "testing.Skip": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 20
+    }
+  },
+  "unresolved_count": 0
+}

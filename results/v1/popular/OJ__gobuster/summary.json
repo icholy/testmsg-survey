@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "OJ/gobuster",
+  "commit": "c77583fbb8824058d74d38240896eff610683c8e",
+  "test_files": 7,
+  "parse_errors": 0,
+  "total": {
+    "bare": 25,
+    "contextual": 16
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 25,
+      "contextual": 16
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 16,
+      "contextual": 14
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 5,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 21,
+      "contextual": 16
+    }
+  },
+  "unresolved_count": 0
+}

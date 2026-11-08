@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "mailhog/MailHog",
+  "commit": "e6fa06877ef61ea82bbef234d94bdc75cca478d1",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

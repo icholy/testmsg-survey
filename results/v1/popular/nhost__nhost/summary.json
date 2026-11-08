@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "nhost/nhost",
+  "commit": "76997f5b3b3ce61d71bee804b6efe01f7bd2607c",
+  "test_files": 642,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1150,
+    "contextual": 1730
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1127,
+      "contextual": 1730
+    },
+    "helper": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 161,
+      "contextual": 402
+    },
+    "test": {
+      "bare": 987,
+      "contextual": 1328
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 9,
+      "contextual": 102
+    },
+    "testing.Fatal": {
+      "bare": 808,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 306,
+      "contextual": 1625
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 42
+}

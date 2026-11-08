@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "astaxie/build-web-application-with-golang",
+  "commit": "c294b087b96d99d2593ad8f470151af5354bb57f",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

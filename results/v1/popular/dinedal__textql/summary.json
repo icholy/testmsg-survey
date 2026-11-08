@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "dinedal/textql",
+  "commit": "e6545d501ca9c523110526e7b842d9301451e159",
+  "test_files": 3,
+  "parse_errors": 0,
+  "total": {
+    "bare": 35,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 35,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 32,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 24,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 11,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

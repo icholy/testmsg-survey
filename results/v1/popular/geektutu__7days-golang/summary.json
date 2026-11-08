@@ -1,0 +1,34 @@
+{
+  "tier": "popular",
+  "repo": "geektutu/7days-golang",
+  "commit": "58db9709468c9c9a291cbe3b88ff9e3e05614f27",
+  "test_files": 89,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 10
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 0
+}

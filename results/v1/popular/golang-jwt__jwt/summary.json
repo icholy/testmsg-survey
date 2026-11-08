@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "golang-jwt/jwt",
+  "commit": "851a8a957afa44342401fbaa298359ba144a831c",
+  "test_files": 19,
+  "parse_errors": 0,
+  "total": {
+    "bare": 31,
+    "contextual": 23
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 13,
+      "contextual": 23
+    },
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 4
+    },
+    "example": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 8,
+      "contextual": 19
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 19
+    },
+    "testing.Fatal": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 1
+}

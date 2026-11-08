@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "The-Vibe-Company/quivr",
+  "commit": "bb1b19ecf4094dbd1e309e521ce8b5fed4fb539f",
+  "test_files": 407,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3332,
+    "contextual": 219
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3330,
+      "contextual": 219
+    },
+    "helper": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 423,
+      "contextual": 36
+    },
+    "test": {
+      "bare": 2909,
+      "contextual": 183
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 24,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 20
+    },
+    "testing.Fatal": {
+      "bare": 3304,
+      "contextual": 25
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 169
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 42
+}

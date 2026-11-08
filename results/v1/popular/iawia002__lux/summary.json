@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "iawia002/lux",
+  "commit": "dd00f6d258d80b6684a0b9402d7124e5c18ef42f",
+  "test_files": 52,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6,
+    "contextual": 39
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 39
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 6,
+      "contextual": 39
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 0,
+      "contextual": 39
+    },
+    "testing.Error": {
+      "bare": 6,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

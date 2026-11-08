@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "alireza0/s-ui",
+  "commit": "8065b49d56b1e57da7e3f6fa614542a2de6a812c",
+  "test_files": 75,
+  "parse_errors": 0,
+  "total": {
+    "bare": 358,
+    "contextual": 116
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 358,
+      "contextual": 116
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 85,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 273,
+      "contextual": 103
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "testing.Fatal": {
+      "bare": 358,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 103
+    }
+  },
+  "unresolved_count": 6
+}

@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "pinchtab/pinchtab",
+  "commit": "a62662027f233444c579c29fbe42ad90df0d5bc7",
+  "test_files": 741,
+  "parse_errors": 0,
+  "total": {
+    "bare": 979,
+    "contextual": 1911
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 963,
+      "contextual": 1909
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 16,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 182,
+      "contextual": 272
+    },
+    "test": {
+      "bare": 795,
+      "contextual": 1639
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 138
+    },
+    "testing.Fatal": {
+      "bare": 900,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 61,
+      "contextual": 1754
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 12
+    }
+  },
+  "unresolved_count": 5
+}

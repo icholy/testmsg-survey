@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "danielmiessler/Fabric",
+  "commit": "1cff7b4e14a835ee62ab77b2639c1cb69ace5cd4",
+  "test_files": 116,
+  "parse_errors": 0,
+  "total": {
+    "bare": 282,
+    "contextual": 347
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 94,
+      "contextual": 337
+    },
+    "helper": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 166,
+      "contextual": 10
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 25,
+      "contextual": 16
+    },
+    "test": {
+      "bare": 257,
+      "contextual": 331
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 53,
+      "contextual": 10
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 113,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 4,
+      "contextual": 39
+    },
+    "testing.Fatal": {
+      "bare": 73,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 17,
+      "contextual": 287
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 4
+}

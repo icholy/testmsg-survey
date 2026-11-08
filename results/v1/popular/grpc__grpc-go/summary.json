@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "grpc/grpc-go",
+  "commit": "cbf30c41309983ce66c6a81abe569a75fd2b9dcd",
+  "test_files": 408,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1319,
+    "contextual": 3900
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1310,
+      "contextual": 3890
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 10
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 11,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 1299,
+      "contextual": 3834
+    },
+    "test": {
+      "bare": 9,
+      "contextual": 62
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 9,
+      "contextual": 10
+    },
+    "testing.Error": {
+      "bare": 45,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 6,
+      "contextual": 214
+    },
+    "testing.Fatal": {
+      "bare": 1248,
+      "contextual": 113
+    },
+    "testing.Fatalf": {
+      "bare": 10,
+      "contextual": 3561
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 61
+}

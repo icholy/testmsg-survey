@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "glanceapp/glance",
+  "commit": "53aec7f392ca72143870dcb45526ec7c80a68f32",
+  "test_files": 7,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 8
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 1,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 8
+    }
+  },
+  "unresolved_count": 0
+}

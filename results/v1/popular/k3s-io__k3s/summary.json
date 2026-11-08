@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "k3s-io/k3s",
+  "commit": "dca306c81c44fed1dd0621d5579785c980080ae8",
+  "test_files": 96,
+  "parse_errors": 0,
+  "total": {
+    "bare": 668,
+    "contextual": 282
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 18,
+      "contextual": 92
+    },
+    "library": {
+      "bare": 638,
+      "contextual": 190
+    },
+    "panic": {
+      "bare": 12,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 646,
+      "contextual": 185
+    },
+    "test": {
+      "bare": 22,
+      "contextual": 97
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 247,
+      "contextual": 174
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 258,
+      "contextual": 4
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 123,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 4
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 1,
+      "contextual": 8
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 46
+    },
+    "testing.Fatal": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 46
+    }
+  },
+  "unresolved_count": 0
+}

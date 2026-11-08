@@ -1,0 +1,98 @@
+{
+  "tier": "popular",
+  "repo": "podman-container-tools/buildah",
+  "commit": "4213818a5481baa3ff6b30ac4564d8d2536a9a55",
+  "test_files": 62,
+  "parse_errors": 0,
+  "total": {
+    "bare": 386,
+    "contextual": 432
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 32
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 375,
+      "contextual": 396
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 123,
+      "contextual": 143
+    },
+    "test": {
+      "bare": 263,
+      "contextual": 289
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 12,
+      "contextual": 14
+    },
+    "github.com/stretchr/testify/assert.Nilf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 46,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 0,
+      "contextual": 22
+    },
+    "github.com/stretchr/testify/require.Nilf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 317,
+      "contextual": 187
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 148
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 25
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 7
+}

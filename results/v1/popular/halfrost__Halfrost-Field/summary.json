@@ -1,0 +1,34 @@
+{
+  "tier": "popular",
+  "repo": "halfrost/Halfrost-Field",
+  "commit": "e3e22eccd8a4e314810d03ec8ab9919d57e07da6",
+  "test_files": 7,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 25
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 25
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 1,
+      "contextual": 25
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 25
+    }
+  },
+  "unresolved_count": 0
+}

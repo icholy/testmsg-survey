@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "panjf2000/gnet",
+  "commit": "441457f07983e2e2fbc12a33c05fa68ffdc5ee47",
+  "test_files": 13,
+  "parse_errors": 0,
+  "total": {
+    "bare": 235,
+    "contextual": 98
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 235,
+      "contextual": 89
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "other": {
+      "bare": 132,
+      "contextual": 81
+    },
+    "test": {
+      "bare": 103,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 164,
+      "contextual": 42
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 29
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 71,
+      "contextual": 10
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 9
+}

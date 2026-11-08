@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "sjwhitworth/golearn",
+  "commit": "74ae077eafb245fa3bdca0288854b6d51f97fe60",
+  "test_files": 54,
+  "parse_errors": 0,
+  "total": {
+    "bare": 231,
+    "contextual": 5
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4,
+      "contextual": 5
+    },
+    "library": {
+      "bare": 219,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 5,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 24,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 202,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "github.com/smartystreets/goconvey/convey.So": {
+      "bare": 219,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fail": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 63
+}

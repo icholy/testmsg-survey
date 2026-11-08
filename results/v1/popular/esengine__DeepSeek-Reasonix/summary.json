@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "esengine/DeepSeek-Reasonix",
+  "commit": "564177d7c2ac07386f4a19f0749e45be7cc6a408",
+  "test_files": 3548,
+  "parse_errors": 0,
+  "total": {
+    "bare": 11820,
+    "contextual": 6263
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 11690,
+      "contextual": 6263
+    },
+    "helper": {
+      "bare": 108,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 22,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 25,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1567,
+      "contextual": 701
+    },
+    "test": {
+      "bare": 10225,
+      "contextual": 5562
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 108,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 64,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 184
+    },
+    "testing.Fatal": {
+      "bare": 11604,
+      "contextual": 13
+    },
+    "testing.Fatalf": {
+      "bare": 13,
+      "contextual": 5788
+    },
+    "testing.Skip": {
+      "bare": 7,
+      "contextual": 95
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 183
+    }
+  },
+  "unresolved_count": 26
+}

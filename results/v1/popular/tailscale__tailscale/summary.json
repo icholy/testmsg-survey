@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "tailscale/tailscale",
+  "commit": "503010831ecd44ab3d86864e5e65ff9f8b969d88",
+  "test_files": 820,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2979,
+    "contextual": 2764
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2420,
+      "contextual": 2694
+    },
+    "helper": {
+      "bare": 426,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 113,
+      "contextual": 70
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 68,
+      "contextual": 9
+    },
+    "example": {
+      "bare": 26,
+      "contextual": 32
+    },
+    "fuzz": {
+      "bare": 5,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 537,
+      "contextual": 571
+    },
+    "test": {
+      "bare": 2343,
+      "contextual": 2148
+    }
+  },
+  "by_sink": {
+    "github.com/frankban/quicktest.C.Assert": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 426,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 27,
+      "contextual": 24
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "log.Panicf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 86,
+      "contextual": 32
+    },
+    "testing.Error": {
+      "bare": 76,
+      "contextual": 8
+    },
+    "testing.Errorf": {
+      "bare": 22,
+      "contextual": 431
+    },
+    "testing.Fatal": {
+      "bare": 2278,
+      "contextual": 16
+    },
+    "testing.Fatalf": {
+      "bare": 44,
+      "contextual": 2207
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 28
+    }
+  },
+  "unresolved_count": 57
+}

@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "charmbracelet/vhs",
+  "commit": "24fa2254a9806091e6ee6a980e9f3bcfe0a9ba53",
+  "test_files": 10,
+  "parse_errors": 0,
+  "total": {
+    "bare": 23,
+    "contextual": 11
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 10,
+      "contextual": 11
+    },
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 21,
+      "contextual": 11
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 10,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 9
+}

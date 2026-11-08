@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "ory/hydra",
+  "commit": "4174065ffb052799890f7480f5360a877a67ffc1",
+  "test_files": 192,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1590,
+    "contextual": 59
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4,
+      "contextual": 1
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1579,
+      "contextual": 58
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 618,
+      "contextual": 29
+    },
+    "test": {
+      "bare": 953,
+      "contextual": 30
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 111,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1445,
+      "contextual": 29
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 1,
+      "contextual": 6
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 5,
+      "contextual": 20
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 55
+}

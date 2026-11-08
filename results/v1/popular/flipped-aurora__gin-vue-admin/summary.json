@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "flipped-aurora/gin-vue-admin",
+  "commit": "cee04b08d1262036ca33e3026e1e13d29471c7d5",
+  "test_files": 23,
+  "parse_errors": 0,
+  "total": {
+    "bare": 16,
+    "contextual": 28
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 10,
+      "contextual": 28
+    },
+    "library": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 16,
+      "contextual": 28
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 19
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 0
+}

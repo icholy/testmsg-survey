@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "google/pprof",
+  "commit": "4bf881d7fb0bbd81e0471a4ac79e995ef2d63e3b",
+  "test_files": 33,
+  "parse_errors": 0,
+  "total": {
+    "bare": 41,
+    "contextual": 141
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 39,
+      "contextual": 141
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 5,
+      "contextual": 15
+    },
+    "test": {
+      "bare": 26,
+      "contextual": 126
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 11
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 40
+    },
+    "testing.Fatal": {
+      "bare": 31,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 4,
+      "contextual": 83
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

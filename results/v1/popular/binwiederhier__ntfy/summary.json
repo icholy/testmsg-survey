@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "binwiederhier/ntfy",
+  "commit": "59f9931f0f365f1e33871ed9d641b33e8039c190",
+  "test_files": 112,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1407,
+    "contextual": 12
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 140,
+      "contextual": 6
+    },
+    "library": {
+      "bare": 1267,
+      "contextual": 6
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 93,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 1311,
+      "contextual": 10
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 56,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 1168,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 38,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 120,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Fatal": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 3
+}

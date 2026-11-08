@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "go-shiori/shiori",
+  "commit": "aebb4021a56048eed4c8feb325399be5f46e5470",
+  "test_files": 55,
+  "parse_errors": 0,
+  "total": {
+    "bare": 535,
+    "contextual": 257
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 530,
+      "contextual": 253
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 117,
+      "contextual": 54
+    },
+    "test": {
+      "bare": 418,
+      "contextual": 203
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 23,
+      "contextual": 45
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 500,
+      "contextual": 13
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testify.NoError": {
+      "bare": 0,
+      "contextual": 195
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

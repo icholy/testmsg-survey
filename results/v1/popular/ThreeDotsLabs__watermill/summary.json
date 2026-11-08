@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "ThreeDotsLabs/watermill",
+  "commit": "1911646d2795ab0b738661e2443f23171739d8cc",
+  "test_files": 52,
+  "parse_errors": 0,
+  "total": {
+    "bare": 429,
+    "contextual": 4
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 4
+    },
+    "library": {
+      "bare": 413,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 42,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 383,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 95,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 305,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 7,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

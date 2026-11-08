@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "go-delve/delve",
+  "commit": "0e9c74cee4f22bbebb9c48120e569dcda545cc87",
+  "test_files": 56,
+  "parse_errors": 0,
+  "total": {
+    "bare": 123,
+    "contextual": 1162
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 120,
+      "contextual": 164
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 998
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 6,
+      "contextual": 15
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 17,
+      "contextual": 111
+    },
+    "test": {
+      "bare": 100,
+      "contextual": 1033
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 0,
+      "contextual": 998
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 3
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 19
+    },
+    "testing.Fatal": {
+      "bare": 86,
+      "contextual": 20
+    },
+    "testing.Fatalf": {
+      "bare": 30,
+      "contextual": 116
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 24
+}

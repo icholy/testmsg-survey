@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "containerd/nerdctl",
+  "commit": "27dac9462451c6f2ebde1889230480111521c766",
+  "test_files": 233,
+  "parse_errors": 0,
+  "total": {
+    "bare": 546,
+    "contextual": 209
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 65,
+      "contextual": 41
+    },
+    "library": {
+      "bare": 481,
+      "contextual": 168
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 84,
+      "contextual": 11
+    },
+    "test": {
+      "bare": 462,
+      "contextual": 198
+    }
+  },
+  "by_sink": {
+    "gotest.tools/v3/assert.Assert": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "gotest.tools/v3/assert.Check": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "gotest.tools/v3/assert.NilError": {
+      "bare": 480,
+      "contextual": 166
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 15
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.FailNow": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "testing.Fatal": {
+      "bare": 60,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 8
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 65
+}

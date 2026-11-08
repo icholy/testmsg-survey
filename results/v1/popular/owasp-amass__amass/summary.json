@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "owasp-amass/amass",
+  "commit": "a284d25a890cbb561a53410080a3fd96bbaa7312",
+  "test_files": 24,
+  "parse_errors": 0,
+  "total": {
+    "bare": 88,
+    "contextual": 22
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 23,
+      "contextual": 15
+    },
+    "library": {
+      "bare": 65,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 87,
+      "contextual": 21
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 62,
+      "contextual": 4
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 13,
+      "contextual": 13
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 6,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

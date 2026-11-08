@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "fish2018/pansou",
+  "commit": "221665fb2c9279f22af4684ea2d8c0c331eac1cc",
+  "test_files": 105,
+  "parse_errors": 0,
+  "total": {
+    "bare": 222,
+    "contextual": 61
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 222,
+      "contextual": 59
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 17,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 205,
+      "contextual": 57
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 7
+    },
+    "testing.Fatal": {
+      "bare": 150,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 56,
+      "contextual": 52
+    }
+  },
+  "unresolved_count": 2
+}

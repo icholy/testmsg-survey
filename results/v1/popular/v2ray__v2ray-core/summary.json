@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "v2ray/v2ray-core",
+  "commit": "d80440f3d57b45c829dbf513306f7adf9a0f3f76",
+  "test_files": 143,
+  "parse_errors": 0,
+  "total": {
+    "bare": 731,
+    "contextual": 15
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 82,
+      "contextual": 15
+    },
+    "helper": {
+      "bare": 642,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 25,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 23,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 683,
+      "contextual": 15
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 642,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 42,
+      "contextual": 3
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 40,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 0
+}

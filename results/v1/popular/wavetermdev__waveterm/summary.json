@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "wavetermdev/waveterm",
+  "commit": "9f1c9670d407be3b93cf090319a63ef30bf54d0e",
+  "test_files": 36,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3,
+    "contextual": 190
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 190
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 183
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 23
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 167
+    }
+  },
+  "unresolved_count": 2
+}

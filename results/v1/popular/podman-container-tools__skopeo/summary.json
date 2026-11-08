@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "podman-container-tools/skopeo",
+  "commit": "c51a5f8fc3c88d7dae273c0b0c0f80c3baa32e12",
+  "test_files": 27,
+  "parse_errors": 0,
+  "total": {
+    "bare": 231,
+    "contextual": 11
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "library": {
+      "bare": 229,
+      "contextual": 9
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 192,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 39,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 12,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 217,
+      "contextual": 6
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 36
+}

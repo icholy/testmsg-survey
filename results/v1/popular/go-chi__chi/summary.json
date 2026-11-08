@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "go-chi/chi",
+  "commit": "c64ed7d6635f33a8b2feaff7dcfa55677023ac7d",
+  "test_files": 35,
+  "parse_errors": 0,
+  "total": {
+    "bare": 46,
+    "contextual": 2
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 29,
+      "contextual": 2
+    },
+    "helper": {
+      "bare": 17,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 33,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 25,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 3
+}

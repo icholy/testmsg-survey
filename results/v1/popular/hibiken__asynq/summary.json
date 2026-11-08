@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "hibiken/asynq",
+  "commit": "83e0966ab47a0ea99f66094afe4a32bbfab80747",
+  "test_files": 31,
+  "parse_errors": 0,
+  "total": {
+    "bare": 49,
+    "contextual": 211
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 40,
+      "contextual": 211
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 21
+    },
+    "example": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 38,
+      "contextual": 186
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 129
+    },
+    "testing.Fatal": {
+      "bare": 34,
+      "contextual": 8
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 74
+    }
+  },
+  "unresolved_count": 0
+}

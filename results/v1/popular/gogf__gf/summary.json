@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "gogf/gf",
+  "commit": "e226709f09d7809d8e6fcf68c4aeee50253976ce",
+  "test_files": 969,
+  "parse_errors": 0,
+  "total": {
+    "bare": 375,
+    "contextual": 81
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 312,
+      "contextual": 78
+    },
+    "panic": {
+      "bare": 63,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 20,
+      "contextual": 1
+    },
+    "example": {
+      "bare": 50,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 15,
+      "contextual": 10
+    },
+    "test": {
+      "bare": 290,
+      "contextual": 70
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 63,
+      "contextual": 3
+    },
+    "testing.Error": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "testing.Fatal": {
+      "bare": 304,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 65
+    }
+  },
+  "unresolved_count": 31482
+}

@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "dstotijn/hetty",
+  "commit": "8ca6b07b75c2df85e4890b61748f9fbccbf4443c",
+  "test_files": 11,
+  "parse_errors": 0,
+  "total": {
+    "bare": 10,
+    "contextual": 61
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 61
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 7,
+      "contextual": 61
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 7,
+      "contextual": 61
+    }
+  },
+  "unresolved_count": 5
+}

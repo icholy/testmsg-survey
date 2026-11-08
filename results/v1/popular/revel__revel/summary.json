@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "revel/revel",
+  "commit": "b053175279547526fe914932716bc313558df4bd",
+  "test_files": 28,
+  "parse_errors": 0,
+  "total": {
+    "bare": 12,
+    "contextual": 34
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 11,
+      "contextual": 34
+    },
+    "library": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 23
+    },
+    "test": {
+      "bare": 8,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "testify.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 33
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 1
+}

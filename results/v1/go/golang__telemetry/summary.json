@@ -1,0 +1,54 @@
+{
+  "tier": "go",
+  "repo": "golang/telemetry",
+  "commit": "6cd571d43fbb06cf3ea6659089f7152e2734f215",
+  "test_files": 30,
+  "parse_errors": 0,
+  "total": {
+    "bare": 90,
+    "contextual": 62
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 90,
+      "contextual": 57
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 17,
+      "contextual": 16
+    },
+    "test": {
+      "bare": 73,
+      "contextual": 46
+    }
+  },
+  "by_sink": {
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 19
+    },
+    "testing.Fatal": {
+      "bare": 89,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 36
+    }
+  },
+  "unresolved_count": 0
+}

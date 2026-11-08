@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "certimate-go/certimate",
+  "commit": "f09a5641847859a9f94b93c12ecc57857c59c6de",
+  "test_files": 204,
+  "parse_errors": 0,
+  "total": {
+    "bare": 220,
+    "contextual": 6
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "library": {
+      "bare": 219,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 220,
+      "contextual": 6
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 219,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "onsi/ginkgo",
+  "commit": "7035669bb55680e18e1bf5c1aac7b0fd9ea25c73",
+  "test_files": 121,
+  "parse_errors": 0,
+  "total": {
+    "bare": 270,
+    "contextual": 37
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 270,
+      "contextual": 35
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 270,
+      "contextual": 37
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(BeNil)": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 108,
+      "contextual": 17
+    },
+    "github.com/onsi/gomega.ShouldNot(HaveOccurred)": {
+      "bare": 133,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 0,
+      "contextual": 18
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

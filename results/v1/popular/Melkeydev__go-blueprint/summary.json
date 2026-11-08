@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "Melkeydev/go-blueprint",
+  "commit": "81f56f8c24637d2fd2adb5f37071c6d4cb72b571",
+  "test_files": 2,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

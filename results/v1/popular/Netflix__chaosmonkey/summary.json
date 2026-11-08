@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "Netflix/chaosmonkey",
+  "commit": "eaa28fb761c0ebe8644d1333e5d164e9cc3071e9",
+  "test_files": 22,
+  "parse_errors": 0,
+  "total": {
+    "bare": 95,
+    "contextual": 7
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 92,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 91,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 70,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 8,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

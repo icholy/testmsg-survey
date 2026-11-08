@@ -1,0 +1,98 @@
+{
+  "tier": "popular",
+  "repo": "kubernetes/autoscaler",
+  "commit": "eac1a9a6c885ea903fdf8c7278cf0afb9d4db54d",
+  "test_files": 228,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1341,
+    "contextual": 131
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 255,
+      "contextual": 85
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1078,
+      "contextual": 46
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 79,
+      "contextual": 10
+    },
+    "test": {
+      "bare": 1261,
+      "contextual": 121
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 38,
+      "contextual": 11
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 850,
+      "contextual": 27
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 154,
+      "contextual": 5
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 30,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 33,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 12,
+      "contextual": 15
+    },
+    "testing.Fatal": {
+      "bare": 77,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 133,
+      "contextual": 67
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 14
+}

@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "dgraph-io/badger",
+  "commit": "78b99b8b0f014b539455186404697a0ff58c55f2",
+  "test_files": 42,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1370,
+    "contextual": 137
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 5
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 30
+    },
+    "library": {
+      "bare": 1344,
+      "contextual": 102
+    },
+    "panic": {
+      "bare": 19,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 20,
+      "contextual": 10
+    },
+    "example": {
+      "bare": 11,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 45,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 1294,
+      "contextual": 117
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 1,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1343,
+      "contextual": 98
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 30
+    },
+    "panic": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 2
+}

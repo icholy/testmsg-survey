@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "chaitin/SafeLine",
+  "commit": "9b72ba6ad4d7e042e7a79ee2e062305179312c98",
+  "test_files": 12,
+  "parse_errors": 0,
+  "total": {
+    "bare": 64,
+    "contextual": 24
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 64,
+      "contextual": 24
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 60,
+      "contextual": 22
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 64,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 24
+    }
+  },
+  "unresolved_count": 0
+}

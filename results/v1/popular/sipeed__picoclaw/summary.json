@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "sipeed/picoclaw",
+  "commit": "bbf6893ca7afad27f1d00a0f5a45982a549c6ed6",
+  "test_files": 327,
+  "parse_errors": 0,
+  "total": {
+    "bare": 762,
+    "contextual": 3180
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 172,
+      "contextual": 3178
+    },
+    "library": {
+      "bare": 589,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 8,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 29,
+      "contextual": 138
+    },
+    "test": {
+      "bare": 725,
+      "contextual": 3039
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 107,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 482,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 65
+    },
+    "testing.Fatal": {
+      "bare": 94,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 75,
+      "contextual": 3098
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 0
+}

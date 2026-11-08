@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "sundowndev/phoneinfoga",
+  "commit": "55807b05b753dab7bc6fe67403ca385668dda179",
+  "test_files": 21,
+  "parse_errors": 0,
+  "total": {
+    "bare": 28,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 6,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 27,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 22,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

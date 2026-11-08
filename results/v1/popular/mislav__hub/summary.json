@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "mislav/hub",
+  "commit": "5c547ed804368763064e51f3990851e267e88edd",
+  "test_files": 30,
+  "parse_errors": 0,
+  "total": {
+    "bare": 5,
+    "contextual": 1
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 97
+}

@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "gorilla/websocket",
+  "commit": "e064f32e3674d9d79a8fd417b5bc06fa5c6cad8f",
+  "test_files": 13,
+  "parse_errors": 0,
+  "total": {
+    "bare": 11,
+    "contextual": 96
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 11,
+      "contextual": 96
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 10,
+      "contextual": 89
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 19
+    },
+    "testing.Fatal": {
+      "bare": 11,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 71
+    }
+  },
+  "unresolved_count": 0
+}

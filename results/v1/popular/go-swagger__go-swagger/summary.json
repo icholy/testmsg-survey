@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "go-swagger/go-swagger",
+  "commit": "6e8ab9eb0945784a38955c8c2700e62d2f59a661",
+  "test_files": 69,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1,
+    "contextual": 5
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 5
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 1166
+}

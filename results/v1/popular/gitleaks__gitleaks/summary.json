@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "gitleaks/gitleaks",
+  "commit": "5f6ec56cfa6f8c67648d863582c7ae2f206d5c1c",
+  "test_files": 19,
+  "parse_errors": 0,
+  "total": {
+    "bare": 74,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 74,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 69,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 73,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

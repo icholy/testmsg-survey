@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "chenhg5/cc-connect",
+  "commit": "619f884c437c3d44d0235c445c95a867073631eb",
+  "test_files": 290,
+  "parse_errors": 0,
+  "total": {
+    "bare": 736,
+    "contextual": 1415
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 591,
+      "contextual": 1415
+    },
+    "library": {
+      "bare": 144,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 51,
+      "contextual": 123
+    },
+    "test": {
+      "bare": 685,
+      "contextual": 1292
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 134,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 20,
+      "contextual": 66
+    },
+    "testing.Fatal": {
+      "bare": 504,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 58,
+      "contextual": 1310
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 18
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 21
+    }
+  },
+  "unresolved_count": 4
+}

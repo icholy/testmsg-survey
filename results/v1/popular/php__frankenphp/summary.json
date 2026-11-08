@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "php/frankenphp",
+  "commit": "a777350da587a9f6fe48d98304e2e429089a50cc",
+  "test_files": 73,
+  "parse_errors": 0,
+  "total": {
+    "bare": 471,
+    "contextual": 148
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 19
+    },
+    "library": {
+      "bare": 463,
+      "contextual": 129
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 61,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 385,
+      "contextual": 143
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 69,
+      "contextual": 43
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 394,
+      "contextual": 85
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

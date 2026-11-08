@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "boyter/scc",
+  "commit": "62ac0b03d79a19421b4fc31edc63687dc1e7e05d",
+  "test_files": 106,
+  "parse_errors": 0,
+  "total": {
+    "bare": 182,
+    "contextual": 201
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 182,
+      "contextual": 201
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 3,
+      "contextual": 55
+    },
+    "test": {
+      "bare": 177,
+      "contextual": 146
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 177,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 184
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 0
+}

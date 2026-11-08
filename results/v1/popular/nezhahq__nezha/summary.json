@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "nezhahq/nezha",
+  "commit": "3e7d9ba60361e7968db2b029f28afc7cf32dd69e",
+  "test_files": 423,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2651,
+    "contextual": 373
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 632,
+      "contextual": 325
+    },
+    "helper": {
+      "bare": 170,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1846,
+      "contextual": 47
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 402,
+      "contextual": 51
+    },
+    "test": {
+      "bare": 2249,
+      "contextual": 322
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 60,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1786,
+      "contextual": 45
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "helper": {
+      "bare": 170,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 34,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 18
+    },
+    "testing.Fatal": {
+      "bare": 582,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 16,
+      "contextual": 299
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 25
+}

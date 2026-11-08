@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "gwuhaolin/livego",
+  "commit": "16c6af5d90317eeb6709ab1218b01350ac7ec2e5",
+  "test_files": 10,
+  "parse_errors": 0,
+  "total": {
+    "bare": 70,
+    "contextual": 9
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 70,
+      "contextual": 9
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 70,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 70,
+      "contextual": 8
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

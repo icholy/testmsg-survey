@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "antonmedv/fx",
+  "commit": "5d57637b00f4329b3cd563330e159d181e4ead85",
+  "test_files": 60,
+  "parse_errors": 0,
+  "total": {
+    "bare": 252,
+    "contextual": 19
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 248,
+      "contextual": 16
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 22,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 230,
+      "contextual": 15
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 246,
+      "contextual": 11
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 1
+}

@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "kubeshark/kubeshark",
+  "commit": "b79aa01afc280f4b377c36ad96527b8d063dbfb7",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3,
+    "contextual": 29
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 29
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 18
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 25
+    }
+  },
+  "unresolved_count": 0
+}

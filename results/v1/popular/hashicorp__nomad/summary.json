@@ -1,0 +1,130 @@
+{
+  "tier": "popular",
+  "repo": "hashicorp/nomad",
+  "commit": "e77c361fd055c12659a194ed62eae477b6e45f40",
+  "test_files": 834,
+  "parse_errors": 0,
+  "total": {
+    "bare": 11712,
+    "contextual": 713
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 931,
+      "contextual": 290
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 10774,
+      "contextual": 422
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 440,
+      "contextual": 145
+    },
+    "test": {
+      "bare": 11255,
+      "contextual": 567
+    }
+  },
+  "by_sink": {
+    "github.com/shoenig/test.Nil": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/shoenig/test.NoError": {
+      "bare": 35,
+      "contextual": 3
+    },
+    "github.com/shoenig/test/must.Nil": {
+      "bare": 55,
+      "contextual": 2
+    },
+    "github.com/shoenig/test/must.NoError": {
+      "bare": 8196,
+      "contextual": 317
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 40,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 54,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1536,
+      "contextual": 38
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 1
+    },
+    "testify.Nil": {
+      "bare": 396,
+      "contextual": 43
+    },
+    "testify.NoError": {
+      "bare": 431,
+      "contextual": 11
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 10
+    },
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 16,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 912,
+      "contextual": 273
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 24
+}

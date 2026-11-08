@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "bettercap/bettercap",
+  "commit": "3a24dd3ea60691b1264357f0fc60aa92973ec00d",
+  "test_files": 66,
+  "parse_errors": 0,
+  "total": {
+    "bare": 109,
+    "contextual": 171
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 106,
+      "contextual": 171
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 14
+    },
+    "test": {
+      "bare": 103,
+      "contextual": 157
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 12,
+      "contextual": 7
+    },
+    "testing.Errorf": {
+      "bare": 20,
+      "contextual": 55
+    },
+    "testing.Fatal": {
+      "bare": 58,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 16,
+      "contextual": 107
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

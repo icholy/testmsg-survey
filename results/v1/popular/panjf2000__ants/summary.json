@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "panjf2000/ants",
+  "commit": "c101e307893f9246aaabc078c8cddaff8884eaec",
+  "test_files": 6,
+  "parse_errors": 0,
+  "total": {
+    "bare": 54,
+    "contextual": 55
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "library": {
+      "bare": 54,
+      "contextual": 53
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 54,
+      "contextual": 53
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 54,
+      "contextual": 23
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 30
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

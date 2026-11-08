@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "gizak/termui",
+  "commit": "3ee54a07c7d109c74f4b1282b256800f55e8e421",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "jpillora/chisel",
+  "commit": "5ee6c74d60d96a75afb18bc866eb19327170aeed",
+  "test_files": 45,
+  "parse_errors": 0,
+  "total": {
+    "bare": 255,
+    "contextual": 40
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 252,
+      "contextual": 39
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 36,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 217,
+      "contextual": 34
+    }
+  },
+  "by_sink": {
+    "log.Panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "log.Panicf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 251,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 35
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 1
+}

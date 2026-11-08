@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "IceWhaleTech/CasaOS",
+  "commit": "0d3b2f444ec0193193cf03eef6d43c6e35b0183e",
+  "test_files": 8,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "library": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

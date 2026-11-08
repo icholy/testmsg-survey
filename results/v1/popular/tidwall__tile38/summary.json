@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "tidwall/tile38",
+  "commit": "a9f953e358d31bc8fc9479ad71f132b1ed752b4b",
+  "test_files": 37,
+  "parse_errors": 0,
+  "total": {
+    "bare": 11,
+    "contextual": 1
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 9,
+      "contextual": 1
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 8,
+      "contextual": 1
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

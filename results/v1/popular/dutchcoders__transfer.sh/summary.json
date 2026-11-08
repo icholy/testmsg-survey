@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "dutchcoders/transfer.sh",
+  "commit": "20efd89137d4fe13122e1b4cd48b1deab0f34fbd",
+  "test_files": 4,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2,
+    "contextual": 4
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "library": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "gopkg.in/check.v1.C.Assert": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 0
+}

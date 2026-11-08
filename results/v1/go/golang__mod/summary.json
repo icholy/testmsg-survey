@@ -1,0 +1,54 @@
+{
+  "tier": "go",
+  "repo": "golang/mod",
+  "commit": "b5136e5ba156da612a1efc6e49b55988a134a5e0",
+  "test_files": 17,
+  "parse_errors": 0,
+  "total": {
+    "bare": 171,
+    "contextual": 48
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 171,
+      "contextual": 48
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 29,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 140,
+      "contextual": 44
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 15
+    },
+    "testing.Fatal": {
+      "bare": 167,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 31
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 5
+}

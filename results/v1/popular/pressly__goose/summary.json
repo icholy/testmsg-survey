@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "pressly/goose",
+  "commit": "2d285d2249855c959765409c68b17a6634f0acb4",
+  "test_files": 27,
+  "parse_errors": 0,
+  "total": {
+    "bare": 465,
+    "contextual": 7
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 7
+    },
+    "library": {
+      "bare": 458,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 41,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 424,
+      "contextual": 6
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 454,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 1
+}

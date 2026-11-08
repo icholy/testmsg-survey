@@ -1,0 +1,42 @@
+{
+  "tier": "popular",
+  "repo": "joho/godotenv",
+  "commit": "97a2850142438b3c357c1d3439e325181afdcc1d",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2,
+    "contextual": 9
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2,
+      "contextual": 9
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 2,
+      "contextual": 7
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

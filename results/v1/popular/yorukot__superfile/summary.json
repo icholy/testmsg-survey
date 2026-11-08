@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "yorukot/superfile",
+  "commit": "2328e2ecb643ac11198e7a39555484388dfa4785",
+  "test_files": 50,
+  "parse_errors": 0,
+  "total": {
+    "bare": 103,
+    "contextual": 17
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 4
+    },
+    "library": {
+      "bare": 100,
+      "contextual": 13
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 98,
+      "contextual": 13
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 98,
+      "contextual": 12
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,106 @@
+{
+  "tier": "popular",
+  "repo": "weaviate/weaviate",
+  "commit": "85bd085e6fd6bcf2c6269c880dc49181c86bbb92",
+  "test_files": 2458,
+  "parse_errors": 0,
+  "total": {
+    "bare": 23273,
+    "contextual": 1482
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 128,
+      "contextual": 225
+    },
+    "helper": {
+      "bare": 91,
+      "contextual": 151
+    },
+    "library": {
+      "bare": 23004,
+      "contextual": 1041
+    },
+    "panic": {
+      "bare": 50,
+      "contextual": 65
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 165,
+      "contextual": 11
+    },
+    "fuzz": {
+      "bare": 5,
+      "contextual": 6
+    },
+    "other": {
+      "bare": 3811,
+      "contextual": 463
+    },
+    "test": {
+      "bare": 19292,
+      "contextual": 1002
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 673,
+      "contextual": 11
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 542,
+      "contextual": 75
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 4128,
+      "contextual": 25
+    },
+    "github.com/stretchr/testify/require.Nilf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 17661,
+      "contextual": 818
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 108
+    },
+    "helper": {
+      "bare": 91,
+      "contextual": 151
+    },
+    "panic": {
+      "bare": 50,
+      "contextual": 65
+    },
+    "testing.Error": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 39
+    },
+    "testing.Fatal": {
+      "bare": 109,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 6,
+      "contextual": 173
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 234
+}

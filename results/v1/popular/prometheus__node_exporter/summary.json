@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "prometheus/node_exporter",
+  "commit": "2ae7dd881ed9e551fb75abc811bef974b2c31819",
+  "test_files": 46,
+  "parse_errors": 0,
+  "total": {
+    "bare": 143,
+    "contextual": 37
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 135,
+      "contextual": 30
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 139,
+      "contextual": 32
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 8,
+      "contextual": 7
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 130,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 21
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

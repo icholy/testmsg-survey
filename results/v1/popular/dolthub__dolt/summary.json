@@ -1,0 +1,118 @@
+{
+  "tier": "popular",
+  "repo": "dolthub/dolt",
+  "commit": "b8db8d97072a3d103d668a965c36a736df3c1d3c",
+  "test_files": 493,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6285,
+    "contextual": 224
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 214,
+      "contextual": 101
+    },
+    "helper": {
+      "bare": 101,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 5893,
+      "contextual": 99
+    },
+    "panic": {
+      "bare": 77,
+      "contextual": 24
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 39,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 1734,
+      "contextual": 55
+    },
+    "test": {
+      "bare": 4512,
+      "contextual": 168
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 584,
+      "contextual": 15
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 4965,
+      "contextual": 63
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "helper": {
+      "bare": 101,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 63,
+      "contextual": 23
+    },
+    "testify.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 336,
+      "contextual": 12
+    },
+    "testing.Error": {
+      "bare": 11,
+      "contextual": 18
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 200,
+      "contextual": 40
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 17
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 6
+}

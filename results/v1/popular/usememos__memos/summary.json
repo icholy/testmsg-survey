@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "usememos/memos",
+  "commit": "88a20fefdb20962558aa8db04d5ba068aac201e8",
+  "test_files": 211,
+  "parse_errors": 0,
+  "total": {
+    "bare": 4137,
+    "contextual": 163
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 30
+    },
+    "library": {
+      "bare": 4134,
+      "contextual": 133
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 222,
+      "contextual": 17
+    },
+    "test": {
+      "bare": 3913,
+      "contextual": 142
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 16,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 4118,
+      "contextual": 132
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 26
+    }
+  },
+  "unresolved_count": 19
+}

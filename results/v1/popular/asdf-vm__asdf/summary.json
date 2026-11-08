@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "asdf-vm/asdf",
+  "commit": "ae14f6e673cc45d29e4977c4e9a70c70bef48196",
+  "test_files": 20,
+  "parse_errors": 0,
+  "total": {
+    "bare": 331,
+    "contextual": 18
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 326,
+      "contextual": 15
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 20,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 311,
+      "contextual": 15
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 319,
+      "contextual": 15
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

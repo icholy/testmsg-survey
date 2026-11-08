@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "maxence-charriere/go-app",
+  "commit": "6c366ee8a8c6ddab708a2222eb019ffbb9a00c2c",
+  "test_files": 34,
+  "parse_errors": 0,
+  "total": {
+    "bare": 243,
+    "contextual": 11
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 9,
+      "contextual": 5
+    },
+    "library": {
+      "bare": 234,
+      "contextual": 6
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 219,
+      "contextual": 11
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 234,
+      "contextual": 6
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

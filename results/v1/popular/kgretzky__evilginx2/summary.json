@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "kgretzky/evilginx2",
+  "commit": "4c0988a1d9db4d172a185e979a38bfd0efdb5830",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

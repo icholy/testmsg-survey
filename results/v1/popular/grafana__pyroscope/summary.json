@@ -1,0 +1,98 @@
+{
+  "tier": "popular",
+  "repo": "grafana/pyroscope",
+  "commit": "065c94da7366e975a914d777534b737ca5a2e609",
+  "test_files": 454,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3681,
+    "contextual": 65
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 34,
+      "contextual": 21
+    },
+    "helper": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 3635,
+      "contextual": 40
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 4
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 88,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 477,
+      "contextual": 28
+    },
+    "test": {
+      "bare": 3111,
+      "contextual": 37
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 242,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 21,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 3246,
+      "contextual": 36
+    },
+    "helper": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 4
+    },
+    "testify.NoError": {
+      "bare": 125,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 30,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 20
+    }
+  },
+  "unresolved_count": 9
+}

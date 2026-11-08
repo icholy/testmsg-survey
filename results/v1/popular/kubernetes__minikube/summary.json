@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "kubernetes/minikube",
+  "commit": "db10525ea2a5f75074bbd72aab54e0b320eb499c",
+  "test_files": 212,
+  "parse_errors": 0,
+  "total": {
+    "bare": 261,
+    "contextual": 930
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 153,
+      "contextual": 924
+    },
+    "library": {
+      "bare": 107,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 15,
+      "contextual": 420
+    },
+    "test": {
+      "bare": 246,
+      "contextual": 510
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 98,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 8,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 10,
+      "contextual": 360
+    },
+    "testing.Fatal": {
+      "bare": 127,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 8,
+      "contextual": 553
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 1
+}

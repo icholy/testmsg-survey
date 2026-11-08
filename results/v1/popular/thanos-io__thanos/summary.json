@@ -1,0 +1,94 @@
+{
+  "tier": "popular",
+  "repo": "thanos-io/thanos",
+  "commit": "df1f3f3d5e72769dc639cb6006a7972b168672ce",
+  "test_files": 227,
+  "parse_errors": 0,
+  "total": {
+    "bare": 392,
+    "contextual": 42
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 18,
+      "contextual": 29
+    },
+    "library": {
+      "bare": 355,
+      "contextual": 13
+    },
+    "panic": {
+      "bare": 19,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 66,
+      "contextual": 3
+    },
+    "example": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 41,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 280,
+      "contextual": 26
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 342,
+      "contextual": 12
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "log.Fatal": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 13,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 27
+    }
+  },
+  "unresolved_count": 1544
+}

@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "gotenberg/gotenberg",
+  "commit": "57361586bce5b4b0d4b8448b7c972af34a745baf",
+  "test_files": 83,
+  "parse_errors": 0,
+  "total": {
+    "bare": 93,
+    "contextual": 334
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 82,
+      "contextual": 334
+    },
+    "library": {
+      "bare": 11,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 21,
+      "contextual": 32
+    },
+    "test": {
+      "bare": 72,
+      "contextual": 302
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 4
+    },
+    "testing.Fatal": {
+      "bare": 62,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 18,
+      "contextual": 328
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 2
+}

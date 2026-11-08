@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "ccfos/nightingale",
+  "commit": "3abcdb2312453be2dbb2174e42320620c9819dcf",
+  "test_files": 243,
+  "parse_errors": 0,
+  "total": {
+    "bare": 485,
+    "contextual": 706
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 228,
+      "contextual": 705
+    },
+    "library": {
+      "bare": 255,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 55,
+      "contextual": 87
+    },
+    "test": {
+      "bare": 430,
+      "contextual": 619
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 228,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 34
+    },
+    "testing.Fatal": {
+      "bare": 191,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 33,
+      "contextual": 655
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 0
+}

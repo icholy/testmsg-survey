@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "securego/gosec",
+  "commit": "14c713478ed40c9bdfa56d35d9c2142b91608106",
+  "test_files": 76,
+  "parse_errors": 0,
+  "total": {
+    "bare": 621,
+    "contextual": 43
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 24,
+      "contextual": 43
+    },
+    "library": {
+      "bare": 597,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 570,
+      "contextual": 22
+    },
+    "test": {
+      "bare": 50,
+      "contextual": 20
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 113,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ShouldNot(HaveOccurred)": {
+      "bare": 415,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 16,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 35,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 7,
+      "contextual": 43
+    }
+  },
+  "unresolved_count": 1
+}

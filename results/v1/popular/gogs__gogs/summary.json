@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "gogs/gogs",
+  "commit": "df829902c88c23cba12fa7468b81472a04ebd4ce",
+  "test_files": 69,
+  "parse_errors": 0,
+  "total": {
+    "bare": 459,
+    "contextual": 8
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 25,
+      "contextual": 2
+    },
+    "library": {
+      "bare": 434,
+      "contextual": 6
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 379,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 80,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 432,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 25,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "evanw/esbuild",
+  "commit": "f6058f8364fe7ab91ca57a83e02577ed74c9cae4",
+  "test_files": 34,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2,
+    "contextual": 13
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 13
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 1,
+      "contextual": 13
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 10
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 33
+}

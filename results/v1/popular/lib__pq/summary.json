@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "lib/pq",
+  "commit": "451ac10e4e854d3dd426b7b6ef6446850efbc34e",
+  "test_files": 24,
+  "parse_errors": 0,
+  "total": {
+    "bare": 174,
+    "contextual": 15
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 138,
+      "contextual": 12
+    },
+    "panic": {
+      "bare": 36,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 12,
+      "contextual": 2
+    },
+    "example": {
+      "bare": 35,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 6,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 121,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 35,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 137,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "unresolved_count": 19
+}

@@ -1,0 +1,78 @@
+{
+  "tier": "go",
+  "repo": "golang/crypto",
+  "commit": "a1058eb15227820326f7baca20eabf9328dada68",
+  "test_files": 117,
+  "parse_errors": 0,
+  "total": {
+    "bare": 287,
+    "contextual": 845
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 242,
+      "contextual": 792
+    },
+    "panic": {
+      "bare": 45,
+      "contextual": 53
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 9,
+      "contextual": 8
+    },
+    "example": {
+      "bare": 26,
+      "contextual": 37
+    },
+    "other": {
+      "bare": 41,
+      "contextual": 162
+    },
+    "test": {
+      "bare": 211,
+      "contextual": 638
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 7,
+      "contextual": 27
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 10
+    },
+    "panic": {
+      "bare": 38,
+      "contextual": 16
+    },
+    "testing.Error": {
+      "bare": 26,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 4,
+      "contextual": 183
+    },
+    "testing.Fatal": {
+      "bare": 203,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 9,
+      "contextual": 598
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 10
+}

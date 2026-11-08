@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "google/adk-go",
+  "commit": "dba8afa2bc3a54e13731ac6d18592edcba4c7530",
+  "test_files": 408,
+  "parse_errors": 0,
+  "total": {
+    "bare": 755,
+    "contextual": 4405
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 550,
+      "contextual": 4400
+    },
+    "helper": {
+      "bare": 193,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 12,
+      "contextual": 5
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 78,
+      "contextual": 476
+    },
+    "test": {
+      "bare": 672,
+      "contextual": 3929
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 193,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 6
+    },
+    "testing.Errorf": {
+      "bare": 8,
+      "contextual": 242
+    },
+    "testing.Fatal": {
+      "bare": 469,
+      "contextual": 66
+    },
+    "testing.Fatalf": {
+      "bare": 69,
+      "contextual": 4084
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 80
+}

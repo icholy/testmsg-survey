@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "rqlite/rqlite",
+  "commit": "21baebc228776354a135537152cd06124bea9053",
+  "test_files": 148,
+  "parse_errors": 0,
+  "total": {
+    "bare": 401,
+    "contextual": 3892
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 365,
+      "contextual": 3836
+    },
+    "panic": {
+      "bare": 36,
+      "contextual": 56
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 10
+    },
+    "other": {
+      "bare": 39,
+      "contextual": 192
+    },
+    "test": {
+      "bare": 361,
+      "contextual": 3690
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 34,
+      "contextual": 56
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 6,
+      "contextual": 37
+    },
+    "testing.Fatal": {
+      "bare": 267,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 89,
+      "contextual": 3797
+    }
+  },
+  "unresolved_count": 5
+}

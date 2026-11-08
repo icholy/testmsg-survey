@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "XIU2/CloudflareSpeedTest",
+  "commit": "50b42c7f95cfb06413740ce6e1967578ebe63380",
+  "test_files": 0,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

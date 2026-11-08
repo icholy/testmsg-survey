@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "googleapis/mcp-toolbox",
+  "commit": "8d54da0d2c4069937f62654f3262f3f46fae850d",
+  "test_files": 562,
+  "parse_errors": 0,
+  "total": {
+    "bare": 825,
+    "contextual": 2632
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 822,
+      "contextual": 2629
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 819
+    },
+    "test": {
+      "bare": 823,
+      "contextual": 1813
+    }
+  },
+  "by_sink": {
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 7,
+      "contextual": 96
+    },
+    "testing.Fatal": {
+      "bare": 99,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 715,
+      "contextual": 2530
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 2
+}

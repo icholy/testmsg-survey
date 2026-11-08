@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "fullstorydev/grpcurl",
+  "commit": "bcfae43127a61c609af2312c98187d8d09051e58",
+  "test_files": 5,
+  "parse_errors": 0,
+  "total": {
+    "bare": 9,
+    "contextual": 85
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 84
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 6,
+      "contextual": 30
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 55
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 6,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 75
+    }
+  },
+  "unresolved_count": 0
+}

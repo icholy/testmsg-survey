@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "linkerd/linkerd2",
+  "commit": "e9de42d3513e6bec8e39dbc02d2a2ca5876fe8ed",
+  "test_files": 133,
+  "parse_errors": 0,
+  "total": {
+    "bare": 298,
+    "contextual": 308
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 291,
+      "contextual": 305
+    },
+    "helper": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 61,
+      "contextual": 26
+    },
+    "test": {
+      "bare": 237,
+      "contextual": 282
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 1,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 14,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 8,
+      "contextual": 15
+    },
+    "testing.Fatal": {
+      "bare": 124,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 145,
+      "contextual": 281
+    }
+  },
+  "unresolved_count": 340
+}

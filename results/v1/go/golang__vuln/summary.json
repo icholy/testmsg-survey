@@ -1,0 +1,54 @@
+{
+  "tier": "go",
+  "repo": "golang/vuln",
+  "commit": "e672cbe8fbc8c76e28fcb6db0efd9ce354e0dac5",
+  "test_files": 36,
+  "parse_errors": 0,
+  "total": {
+    "bare": 76,
+    "contextual": 16
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 76,
+      "contextual": 14
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 15,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 58,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 76,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 12
+    }
+  },
+  "unresolved_count": 0
+}

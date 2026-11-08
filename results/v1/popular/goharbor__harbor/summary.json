@@ -1,0 +1,102 @@
+{
+  "tier": "popular",
+  "repo": "goharbor/harbor",
+  "commit": "3852755e06aa621ebfc7b665545de1e7d0032b47",
+  "test_files": 581,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2440,
+    "contextual": 427
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 80,
+      "contextual": 138
+    },
+    "library": {
+      "bare": 2350,
+      "contextual": 289
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1913,
+      "contextual": 296
+    },
+    "test": {
+      "bare": 527,
+      "contextual": 131
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 150,
+      "contextual": 26
+    },
+    "github.com/stretchr/testify/assert.Nilf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 86,
+      "contextual": 17
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 129,
+      "contextual": 19
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 282,
+      "contextual": 85
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testify.Nil": {
+      "bare": 1229,
+      "contextual": 17
+    },
+    "testify.NoError": {
+      "bare": 472,
+      "contextual": 100
+    },
+    "testify.NoErrorf": {
+      "bare": 2,
+      "contextual": 21
+    },
+    "testing.Error": {
+      "bare": 19,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 69
+    },
+    "testing.Fail": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 52,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 64
+    }
+  },
+  "unresolved_count": 44
+}

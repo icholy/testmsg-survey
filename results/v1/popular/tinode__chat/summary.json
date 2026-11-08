@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "tinode/chat",
+  "commit": "eb90ef83acae6542f52719377ee5a76d267a5618",
+  "test_files": 14,
+  "parse_errors": 0,
+  "total": {
+    "bare": 492,
+    "contextual": 37
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 488,
+      "contextual": 29
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 4,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 488,
+      "contextual": 25
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 4,
+      "contextual": 8
+    },
+    "testing.Error": {
+      "bare": 75,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "testing.Fatal": {
+      "bare": 410,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 16
+    }
+  },
+  "unresolved_count": 1
+}

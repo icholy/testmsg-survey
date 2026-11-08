@@ -1,0 +1,94 @@
+{
+  "tier": "popular",
+  "repo": "podman-container-tools/podman",
+  "commit": "1c975cf8f85dbbc947d6278f195a0bfaa527e109",
+  "test_files": 368,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3027,
+    "contextual": 126
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 31,
+      "contextual": 27
+    },
+    "library": {
+      "bare": 2992,
+      "contextual": 98
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2094,
+      "contextual": 55
+    },
+    "test": {
+      "bare": 933,
+      "contextual": 71
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 39,
+      "contextual": 2
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ShouldNot(HaveOccurred)": {
+      "bare": 40,
+      "contextual": 1
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 114,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 1844,
+      "contextual": 45
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 693,
+      "contextual": 22
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 257,
+      "contextual": 26
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 22,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 23
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 22
+}

@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "flannel-io/flannel",
+  "commit": "dc074a93121c406313b7f6c2607d9ad102b6d24e",
+  "test_files": 32,
+  "parse_errors": 0,
+  "total": {
+    "bare": 153,
+    "contextual": 128
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 46,
+      "contextual": 97
+    },
+    "library": {
+      "bare": 102,
+      "contextual": 31
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 107,
+      "contextual": 38
+    },
+    "test": {
+      "bare": 46,
+      "contextual": 87
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 35,
+      "contextual": 27
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 67,
+      "contextual": 4
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 23
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 9
+    },
+    "testing.Fatal": {
+      "bare": 45,
+      "contextual": 45
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 20
+    }
+  },
+  "unresolved_count": 0
+}

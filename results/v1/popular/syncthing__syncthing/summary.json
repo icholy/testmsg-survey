@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "syncthing/syncthing",
+  "commit": "b34734376128492fa4e1b01412193de033e20613",
+  "test_files": 140,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1232,
+    "contextual": 104
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1142,
+      "contextual": 96
+    },
+    "helper": {
+      "bare": 47,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 43,
+      "contextual": 8
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 38,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 208,
+      "contextual": 28
+    },
+    "test": {
+      "bare": 986,
+      "contextual": 76
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 47,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 25,
+      "contextual": 8
+    },
+    "testing.Error": {
+      "bare": 107,
+      "contextual": 18
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 36
+    },
+    "testing.Fatal": {
+      "bare": 1024,
+      "contextual": 27
+    },
+    "testing.Fatalf": {
+      "bare": 7,
+      "contextual": 15
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 64
+}

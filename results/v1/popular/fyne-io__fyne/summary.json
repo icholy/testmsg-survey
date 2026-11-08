@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "fyne-io/fyne",
+  "commit": "a2c0f8894093e54ad95d1012857cb2cb74868db9",
+  "test_files": 322,
+  "parse_errors": 0,
+  "total": {
+    "bare": 743,
+    "contextual": 20
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 44,
+      "contextual": 18
+    },
+    "library": {
+      "bare": 699,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 5,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 11,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 727,
+      "contextual": 16
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 411,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 199,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 65,
+      "contextual": 2
+    },
+    "testify.NoError": {
+      "bare": 24,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 4
+    },
+    "testing.FailNow": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 33,
+      "contextual": 3
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 6
+    }
+  },
+  "unresolved_count": 7
+}

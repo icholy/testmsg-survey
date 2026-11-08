@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "infracost/infracost",
+  "commit": "93b9a2d921f19966b09a3d84d2e63bd86f8587d0",
+  "test_files": 395,
+  "parse_errors": 0,
+  "total": {
+    "bare": 222,
+    "contextual": 5
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 26,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 189,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 31,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 190,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 60,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 121,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 14,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

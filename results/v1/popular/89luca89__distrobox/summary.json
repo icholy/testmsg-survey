@@ -1,0 +1,46 @@
+{
+  "tier": "popular",
+  "repo": "89luca89/distrobox",
+  "commit": "a48297c09c3345051b8b04ba3589ebaa7bc293be",
+  "test_files": 35,
+  "parse_errors": 0,
+  "total": {
+    "bare": 135,
+    "contextual": 25
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 10,
+      "contextual": 1
+    },
+    "library": {
+      "bare": 125,
+      "contextual": 24
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 10,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 125,
+      "contextual": 24
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 125,
+      "contextual": 22
+    },
+    "testing.Fatalf": {
+      "bare": 10,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

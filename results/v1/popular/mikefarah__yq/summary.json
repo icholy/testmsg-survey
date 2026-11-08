@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "mikefarah/yq",
+  "commit": "4fdfdb4308a81310b6645cc3b2e151b6b07aafdf",
+  "test_files": 114,
+  "parse_errors": 0,
+  "total": {
+    "bare": 102,
+    "contextual": 141
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 40,
+      "contextual": 141
+    },
+    "panic": {
+      "bare": 62,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 27,
+      "contextual": 19
+    },
+    "test": {
+      "bare": 75,
+      "contextual": 122
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 62,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 16,
+      "contextual": 12
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 40
+    },
+    "testing.Fatal": {
+      "bare": 23,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 87
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 48
+}

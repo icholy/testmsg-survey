@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "halfrost/LeetCode-Go",
+  "commit": "1dde49c8ab37a08f21a4fb249d7bd90af4a9c58e",
+  "test_files": 810,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

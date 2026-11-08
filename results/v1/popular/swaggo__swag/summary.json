@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "swaggo/swag",
+  "commit": "eb131898e464c54a946c502830c45379e428b5cd",
+  "test_files": 14,
+  "parse_errors": 0,
+  "total": {
+    "bare": 434,
+    "contextual": 23
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 5,
+      "contextual": 6
+    },
+    "library": {
+      "bare": 429,
+      "contextual": 17
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 429,
+      "contextual": 23
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 388,
+      "contextual": 15
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 39,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "go-sql-driver/mysql",
+  "commit": "4cdf75e9037ffccf63a981d10f5c2e669edbfc49",
+  "test_files": 26,
+  "parse_errors": 0,
+  "total": {
+    "bare": 181,
+    "contextual": 63
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 176,
+      "contextual": 63
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 10,
+      "contextual": 3
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 8,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 163,
+      "contextual": 44
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 36,
+      "contextual": 14
+    },
+    "testing.Fail": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 126,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 38
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 115
+}

@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "cloudwego/eino",
+  "commit": "0a5ca53b9d3bf7b661dccc863465ec568a421eea",
+  "test_files": 139,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3055,
+    "contextual": 176
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 282,
+      "contextual": 143
+    },
+    "library": {
+      "bare": 2768,
+      "contextual": 33
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 69,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 2986,
+      "contextual": 172
+    }
+  },
+  "by_sink": {
+    "github.com/smartystreets/goconvey/convey.So": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 152,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2114,
+      "contextual": 27
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 500,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "testing.Fatal": {
+      "bare": 250,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 31,
+      "contextual": 135
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 27
+}

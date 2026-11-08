@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "infiniflow/ragflow",
+  "commit": "3c6d2255af06164f0818d0959af10de0afd8b8fa",
+  "test_files": 1661,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2343,
+    "contextual": 10650
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2319,
+      "contextual": 10642
+    },
+    "helper": {
+      "bare": 12,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 12,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 21,
+      "contextual": 14
+    },
+    "other": {
+      "bare": 205,
+      "contextual": 1138
+    },
+    "test": {
+      "bare": 2117,
+      "contextual": 9498
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 12,
+      "contextual": 5
+    },
+    "panic": {
+      "bare": 12,
+      "contextual": 3
+    },
+    "testing.Error": {
+      "bare": 32,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 28,
+      "contextual": 530
+    },
+    "testing.Fatal": {
+      "bare": 2016,
+      "contextual": 10
+    },
+    "testing.Fatalf": {
+      "bare": 243,
+      "contextual": 10025
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 10
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 67
+    }
+  },
+  "unresolved_count": 22
+}

@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "axllent/mailpit",
+  "commit": "9df89456303043e1f5bfe468dc21108e32e1d0ca",
+  "test_files": 30,
+  "parse_errors": 0,
+  "total": {
+    "bare": 168,
+    "contextual": 89
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 157,
+      "contextual": 89
+    },
+    "panic": {
+      "bare": 11,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 26,
+      "contextual": 8
+    },
+    "test": {
+      "bare": 140,
+      "contextual": 81
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 49,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 27
+    },
+    "testing.Fail": {
+      "bare": 50,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 45,
+      "contextual": 13
+    },
+    "testing.Fatalf": {
+      "bare": 13,
+      "contextual": 49
+    }
+  },
+  "unresolved_count": 0
+}

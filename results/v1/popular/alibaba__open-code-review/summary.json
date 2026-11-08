@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "alibaba/open-code-review",
+  "commit": "0d403392073bcb0d3894c5364b0a85e7b6a47e0d",
+  "test_files": 319,
+  "parse_errors": 0,
+  "total": {
+    "bare": 758,
+    "contextual": 1652
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 748,
+      "contextual": 1652
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 56,
+      "contextual": 130
+    },
+    "test": {
+      "bare": 702,
+      "contextual": 1522
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 7,
+      "contextual": 90
+    },
+    "testing.Fatal": {
+      "bare": 580,
+      "contextual": 10
+    },
+    "testing.Fatalf": {
+      "bare": 154,
+      "contextual": 1525
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 21
+    }
+  },
+  "unresolved_count": 2
+}

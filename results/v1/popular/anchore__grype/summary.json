@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "anchore/grype",
+  "commit": "606a3ddca51da46c9d2f596758f604c3ef7b4aec",
+  "test_files": 291,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1045,
+    "contextual": 94
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 18,
+      "contextual": 51
+    },
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1014,
+      "contextual": 43
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 107,
+      "contextual": 22
+    },
+    "test": {
+      "bare": 937,
+      "contextual": 72
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 73,
+      "contextual": 9
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 940,
+      "contextual": 33
+    },
+    "helper": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "testing.Fatal": {
+      "bare": 15,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 43
+    }
+  },
+  "unresolved_count": 73
+}

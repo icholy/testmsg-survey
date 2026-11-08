@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "DNSCrypt/dnscrypt-proxy",
+  "commit": "8d5b1b5bebd205d509c126f3d529c6beddddc50c",
+  "test_files": 13,
+  "parse_errors": 0,
+  "total": {
+    "bare": 37,
+    "contextual": 27
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 36,
+      "contextual": 27
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 33,
+      "contextual": 20
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 31,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 25
+    },
+    "testing.Skip": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 5
+}

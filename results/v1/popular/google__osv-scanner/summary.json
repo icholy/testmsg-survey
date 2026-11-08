@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "google/osv-scanner",
+  "commit": "eda4d27210b1d28dd3ca491b6a78744875241b56",
+  "test_files": 83,
+  "parse_errors": 0,
+  "total": {
+    "bare": 39,
+    "contextual": 125
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 33,
+      "contextual": 125
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 8,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 30,
+      "contextual": 112
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 8,
+      "contextual": 38
+    },
+    "testing.Fatal": {
+      "bare": 15,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 86
+    }
+  },
+  "unresolved_count": 3
+}

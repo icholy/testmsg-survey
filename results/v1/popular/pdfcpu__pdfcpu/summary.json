@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "pdfcpu/pdfcpu",
+  "commit": "a21a372de6864eccd9e554df63c7950dfd1a4b47",
+  "test_files": 417,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2450,
+    "contextual": 1045
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2442,
+      "contextual": 1038
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 11,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 592,
+      "contextual": 232
+    },
+    "test": {
+      "bare": 1847,
+      "contextual": 810
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 0,
+      "contextual": 7
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 58
+    },
+    "testing.Fail": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2415,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 20,
+      "contextual": 976
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 58
+}

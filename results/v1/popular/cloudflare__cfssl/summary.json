@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "cloudflare/cfssl",
+  "commit": "e5d686ddb7af3fc31911ddd5c385c3d8715307e4",
+  "test_files": 91,
+  "parse_errors": 0,
+  "total": {
+    "bare": 589,
+    "contextual": 307
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 577,
+      "contextual": 300
+    },
+    "panic": {
+      "bare": 12,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 140,
+      "contextual": 42
+    },
+    "test": {
+      "bare": 448,
+      "contextual": 261
+    }
+  },
+  "by_sink": {
+    "log.Fatalf": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 7
+    },
+    "testing.Error": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 51
+    },
+    "testing.FailNow": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 446,
+      "contextual": 94
+    },
+    "testing.Fatalf": {
+      "bare": 123,
+      "contextual": 154
+    }
+  },
+  "unresolved_count": 14
+}

@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "m1k1o/neko",
+  "commit": "bead4134a621337d19a15440239a81a6f99238fb",
+  "test_files": 17,
+  "parse_errors": 0,
+  "total": {
+    "bare": 32,
+    "contextual": 32
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 24,
+      "contextual": 32
+    },
+    "helper": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 6,
+      "contextual": 11
+    },
+    "test": {
+      "bare": 26,
+      "contextual": 21
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 18
+    },
+    "testing.Fatal": {
+      "bare": 23,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 14
+    }
+  },
+  "unresolved_count": 0
+}

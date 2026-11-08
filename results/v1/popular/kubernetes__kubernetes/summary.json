@@ -1,0 +1,134 @@
+{
+  "tier": "popular",
+  "repo": "kubernetes/kubernetes",
+  "commit": "e3d37bb9fb1d695daff432925cd44b1452df64e1",
+  "test_files": 3366,
+  "parse_errors": 0,
+  "total": {
+    "bare": 10264,
+    "contextual": 11337
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 6981,
+      "contextual": 10666
+    },
+    "helper": {
+      "bare": 207,
+      "contextual": 56
+    },
+    "library": {
+      "bare": 2911,
+      "contextual": 539
+    },
+    "panic": {
+      "bare": 165,
+      "contextual": 76
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 183,
+      "contextual": 103
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 1317,
+      "contextual": 1680
+    },
+    "test": {
+      "bare": 8764,
+      "contextual": 9552
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.Should(Succeed)": {
+      "bare": 7,
+      "contextual": 1
+    },
+    "github.com/onsi/gomega.ShouldNot(HaveOccurred)": {
+      "bare": 8,
+      "contextual": 1
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 17,
+      "contextual": 10
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 10
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 485,
+      "contextual": 131
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 11
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 2269,
+      "contextual": 318
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 55
+    },
+    "helper": {
+      "bare": 207,
+      "contextual": 56
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 164,
+      "contextual": 75
+    },
+    "testify.NoError": {
+      "bare": 109,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 484,
+      "contextual": 39
+    },
+    "testing.Errorf": {
+      "bare": 886,
+      "contextual": 2754
+    },
+    "testing.Fatal": {
+      "bare": 4394,
+      "contextual": 115
+    },
+    "testing.Fatalf": {
+      "bare": 1217,
+      "contextual": 7755
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 1805
+}

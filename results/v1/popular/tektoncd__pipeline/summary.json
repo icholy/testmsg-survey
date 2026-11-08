@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "tektoncd/pipeline",
+  "commit": "38288103580bbfd727b88545a9d2dca34edb1a2e",
+  "test_files": 299,
+  "parse_errors": 0,
+  "total": {
+    "bare": 208,
+    "contextual": 1970
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 195,
+      "contextual": 1949
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 21
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 26,
+      "contextual": 166
+    },
+    "test": {
+      "bare": 182,
+      "contextual": 1804
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 0,
+      "contextual": 21
+    },
+    "log.Fatal": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 54,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 14,
+      "contextual": 382
+    },
+    "testing.Fatal": {
+      "bare": 63,
+      "contextual": 99
+    },
+    "testing.Fatalf": {
+      "bare": 64,
+      "contextual": 1462
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 23
+}

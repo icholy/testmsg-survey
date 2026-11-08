@@ -1,0 +1,102 @@
+{
+  "tier": "popular",
+  "repo": "velero-io/velero",
+  "commit": "00d439d6beff5b3a4e1b21e26d650c2459122e3c",
+  "test_files": 307,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1846,
+    "contextual": 48
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 12,
+      "contextual": 17
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 1822,
+      "contextual": 31
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 106,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 1739,
+      "contextual": 41
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 28,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 149,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1621,
+      "contextual": 23
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 7
+    },
+    "testing.FailNow": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 6
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 11
+}

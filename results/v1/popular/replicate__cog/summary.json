@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "replicate/cog",
+  "commit": "ee8ae12ccf7dc01ae7b9106ff2b85af454e261a2",
+  "test_files": 130,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1436,
+    "contextual": 91
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "library": {
+      "bare": 1436,
+      "contextual": 88
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 83,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 1353,
+      "contextual": 85
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 5,
+      "contextual": 4
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1429,
+      "contextual": 84
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testify.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 2
+}

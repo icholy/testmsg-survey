@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "gocolly/colly",
+  "commit": "d42a1f44c086ea74c375361a0199247cdfebe31b",
+  "test_files": 7,
+  "parse_errors": 0,
+  "total": {
+    "bare": 15,
+    "contextual": 30
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 14,
+      "contextual": 30
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 15,
+      "contextual": 30
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 6,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 14
+    },
+    "testing.Fatal": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 12
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "gravitl/netmaker",
+  "commit": "51c1838b20b31318f44c85efac267de42958d224",
+  "test_files": 95,
+  "parse_errors": 0,
+  "total": {
+    "bare": 605,
+    "contextual": 44
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 49,
+      "contextual": 20
+    },
+    "library": {
+      "bare": 556,
+      "contextual": 24
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 132,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 472,
+      "contextual": 44
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 36,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 23,
+      "contextual": 13
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 397,
+      "contextual": 11
+    },
+    "testify.NoError": {
+      "bare": 100,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 42,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 7,
+      "contextual": 18
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 1
+}

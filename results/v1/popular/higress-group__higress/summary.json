@@ -1,0 +1,86 @@
+{
+  "tier": "popular",
+  "repo": "higress-group/higress",
+  "commit": "eb34c40c3d682f88aedc25fac10d9d8e0a209547",
+  "test_files": 340,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1534,
+    "contextual": 321
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 393,
+      "contextual": 312
+    },
+    "library": {
+      "bare": 1120,
+      "contextual": 6
+    },
+    "panic": {
+      "bare": 21,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 153,
+      "contextual": 39
+    },
+    "test": {
+      "bare": 1380,
+      "contextual": 282
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 97,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1014,
+      "contextual": 5
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 20,
+      "contextual": 3
+    },
+    "testify.NoError": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 6,
+      "contextual": 32
+    },
+    "testing.Fatal": {
+      "bare": 354,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 32,
+      "contextual": 277
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 2
+}

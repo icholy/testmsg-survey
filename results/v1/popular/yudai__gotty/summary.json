@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "yudai/gotty",
+  "commit": "a080c85cbc59226c94c6941ad8c395232d72d517",
+  "test_files": 1,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 10
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "by_sink": {
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 0
+}

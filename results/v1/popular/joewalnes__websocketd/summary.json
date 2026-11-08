@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "joewalnes/websocketd",
+  "commit": "a9fa1f1da4a1b4edc1f61d9242addfc680837cdf",
+  "test_files": 55,
+  "parse_errors": 0,
+  "total": {
+    "bare": 79,
+    "contextual": 207
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 79,
+      "contextual": 207
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 8,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 35,
+      "contextual": 57
+    },
+    "test": {
+      "bare": 36,
+      "contextual": 149
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 26
+    },
+    "testing.Fatal": {
+      "bare": 68,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 8,
+      "contextual": 176
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

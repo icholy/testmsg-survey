@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "go-gitea/gitea",
+  "commit": "3699309edde9bbe5a96b73937989e407ff951374",
+  "test_files": 1076,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6286,
+    "contextual": 111
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 34,
+      "contextual": 24
+    },
+    "library": {
+      "bare": 6252,
+      "contextual": 86
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 15,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 858,
+      "contextual": 16
+    },
+    "test": {
+      "bare": 5413,
+      "contextual": 93
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 3711,
+      "contextual": 63
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 2541,
+      "contextual": 23
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 12
+    },
+    "testing.FailNow": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 8
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 5
+}

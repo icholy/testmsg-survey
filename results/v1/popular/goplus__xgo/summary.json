@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "goplus/xgo",
+  "commit": "27bbd6933aea5689dc197368a19d8ff02bbd2102",
+  "test_files": 46,
+  "parse_errors": 0,
+  "total": {
+    "bare": 75,
+    "contextual": 93
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 61,
+      "contextual": 93
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 11,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 19,
+      "contextual": 40
+    },
+    "test": {
+      "bare": 56,
+      "contextual": 53
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 58,
+      "contextual": 81
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 5
+}

@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "gokcehan/lf",
+  "commit": "1d8a32edef37afbc6ad37495d6d737d3146d09e7",
+  "test_files": 8,
+  "parse_errors": 0,
+  "total": {
+    "bare": 4,
+    "contextual": 3
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 4,
+      "contextual": 3
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

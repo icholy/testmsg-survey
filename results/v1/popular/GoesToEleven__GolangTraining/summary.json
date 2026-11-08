@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "GoesToEleven/GolangTraining",
+  "commit": "f9a4f6cf39399a951f1b26875ed5aeee34aafb21",
+  "test_files": 6,
+  "parse_errors": 1,
+  "total": {
+    "bare": 1,
+    "contextual": 0
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

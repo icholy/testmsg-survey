@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "majd/ipatool",
+  "commit": "72c47d538b726df397fbf17bb3af809d69ef51b7",
+  "test_files": 113,
+  "parse_errors": 0,
+  "total": {
+    "bare": 658,
+    "contextual": 12
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 94,
+      "contextual": 12
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 562,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 573,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 85,
+      "contextual": 9
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 170,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 133,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 259,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 94,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 10
+    }
+  },
+  "unresolved_count": 14
+}

@@ -1,0 +1,102 @@
+{
+  "tier": "popular",
+  "repo": "jackc/pgx",
+  "commit": "21fbf266e84f1964c7f61fdf7c46054cca47d1ad",
+  "test_files": 149,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1994,
+    "contextual": 320
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 224,
+      "contextual": 239
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 1767,
+      "contextual": 78
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 99,
+      "contextual": 4
+    },
+    "fuzz": {
+      "bare": 2,
+      "contextual": 3
+    },
+    "other": {
+      "bare": 95,
+      "contextual": 21
+    },
+    "test": {
+      "bare": 1798,
+      "contextual": 292
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nilf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 101,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 36
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 12,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.Nilf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1654,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 32
+    },
+    "helper": {
+      "bare": 3,
+      "contextual": 3
+    },
+    "testing.Error": {
+      "bare": 30,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 130
+    },
+    "testing.Fatal": {
+      "bare": 177,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 17,
+      "contextual": 104
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

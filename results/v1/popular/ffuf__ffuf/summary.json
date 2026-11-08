@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "ffuf/ffuf",
+  "commit": "8d65e0373e5f223530174e5694285af849770078",
+  "test_files": 51,
+  "parse_errors": 0,
+  "total": {
+    "bare": 13,
+    "contextual": 77
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 12,
+      "contextual": 77
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 4,
+      "contextual": 15
+    },
+    "test": {
+      "bare": 9,
+      "contextual": 62
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 16
+    },
+    "testing.Fatal": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 2,
+      "contextual": 61
+    }
+  },
+  "unresolved_count": 0
+}

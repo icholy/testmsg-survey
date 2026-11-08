@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "blevesearch/bleve",
+  "commit": "d6b0c82cd5c1bf27a0b74931d956becbdf4e038e",
+  "test_files": 222,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2398,
+    "contextual": 471
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2346,
+      "contextual": 471
+    },
+    "panic": {
+      "bare": 52,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 60,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 29,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 327,
+      "contextual": 25
+    },
+    "test": {
+      "bare": 1982,
+      "contextual": 446
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "log.Fatalln": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 39,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 478,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 25,
+      "contextual": 184
+    },
+    "testing.Fatal": {
+      "bare": 1830,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 13,
+      "contextual": 287
+    }
+  },
+  "unresolved_count": 6
+}

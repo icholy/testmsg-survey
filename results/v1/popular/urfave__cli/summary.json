@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "urfave/cli",
+  "commit": "025d9538856463883c93b4c8a3de7187075bce27",
+  "test_files": 34,
+  "parse_errors": 0,
+  "total": {
+    "bare": 395,
+    "contextual": 8
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 18,
+      "contextual": 1
+    },
+    "library": {
+      "bare": 377,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 393,
+      "contextual": 7
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 95,
+      "contextual": 4
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 196,
+      "contextual": 3
+    },
+    "testify.NoError": {
+      "bare": 85,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 8
+}

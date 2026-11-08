@@ -1,0 +1,70 @@
+{
+  "tier": "go",
+  "repo": "golang/vulndb",
+  "commit": "e22db6528018f9725b3230c4e6429c791f40bb15",
+  "test_files": 68,
+  "parse_errors": 0,
+  "total": {
+    "bare": 233,
+    "contextual": 40
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 212,
+      "contextual": 40
+    },
+    "helper": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 50,
+      "contextual": 11
+    },
+    "test": {
+      "bare": 183,
+      "contextual": 29
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 21,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 12
+    },
+    "testing.Fatal": {
+      "bare": 190,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 24
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 2
+}

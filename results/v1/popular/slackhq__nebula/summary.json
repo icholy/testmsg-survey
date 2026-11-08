@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "slackhq/nebula",
+  "commit": "fb4ef139cbb4af67d142c72083fb735f56460e50",
+  "test_files": 144,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1626,
+    "contextual": 141
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 275,
+      "contextual": 119
+    },
+    "library": {
+      "bare": 1289,
+      "contextual": 22
+    },
+    "panic": {
+      "bare": 62,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 20,
+      "contextual": 1
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "other": {
+      "bare": 158,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 1448,
+      "contextual": 126
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 8,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1281,
+      "contextual": 19
+    },
+    "panic": {
+      "bare": 62,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 275,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 105
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 12
+    }
+  },
+  "unresolved_count": 6
+}

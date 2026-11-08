@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "qax-os/excelize",
+  "commit": "c4331ec2d7aab0546515906032d54b81952bbfa0",
+  "test_files": 31,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2560,
+    "contextual": 55
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 13,
+      "contextual": 1
+    },
+    "library": {
+      "bare": 2547,
+      "contextual": 54
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 10,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 2550,
+      "contextual": 54
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2535,
+      "contextual": 48
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 11,
+      "contextual": 1
+    },
+    "testing.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

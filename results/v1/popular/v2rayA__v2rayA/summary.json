@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "v2rayA/v2rayA",
+  "commit": "3cde5b66093d31cef35310d416c02f1ec4e8107c",
+  "test_files": 92,
+  "parse_errors": 0,
+  "total": {
+    "bare": 261,
+    "contextual": 60
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 257,
+      "contextual": 60
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 28,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 230,
+      "contextual": 56
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 8
+    },
+    "testing.Fatal": {
+      "bare": 250,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 5,
+      "contextual": 51
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "derailed/k9s",
+  "commit": "8f6226e0dac7d0418741e39b1c91b33871beb876",
+  "test_files": 218,
+  "parse_errors": 0,
+  "total": {
+    "bare": 295,
+    "contextual": 6
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 290,
+      "contextual": 6
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 19,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 276,
+      "contextual": 6
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 288,
+      "contextual": 5
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 0
+}

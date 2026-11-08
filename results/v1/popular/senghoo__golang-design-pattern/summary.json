@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "senghoo/golang-design-pattern",
+  "commit": "e9d687a5411f31db2a5d7229f94fb4c6c73163d3",
+  "test_files": 24,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

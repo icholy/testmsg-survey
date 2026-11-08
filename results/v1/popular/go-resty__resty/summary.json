@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "go-resty/resty",
+  "commit": "a8774780d8d919a17055285703541df18d892e4b",
+  "test_files": 21,
+  "parse_errors": 0,
+  "total": {
+    "bare": 19,
+    "contextual": 212
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 18,
+      "contextual": 26
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 186
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 12
+    },
+    "other": {
+      "bare": 5,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 14,
+      "contextual": 194
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 0,
+      "contextual": 186
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 23
+    },
+    "testing.Fatal": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 468
+}

@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "hashicorp/raft",
+  "commit": "a5b469295ddc9924541477eafe34bf59a8571063",
+  "test_files": 25,
+  "parse_errors": 0,
+  "total": {
+    "bare": 245,
+    "contextual": 56
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 191,
+      "contextual": 55
+    },
+    "helper": {
+      "bare": 26,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 10,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 232,
+      "contextual": 49
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "helper": {
+      "bare": 26,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fatal": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 186,
+      "contextual": 51
+    }
+  },
+  "unresolved_count": 1
+}

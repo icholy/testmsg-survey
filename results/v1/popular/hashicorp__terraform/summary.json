@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "hashicorp/terraform",
+  "commit": "aa716fca8c2e5bfd24ada7e0cd4a582ad1c824f1",
+  "test_files": 708,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1976,
+    "contextual": 1266
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1915,
+      "contextual": 1262
+    },
+    "helper": {
+      "bare": 26,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 35,
+      "contextual": 4
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 138,
+      "contextual": 156
+    },
+    "test": {
+      "bare": 1838,
+      "contextual": 1110
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 26,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 34,
+      "contextual": 4
+    },
+    "testing.Error": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 37,
+      "contextual": 67
+    },
+    "testing.Fatal": {
+      "bare": 1149,
+      "contextual": 68
+    },
+    "testing.Fatalf": {
+      "bare": 714,
+      "contextual": 1127
+    }
+  },
+  "unresolved_count": 10
+}

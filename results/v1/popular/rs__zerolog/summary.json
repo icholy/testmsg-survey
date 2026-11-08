@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "rs/zerolog",
+  "commit": "20ca4734f29c37a6781c3c502442c349b306dee3",
+  "test_files": 38,
+  "parse_errors": 0,
+  "total": {
+    "bare": 19,
+    "contextual": 45
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 19,
+      "contextual": 45
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "test": {
+      "bare": 13,
+      "contextual": 44
+    }
+  },
+  "by_sink": {
+    "testing.Error": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 42
+    },
+    "testing.Fatal": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

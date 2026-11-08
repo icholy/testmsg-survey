@@ -1,0 +1,98 @@
+{
+  "tier": "popular",
+  "repo": "prometheus/prometheus",
+  "commit": "1d4faeaf10281aa16c4a5e73e4bfda92f81bc366",
+  "test_files": 299,
+  "parse_errors": 0,
+  "total": {
+    "bare": 6669,
+    "contextual": 171
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 59,
+      "contextual": 20
+    },
+    "helper": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 6570,
+      "contextual": 138
+    },
+    "panic": {
+      "bare": 25,
+      "contextual": 13
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 272,
+      "contextual": 4
+    },
+    "example": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 973,
+      "contextual": 25
+    },
+    "test": {
+      "bare": 5407,
+      "contextual": 142
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 6566,
+      "contextual": 133
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "helper": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 25,
+      "contextual": 13
+    },
+    "testify.NoError": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 54,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 11
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 8
+}

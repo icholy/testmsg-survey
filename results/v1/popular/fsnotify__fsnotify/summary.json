@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "fsnotify/fsnotify",
+  "commit": "20b1e15ef3c70caeb37ea2bd184f48ef8382669e",
+  "test_files": 8,
+  "parse_errors": 0,
+  "total": {
+    "bare": 61,
+    "contextual": 30
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 61,
+      "contextual": 29
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1,
+      "contextual": 26
+    },
+    "test": {
+      "bare": 46,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 60,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 26
+    }
+  },
+  "unresolved_count": 0
+}

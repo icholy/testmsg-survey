@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "pocket-id/pocket-id",
+  "commit": "2aa1db694318bf725139b75fb418a40ad5d35609",
+  "test_files": 138,
+  "parse_errors": 0,
+  "total": {
+    "bare": 2072,
+    "contextual": 25
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4,
+      "contextual": 3
+    },
+    "library": {
+      "bare": 2067,
+      "contextual": 21
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 167,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 1905,
+      "contextual": 22
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 2066,
+      "contextual": 18
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 11
+}

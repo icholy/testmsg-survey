@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "kubernetes/client-go",
+  "commit": "494d62c5edeff3b84f2e6b3e757554c13bc3648f",
+  "test_files": 165,
+  "parse_errors": 0,
+  "total": {
+    "bare": 763,
+    "contextual": 634
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 477,
+      "contextual": 582
+    },
+    "helper": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 260,
+      "contextual": 48
+    },
+    "panic": {
+      "bare": 11,
+      "contextual": 4
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 4,
+      "contextual": 6
+    },
+    "other": {
+      "bare": 45,
+      "contextual": 64
+    },
+    "test": {
+      "bare": 714,
+      "contextual": 564
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 30,
+      "contextual": 19
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 199,
+      "contextual": 29
+    },
+    "helper": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 11,
+      "contextual": 4
+    },
+    "testify.NoError": {
+      "bare": 31,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 33,
+      "contextual": 5
+    },
+    "testing.Errorf": {
+      "bare": 132,
+      "contextual": 225
+    },
+    "testing.Fatal": {
+      "bare": 227,
+      "contextual": 18
+    },
+    "testing.Fatalf": {
+      "bare": 85,
+      "contextual": 334
+    }
+  },
+  "unresolved_count": 8
+}

@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "nats-io/nats-server",
+  "commit": "59bf235aea63881477dd485af3579be2ffc32b0c",
+  "test_files": 130,
+  "parse_errors": 0,
+  "total": {
+    "bare": 12839,
+    "contextual": 2632
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1282,
+      "contextual": 2618
+    },
+    "helper": {
+      "bare": 11544,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 14
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 112,
+      "contextual": 74
+    },
+    "fuzz": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 316,
+      "contextual": 182
+    },
+    "test": {
+      "bare": 12411,
+      "contextual": 2374
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 11544,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 13,
+      "contextual": 14
+    },
+    "testing.Error": {
+      "bare": 18,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 28,
+      "contextual": 49
+    },
+    "testing.Fatal": {
+      "bare": 281,
+      "contextual": 25
+    },
+    "testing.Fatalf": {
+      "bare": 955,
+      "contextual": 2540
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 870
+}

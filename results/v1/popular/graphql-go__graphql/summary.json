@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "graphql-go/graphql",
+  "commit": "6acef3563ff762c0f5cd14b759ed2cca405ac8fa",
+  "test_files": 75,
+  "parse_errors": 0,
+  "total": {
+    "bare": 278,
+    "contextual": 94
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 272,
+      "contextual": 90
+    },
+    "helper": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 4
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 10
+    },
+    "other": {
+      "bare": 10,
+      "contextual": 11
+    },
+    "test": {
+      "bare": 267,
+      "contextual": 73
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 101,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 166,
+      "contextual": 87
+    }
+  },
+  "unresolved_count": 2
+}

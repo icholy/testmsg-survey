@@ -1,0 +1,50 @@
+{
+  "tier": "popular",
+  "repo": "openfaas/faas",
+  "commit": "eb29c060bda6c2de3df83ca62f7ff6dedca9db23",
+  "test_files": 20,
+  "parse_errors": 0,
+  "total": {
+    "bare": 9,
+    "contextual": 8
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 8
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 7,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fail": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "testing.Fatal": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 0
+}

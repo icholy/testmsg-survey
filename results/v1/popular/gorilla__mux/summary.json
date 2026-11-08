@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "gorilla/mux",
+  "commit": "db9d1d0073d27a0a2d9a8c1bc52aa0af4374d265",
+  "test_files": 11,
+  "parse_errors": 0,
+  "total": {
+    "bare": 8,
+    "contextual": 36
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 1,
+      "contextual": 36
+    },
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 5,
+      "contextual": 31
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fatal": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 31
+    }
+  },
+  "unresolved_count": 0
+}

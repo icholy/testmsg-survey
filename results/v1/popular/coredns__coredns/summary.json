@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "coredns/coredns",
+  "commit": "603b99c1880fd95d5ff7f72aa3e5c18812314abb",
+  "test_files": 413,
+  "parse_errors": 0,
+  "total": {
+    "bare": 590,
+    "contextual": 1066
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 582,
+      "contextual": 1064
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 3
+    },
+    "example": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 85,
+      "contextual": 106
+    },
+    "test": {
+      "bare": 496,
+      "contextual": 957
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 8,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 86,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 30,
+      "contextual": 194
+    },
+    "testing.Fatal": {
+      "bare": 405,
+      "contextual": 28
+    },
+    "testing.Fatalf": {
+      "bare": 61,
+      "contextual": 831
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 5
+    }
+  },
+  "unresolved_count": 11
+}

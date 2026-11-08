@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "reviewdog/reviewdog",
+  "commit": "b91830216780c673afee178a76a754be9f3e6fe7",
+  "test_files": 46,
+  "parse_errors": 0,
+  "total": {
+    "bare": 206,
+    "contextual": 44
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 185,
+      "contextual": 44
+    },
+    "library": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 22,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 179,
+      "contextual": 41
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 61,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 10,
+      "contextual": 16
+    },
+    "testing.Fatal": {
+      "bare": 114,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 26
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,70 @@
+{
+  "tier": "popular",
+  "repo": "prometheus-operator/prometheus-operator",
+  "commit": "854d33a40caad1dd773f73deb55726732803bcb8",
+  "test_files": 85,
+  "parse_errors": 0,
+  "total": {
+    "bare": 1602,
+    "contextual": 191
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 199,
+      "contextual": 165
+    },
+    "library": {
+      "bare": 1402,
+      "contextual": 25
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 934,
+      "contextual": 145
+    },
+    "test": {
+      "bare": 668,
+      "contextual": 46
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1402,
+      "contextual": 24
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 8,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 6,
+      "contextual": 17
+    },
+    "testing.Fatal": {
+      "bare": 182,
+      "contextual": 69
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 76
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 8
+}

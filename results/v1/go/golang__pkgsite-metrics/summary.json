@@ -1,0 +1,54 @@
+{
+  "tier": "go",
+  "repo": "golang/pkgsite-metrics",
+  "commit": "9cb9b30b17a56ab5c981c6645e453dd54557658a",
+  "test_files": 28,
+  "parse_errors": 0,
+  "total": {
+    "bare": 94,
+    "contextual": 4
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 82,
+      "contextual": 4
+    },
+    "helper": {
+      "bare": 12,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "test": {
+      "bare": 93,
+      "contextual": 4
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Fatal": {
+      "bare": 80,
+      "contextual": 1
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 0
+}

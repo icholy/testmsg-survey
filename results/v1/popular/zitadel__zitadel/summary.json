@@ -1,0 +1,98 @@
+{
+  "tier": "popular",
+  "repo": "zitadel/zitadel",
+  "commit": "62c9668cc7fec2dc039174015a28d9fbb3bf7dcc",
+  "test_files": 877,
+  "parse_errors": 0,
+  "total": {
+    "bare": 4469,
+    "contextual": 78
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 78,
+      "contextual": 60
+    },
+    "helper": {
+      "bare": 141,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 4242,
+      "contextual": 15
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "example": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 450,
+      "contextual": 22
+    },
+    "test": {
+      "bare": 4011,
+      "contextual": 56
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 750,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 74,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 3387,
+      "contextual": 10
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "helper": {
+      "bare": 141,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 3
+    },
+    "testify.NoError": {
+      "bare": 27,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 14,
+      "contextual": 4
+    },
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 35
+    },
+    "testing.Fatal": {
+      "bare": 59,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 21
+    }
+  },
+  "unresolved_count": 262
+}

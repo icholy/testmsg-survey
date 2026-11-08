@@ -1,0 +1,102 @@
+{
+  "tier": "popular",
+  "repo": "hyperledger/fabric",
+  "commit": "f4e34aa99167be0070082017f721c475001b01f6",
+  "test_files": 687,
+  "parse_errors": 0,
+  "total": {
+    "bare": 7215,
+    "contextual": 1134
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 23,
+      "contextual": 449
+    },
+    "helper": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 7141,
+      "contextual": 667
+    },
+    "panic": {
+      "bare": 40,
+      "contextual": 18
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 3053,
+      "contextual": 180
+    },
+    "test": {
+      "bare": 4162,
+      "contextual": 954
+    }
+  },
+  "by_sink": {
+    "github.com/onsi/gomega.NotTo(HaveOccurred)": {
+      "bare": 2089,
+      "contextual": 4
+    },
+    "github.com/onsi/gomega.To(BeNil)": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.To(Succeed)": {
+      "bare": 74,
+      "contextual": 0
+    },
+    "github.com/onsi/gomega.ToNot(HaveOccurred)": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 4899,
+      "contextual": 588
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 74
+    },
+    "helper": {
+      "bare": 11,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 40,
+      "contextual": 17
+    },
+    "testify.NoError": {
+      "bare": 61,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 8
+    },
+    "testing.FailNow": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 17,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 431
+    }
+  },
+  "unresolved_count": 49
+}

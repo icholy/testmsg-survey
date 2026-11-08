@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "jesseduffield/lazygit",
+  "commit": "bd4062a1e745b47d87ee8d0b24649529ed28b499",
+  "test_files": 150,
+  "parse_errors": 0,
+  "total": {
+    "bare": 398,
+    "contextual": 14
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 14
+    },
+    "library": {
+      "bare": 381,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 9,
+      "contextual": 6
+    },
+    "test": {
+      "bare": 389,
+      "contextual": 8
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 375,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 2
+}

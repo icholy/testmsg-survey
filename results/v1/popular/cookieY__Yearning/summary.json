@@ -1,0 +1,15 @@
+{
+  "tier": "popular",
+  "repo": "cookieY/Yearning",
+  "commit": "6e56e685beb2fff830ddd55ac406f842d575b82c",
+  "test_files": 3,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 0
+  },
+  "by_mechanism": {},
+  "by_func": {},
+  "by_sink": {},
+  "unresolved_count": 0
+}

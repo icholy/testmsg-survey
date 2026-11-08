@@ -1,0 +1,90 @@
+{
+  "tier": "popular",
+  "repo": "open-policy-agent/opa",
+  "commit": "bbcac03cb4082fd8d26cd99a9a1dc212dcbb55cb",
+  "test_files": 474,
+  "parse_errors": 0,
+  "total": {
+    "bare": 4527,
+    "contextual": 1068
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4266,
+      "contextual": 1062
+    },
+    "helper": {
+      "bare": 43,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 218,
+      "contextual": 6
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 284,
+      "contextual": 18
+    },
+    "example": {
+      "bare": 14,
+      "contextual": 0
+    },
+    "fuzz": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 327,
+      "contextual": 161
+    },
+    "test": {
+      "bare": 3900,
+      "contextual": 889
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 43,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "panic": {
+      "bare": 214,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 38,
+      "contextual": 8
+    },
+    "testing.Errorf": {
+      "bare": 42,
+      "contextual": 83
+    },
+    "testing.Fail": {
+      "bare": 4,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 2845,
+      "contextual": 64
+    },
+    "testing.Fatalf": {
+      "bare": 1337,
+      "contextual": 906
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 129
+}

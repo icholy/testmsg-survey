@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "golangci/golangci-lint",
+  "commit": "b6379d175cf23337327359361a1876c44ae1e6ac",
+  "test_files": 190,
+  "parse_errors": 0,
+  "total": {
+    "bare": 142,
+    "contextual": 17
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 17,
+      "contextual": 15
+    },
+    "library": {
+      "bare": 124,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 20,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 121,
+      "contextual": 10
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 118,
+      "contextual": 2
+    },
+    "log.Fatal": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 15
+    }
+  },
+  "unresolved_count": 1
+}

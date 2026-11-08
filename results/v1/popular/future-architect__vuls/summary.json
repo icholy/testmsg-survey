@@ -1,0 +1,38 @@
+{
+  "tier": "popular",
+  "repo": "future-architect/vuls",
+  "commit": "031f637cadf5f0c26b3387578172d9c8aa4afcd6",
+  "test_files": 51,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3,
+    "contextual": 84
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 3,
+      "contextual": 84
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 0,
+      "contextual": 5
+    },
+    "test": {
+      "bare": 3,
+      "contextual": 79
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 2,
+      "contextual": 26
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 58
+    }
+  },
+  "unresolved_count": 1
+}

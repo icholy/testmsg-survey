@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "google/go-github",
+  "commit": "f869cf9d3df6a4738d7634ddfbcbf122314d0d1a",
+  "test_files": 235,
+  "parse_errors": 0,
+  "total": {
+    "bare": 55,
+    "contextual": 1822
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 26,
+      "contextual": 1801
+    },
+    "helper": {
+      "bare": 28,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 21
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "example": {
+      "bare": 0,
+      "contextual": 19
+    },
+    "other": {
+      "bare": 19,
+      "contextual": 27
+    },
+    "test": {
+      "bare": 36,
+      "contextual": 1772
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 28,
+      "contextual": 0
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 21
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 3,
+      "contextual": 1451
+    },
+    "testing.Fatal": {
+      "bare": 17,
+      "contextual": 6
+    },
+    "testing.Fatalf": {
+      "bare": 3,
+      "contextual": 343
+    }
+  },
+  "unresolved_count": 266
+}

@@ -1,0 +1,82 @@
+{
+  "tier": "popular",
+  "repo": "superplanehq/superplane",
+  "commit": "4bdad6111788a782a6301f3bccaaa7f425a008b6",
+  "test_files": 1619,
+  "parse_errors": 0,
+  "total": {
+    "bare": 21546,
+    "contextual": 383
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 198,
+      "contextual": 197
+    },
+    "library": {
+      "bare": 21340,
+      "contextual": 186
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "other": {
+      "bare": 1650,
+      "contextual": 81
+    },
+    "test": {
+      "bare": 19896,
+      "contextual": 302
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 462,
+      "contextual": 10
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 20868,
+      "contextual": 176
+    },
+    "panic": {
+      "bare": 8,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 7,
+      "contextual": 46
+    },
+    "testing.Fatal": {
+      "bare": 151,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 37,
+      "contextual": 112
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 15
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 24
+    }
+  },
+  "unresolved_count": 119
+}

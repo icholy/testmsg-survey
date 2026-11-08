@@ -1,0 +1,74 @@
+{
+  "tier": "popular",
+  "repo": "JanDeDobbeleer/oh-my-posh",
+  "commit": "d01ca021d6ceb899e252884f3a95db5969a4b8fd",
+  "test_files": 238,
+  "parse_errors": 0,
+  "total": {
+    "bare": 271,
+    "contextual": 62
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 4,
+      "contextual": 13
+    },
+    "library": {
+      "bare": 267,
+      "contextual": 49
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 42,
+      "contextual": 7
+    },
+    "test": {
+      "bare": 228,
+      "contextual": 55
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 76,
+      "contextual": 17
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 191,
+      "contextual": 15
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 13
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Skip": {
+      "bare": 0,
+      "contextual": 9
+    }
+  },
+  "unresolved_count": 26
+}

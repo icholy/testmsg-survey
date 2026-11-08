@@ -1,0 +1,34 @@
+{
+  "tier": "popular",
+  "repo": "asciimoo/wuzz",
+  "commit": "82195c607ed2547487de9f10c2411683e51e4d0f",
+  "test_files": 3,
+  "parse_errors": 0,
+  "total": {
+    "bare": 10,
+    "contextual": 2
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 10,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 10,
+      "contextual": 2
+    }
+  },
+  "by_sink": {
+    "testing.Fatal": {
+      "bare": 10,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

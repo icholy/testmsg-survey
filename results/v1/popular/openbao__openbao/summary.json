@@ -1,0 +1,102 @@
+{
+  "tier": "popular",
+  "repo": "openbao/openbao",
+  "commit": "423b25465a2c8f70565de52baa50a195b071e5c3",
+  "test_files": 594,
+  "parse_errors": 0,
+  "total": {
+    "bare": 8140,
+    "contextual": 1430
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 636,
+      "contextual": 294
+    },
+    "helper": {
+      "bare": 63,
+      "contextual": 131
+    },
+    "library": {
+      "bare": 7366,
+      "contextual": 1002
+    },
+    "panic": {
+      "bare": 75,
+      "contextual": 3
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 48,
+      "contextual": 5
+    },
+    "other": {
+      "bare": 1249,
+      "contextual": 404
+    },
+    "test": {
+      "bare": 6843,
+      "contextual": 1021
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 5,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 126,
+      "contextual": 16
+    },
+    "github.com/stretchr/testify/assert.NoErrorf": {
+      "bare": 1,
+      "contextual": 4
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 59,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 7150,
+      "contextual": 724
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 8,
+      "contextual": 258
+    },
+    "helper": {
+      "bare": 63,
+      "contextual": 131
+    },
+    "panic": {
+      "bare": 75,
+      "contextual": 3
+    },
+    "testify.NoError": {
+      "bare": 17,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 20,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 48
+    },
+    "testing.Fail": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 476,
+      "contextual": 20
+    },
+    "testing.Fatalf": {
+      "bare": 138,
+      "contextual": 226
+    }
+  },
+  "unresolved_count": 202
+}

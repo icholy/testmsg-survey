@@ -1,0 +1,54 @@
+{
+  "tier": "popular",
+  "repo": "xo/usql",
+  "commit": "c56d974631c8ed6803435e32a51743e2bd78586f",
+  "test_files": 36,
+  "parse_errors": 0,
+  "total": {
+    "bare": 102,
+    "contextual": 56
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 102,
+      "contextual": 56
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 3,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 10,
+      "contextual": 19
+    },
+    "test": {
+      "bare": 89,
+      "contextual": 35
+    }
+  },
+  "by_sink": {
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 4
+    },
+    "testing.Fatal": {
+      "bare": 85,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 16,
+      "contextual": 48
+    },
+    "testing.Skip": {
+      "bare": 1,
+      "contextual": 2
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 0
+}

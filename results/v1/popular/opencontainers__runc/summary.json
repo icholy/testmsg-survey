@@ -1,0 +1,78 @@
+{
+  "tier": "popular",
+  "repo": "opencontainers/runc",
+  "commit": "9d3029ff5a967677a46395b598659820271d48e5",
+  "test_files": 40,
+  "parse_errors": 0,
+  "total": {
+    "bare": 273,
+    "contextual": 102
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 75,
+      "contextual": 101
+    },
+    "helper": {
+      "bare": 184,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 14,
+      "contextual": 1
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 15,
+      "contextual": 0
+    },
+    "example": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 60,
+      "contextual": 28
+    },
+    "test": {
+      "bare": 186,
+      "contextual": 74
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 184,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 12,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 1
+    },
+    "testing.Error": {
+      "bare": 4,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 1,
+      "contextual": 38
+    },
+    "testing.Fatal": {
+      "bare": 69,
+      "contextual": 15
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 45
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 1
+    }
+  },
+  "unresolved_count": 6
+}

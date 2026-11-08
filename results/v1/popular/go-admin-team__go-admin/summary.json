@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "go-admin-team/go-admin",
+  "commit": "f24c303f6156f82fb626afa8f22860feefcc2ff5",
+  "test_files": 100,
+  "parse_errors": 0,
+  "total": {
+    "bare": 156,
+    "contextual": 428
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 155,
+      "contextual": 428
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 3,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 44,
+      "contextual": 100
+    },
+    "test": {
+      "bare": 109,
+      "contextual": 328
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 21
+    },
+    "testing.Fatal": {
+      "bare": 154,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 404
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 3
+    }
+  },
+  "unresolved_count": 0
+}

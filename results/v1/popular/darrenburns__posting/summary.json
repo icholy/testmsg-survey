@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "darrenburns/posting",
+  "commit": "32c45669032342cf9b95d5758af47a0d93de0ad7",
+  "test_files": 111,
+  "parse_errors": 0,
+  "total": {
+    "bare": 532,
+    "contextual": 59
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 531,
+      "contextual": 59
+    },
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "fuzz": {
+      "bare": 19,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 45,
+      "contextual": 13
+    },
+    "test": {
+      "bare": 468,
+      "contextual": 42
+    }
+  },
+  "by_sink": {
+    "panic": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 12
+    },
+    "testing.Fatal": {
+      "bare": 520,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 43
+    },
+    "testing.Skip": {
+      "bare": 2,
+      "contextual": 4
+    }
+  },
+  "unresolved_count": 0
+}

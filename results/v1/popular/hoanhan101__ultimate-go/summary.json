@@ -1,0 +1,30 @@
+{
+  "tier": "popular",
+  "repo": "hoanhan101/ultimate-go",
+  "commit": "2dafd0c317885d128da215a583522ba432181007",
+  "test_files": 8,
+  "parse_errors": 0,
+  "total": {
+    "bare": 0,
+    "contextual": 7
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "by_func": {
+    "test": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "by_sink": {
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 7
+    }
+  },
+  "unresolved_count": 0
+}

@@ -1,0 +1,98 @@
+{
+  "tier": "popular",
+  "repo": "TykTechnologies/tyk",
+  "commit": "8d8e1f804c48bb2baaccf5814226b1d54cc1cbd9",
+  "test_files": 522,
+  "parse_errors": 0,
+  "total": {
+    "bare": 3344,
+    "contextual": 483
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 297,
+      "contextual": 351
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "library": {
+      "bare": 3038,
+      "contextual": 131
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 74,
+      "contextual": 11
+    },
+    "other": {
+      "bare": 231,
+      "contextual": 94
+    },
+    "test": {
+      "bare": 3039,
+      "contextual": 378
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 81,
+      "contextual": 6
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 1154,
+      "contextual": 49
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 1795,
+      "contextual": 66
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 10
+    },
+    "helper": {
+      "bare": 0,
+      "contextual": 1
+    },
+    "panic": {
+      "bare": 9,
+      "contextual": 0
+    },
+    "testify.NoError": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 44,
+      "contextual": 56
+    },
+    "testing.Errorf": {
+      "bare": 5,
+      "contextual": 36
+    },
+    "testing.Fatal": {
+      "bare": 242,
+      "contextual": 11
+    },
+    "testing.Fatalf": {
+      "bare": 6,
+      "contextual": 246
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "unresolved_count": 22
+}

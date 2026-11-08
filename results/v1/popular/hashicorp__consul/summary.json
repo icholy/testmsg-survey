@@ -1,0 +1,114 @@
+{
+  "tier": "popular",
+  "repo": "hashicorp/consul",
+  "commit": "c711a9f2bab4cc41cc826c2bdf80bde6f07d44a6",
+  "test_files": 897,
+  "parse_errors": 0,
+  "total": {
+    "bare": 10710,
+    "contextual": 288
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 2273,
+      "contextual": 127
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "library": {
+      "bare": 8417,
+      "contextual": 148
+    },
+    "panic": {
+      "bare": 14,
+      "contextual": 13
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 13,
+      "contextual": 1
+    },
+    "fuzz": {
+      "bare": 1,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 1039,
+      "contextual": 82
+    },
+    "test": {
+      "bare": 9657,
+      "contextual": 205
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 109,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 125,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.Nil": {
+      "bare": 96,
+      "contextual": 2
+    },
+    "github.com/stretchr/testify/require.Nilf": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 8080,
+      "contextual": 132
+    },
+    "github.com/stretchr/testify/require.NoErrorf": {
+      "bare": 0,
+      "contextual": 12
+    },
+    "helper": {
+      "bare": 6,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "log.Fatalf": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 12,
+      "contextual": 9
+    },
+    "testify.NoError": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 3,
+      "contextual": 1
+    },
+    "testing.Errorf": {
+      "bare": 25,
+      "contextual": 17
+    },
+    "testing.Fatal": {
+      "bare": 116,
+      "contextual": 13
+    },
+    "testing.Fatalf": {
+      "bare": 2129,
+      "contextual": 88
+    },
+    "testing.Skipf": {
+      "bare": 0,
+      "contextual": 8
+    }
+  },
+  "unresolved_count": 342
+}

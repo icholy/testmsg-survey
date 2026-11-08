@@ -1,0 +1,58 @@
+{
+  "tier": "popular",
+  "repo": "Jguer/yay",
+  "commit": "0938a75e98e63648ebf6e22ece6b4a30ec11a907",
+  "test_files": 74,
+  "parse_errors": 0,
+  "total": {
+    "bare": 561,
+    "contextual": 6
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 7,
+      "contextual": 6
+    },
+    "library": {
+      "bare": 554,
+      "contextual": 0
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 11,
+      "contextual": 2
+    },
+    "other": {
+      "bare": 14,
+      "contextual": 4
+    },
+    "test": {
+      "bare": 536,
+      "contextual": 0
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/assert.Nil": {
+      "bare": 13,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/assert.NoError": {
+      "bare": 71,
+      "contextual": 0
+    },
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 470,
+      "contextual": 0
+    },
+    "testing.Fatal": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "testing.Fatalf": {
+      "bare": 0,
+      "contextual": 6
+    }
+  },
+  "unresolved_count": 0
+}

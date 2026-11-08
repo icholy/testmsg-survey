@@ -1,0 +1,62 @@
+{
+  "tier": "popular",
+  "repo": "probelabs/goreplay",
+  "commit": "251e45abd242886bb64ff2b2dc98789556b56330",
+  "test_files": 25,
+  "parse_errors": 0,
+  "total": {
+    "bare": 30,
+    "contextual": 8
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 19,
+      "contextual": 6
+    },
+    "helper": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 4,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "other": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "test": {
+      "bare": 26,
+      "contextual": 6
+    }
+  },
+  "by_sink": {
+    "helper": {
+      "bare": 7,
+      "contextual": 0
+    },
+    "log.Fatal": {
+      "bare": 2,
+      "contextual": 2
+    },
+    "panic": {
+      "bare": 2,
+      "contextual": 0
+    },
+    "testing.Error": {
+      "bare": 15,
+      "contextual": 6
+    },
+    "testing.Fatal": {
+      "bare": 4,
+      "contextual": 0
+    }
+  },
+  "unresolved_count": 3
+}

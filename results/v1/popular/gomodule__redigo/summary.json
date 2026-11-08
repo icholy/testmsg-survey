@@ -1,0 +1,66 @@
+{
+  "tier": "popular",
+  "repo": "gomodule/redigo",
+  "commit": "57c8b99ccb90c3401bec6e09289081e8b78b3bde",
+  "test_files": 15,
+  "parse_errors": 0,
+  "total": {
+    "bare": 131,
+    "contextual": 70
+  },
+  "by_mechanism": {
+    "direct": {
+      "bare": 25,
+      "contextual": 68
+    },
+    "library": {
+      "bare": 106,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    }
+  },
+  "by_func": {
+    "benchmark": {
+      "bare": 18,
+      "contextual": 4
+    },
+    "other": {
+      "bare": 0,
+      "contextual": 3
+    },
+    "test": {
+      "bare": 113,
+      "contextual": 63
+    }
+  },
+  "by_sink": {
+    "github.com/stretchr/testify/require.NoError": {
+      "bare": 106,
+      "contextual": 0
+    },
+    "panic": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Error": {
+      "bare": 0,
+      "contextual": 2
+    },
+    "testing.Errorf": {
+      "bare": 0,
+      "contextual": 22
+    },
+    "testing.Fatal": {
+      "bare": 24,
+      "contextual": 7
+    },
+    "testing.Fatalf": {
+      "bare": 1,
+      "contextual": 37
+    }
+  },
+  "unresolved_count": 0
+}
