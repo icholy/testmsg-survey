@@ -131,8 +131,8 @@ func (fc *fileCtx) insideHelper(s stack, errName string) bool {
 }
 
 // unresolved records a statement call that passes an error value to a
-// function that is not a known sink, outside the standard library and not on
-// a testing value.
+// function that is not a known sink, outside the standard library and the
+// assertion libraries, and not on a testing value.
 func (fc *fileCtx) unresolved(call *ast.CallExpr, s stack, res *Result) {
 	if len(s) < 2 {
 		return
@@ -156,10 +156,14 @@ func (fc *fileCtx) unresolved(call *ast.CallExpr, s stack, res *Result) {
 			return
 		}
 	case *ast.SelectorExpr:
-		if path := fc.pkgOf(fun.X); path != "" && isStdlib(path) {
+		path := fc.pkgOf(fun.X)
+		if path != "" && (isStdlib(path) || isLibrary(path)) {
 			return
 		}
 		if fc.isTestingValue(fun.X, s) {
+			return
+		}
+		if path == "" && libraryMethods[fun.Sel.Name] && fc.importsAny(libraries...) {
 			return
 		}
 	}

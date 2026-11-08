@@ -344,12 +344,15 @@ import (
 	"fmt"
 	"testing"
 	"github.com/other/testhelp"
+	"github.com/stretchr/testify/require"
 )
 func TestX(t *testing.T) {
 	err := run()
 	testhelp.Check(t, err)
 	fmt.Println(err)
 	t.Log(err)
+	require.Error(t, err)
+	s.ErrorIs(err, target)
 	if testhelp.Bad(err) {
 	}
 }`,

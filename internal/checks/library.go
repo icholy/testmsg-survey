@@ -31,6 +31,41 @@ const (
 	be             = "github.com/carlmjohnson/be"
 )
 
+// libraries is every assertion library path. Calls into these libraries are
+// resolved, whether or not they are sinks.
+var libraries = []string{
+	testifyAssert, testifyRequire, testifySuite, gotestTools, gotestToolsV3,
+	quicktestOld, quicktestNew, checkV1, gomega, matryerIs, goconvey,
+	alecthomas, shoenigTest, shoenigMust, testdeep, be,
+}
+
+// isLibrary reports whether path is an assertion library.
+func isLibrary(path string) bool {
+	for _, l := range libraries {
+		if path == l {
+			return true
+		}
+	}
+	return false
+}
+
+// libraryMethods are assertion method names that are not sinks (they check
+// that an error occurred, or compare values). In a file that imports an
+// assertion library, method calls with these names are treated as resolved.
+var libraryMethods = map[string]bool{
+	"Error": true, "Errorf": true, "ErrorIs": true, "ErrorIsf": true,
+	"ErrorAs": true, "ErrorAsf": true, "ErrorContains": true,
+	"ErrorContainsf": true, "EqualError": true, "EqualErrorf": true,
+	"NotErrorIs": true, "NotErrorIsf": true, "Equal": true, "Equalf": true,
+	"NotEqual": true, "NotEqualf": true, "EqualValues": true, "Same": true,
+	"True": true, "Truef": true, "False": true, "Falsef": true,
+	"NotNil": true, "NotNilf": true, "Nil": true, "Nilf": true,
+	"Contains": true, "NotContains": true, "Empty": true, "NotEmpty": true,
+	"IsType": true, "Implements": true, "Panics": true, "Assert": true,
+	"Check": true, "Expect": true, "Equals": true, "So": true,
+	"Cmp": true, "CmpError": true, "CmpErrorIs": true,
+}
+
 // typedSinks are library functions whose asserted parameter has type error,
 // so any expression passed to them counts as the asserted error. Other sinks
 // (Nil, Assert, IsNil, BeNil, ShouldBeNil) accept any value, and the

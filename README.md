@@ -149,8 +149,10 @@ files (those with a `// Code generated ... DO NOT EDIT.` line).
 
 ### Coverage
 
-Calls that pass an error value to an unresolved function are counted, as an
-upper bound on the sinks the analyser misses.
+Statement calls that pass an error value to an unresolved function are
+counted, as an upper bound on the sinks the analyser misses. Calls into the
+standard library, into the assertion libraries above, and on testing values
+are resolved and not counted.
 
 ## Corpus
 
